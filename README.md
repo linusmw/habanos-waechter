@@ -78,12 +78,29 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
   pausiert: unter **Actions** einfach wieder aktivieren.
 - **Geplante Läufe** starten bei GitHub manchmal ein paar Minuten verspätet; das ist normal.
 
+## Verlauf und Muster
+
+Jede Änderung landet mit Zeitpunkt in **`verlauf.csv`**: wieder da, neu und ausverkauft
+(inklusive wie viele Stunden die Ware verfügbar war). Die Datei öffnet sich direkt in Excel
+oder Numbers.
+
+Daraus erzeugt jeder Lauf die Datei **`auswertung.md`**, auf GitHub direkt lesbar:
+
+- an welchen **Wochentagen und Tageszeiten** jeder Shop nachfüllt
+- **Wareneingänge** (mindestens 3 Artikel gleichzeitig) und ihr Rhythmus in Tagen
+- eine **Prognose** für den nächsten Wareneingang, sobald ein Shop regelmäßig liefert
+- wie schnell einzelne Zigarren **wieder vergriffen** sind
+
+Belastbare Muster brauchen Zeit: erste Hinweise nach ein paar Wochen, verlässlich nach
+2–3 Monaten. Zeitpunkte sind auf etwa 30 Minuten genau (Prüfintervall).
+
 ## Lokal ausprobieren
 
 ```bash
 pip install -r requirements.txt
 python waechter.py --dry-run          # zeigt Ergebnisse, speichert und sendet nichts
 NTFY_TOPIC=dein-thema python waechter.py --test-push
+python auswertung.py                  # Muster-Auswertung aus verlauf.csv
 python -m pytest -q                   # Tests (pip install pytest)
 ```
 

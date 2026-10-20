@@ -94,7 +94,8 @@ def test_back_in_stock_and_new():
 def test_available_only_shop_disappear_and_return():
     st = {}
     w.compare(CB, st, [mk("x", True)], "t0")
-    assert w.compare(CB, st, [], "t1") == []          # ausverkauft -> kein Alarm
+    ev = w.compare(CB, st, [], "t1")                    # ausverkauft -> nur Protokoll
+    assert [(e.kind, e.item.key) for e in ev] == [("ausverkauft", "x")]
     assert st["items"]["x"]["available"] is False
     ev = w.compare(CB, st, [mk("x", True)], "t2")     # wieder da
     assert [(e.kind, e.item.key) for e in ev] == [("wieder_da", "x")]
@@ -132,6 +133,7 @@ def test_grouping_by_product():
 
 def test_full_run(monkeypatch, tmp_path):
     monkeypatch.setattr(w, "STATE_FILE", tmp_path / "state.json")
+    monkeypatch.setattr(w, "LOG_FILE", tmp_path / "verlauf.csv")
     monkeypatch.setattr(w, "PAUSE_BETWEEN_PAGES", 0)
     pushes = []
     monkeypatch.setattr(w, "push", lambda title, message, **kw: pushes.append(title) or True)
@@ -162,7 +164,11 @@ def test_full_run(monkeypatch, tmp_path):
     stock["zigarrentraum"][0] = mk("a", True, "Montecristo No.4")
     stock["casabenden"] = []
     assert w.run() == 0
-    assert pushes == ["Wieder da bei Zigarrentraum: Montecristo No.4"]
+    assert pushes == ["Wieder da bei Zigarrentraum: Montecristo No.4"]   # "ausverkauft" pusht nicht
+    log = (tmp_path / "verlauf.csv").read_text(encoding="utf-8").splitlines()
+    assert log[0].startswith("zeit_utc;zeit_berlin;wochentag;stunde;shop;ereignis")
+    assert any(";Zigarrentraum;wieder_da;Montecristo No.4;" in row for row in log)
+    assert any(";Casa Benden;ausverkauft;Trinidad Reyes;" in row for row in log)
 
     stock["casabenden"] = [mk("r", True, "Trinidad Reyes")]
     for _ in range(4):
@@ -318,3 +324,33 @@ def test_news_only_mode():
     assert w.compare(shop, st, [mk("a", True)], "t2") == []       # kein "wieder da"
     ev = w.compare(shop, st, [mk("a", True), mk("b", True)], "t3")
     assert [(e.kind, e.item.key) for e in ev] == [("neu", "b")]
+
+
+# ---------------------------------------------------------------- Verlauf
+
+def test_duration_until_sold_out():
+    st = {}
+    w.compare(ZT, st, [mk("a", False)], "2026-10-20T08:00:00+00:00")
+    w.compare(ZT, st, [mk("a", True)], "2026-10-20T08:30:00+00:00")          # wieder da
+    ev = w.compare(ZT, st, [mk("a", False)], "2026-10-21T10:00:00+00:00")    # 25,5 h später weg
+    assert [(e.kind, e.hours_available) for e in ev] == [("ausverkauft", 25.5)]
+
+
+def test_baseline_stock_has_unknown_duration():
+    st = {}
+    w.compare(CB, st, [mk("a", True)], "2026-10-20T08:00:00+00:00")         # Ausgangsbestand
+    ev = w.compare(CB, st, [], "2026-10-20T12:00:00+00:00")
+    assert ev[0].kind == "ausverkauft" and ev[0].hours_available is None
+
+
+def test_log_file_format(tmp_path):
+    path = tmp_path / "verlauf.csv"
+    ev = [w.Event("wieder_da", "noblego", mk("k", True, "Cohiba Siglo VI", "10er")),
+          w.Event("ausverkauft", "noblego", mk("k", False, "Cohiba Siglo VI", "10er"), 3.5)]
+    w.log_events(ev, "2026-10-23T18:26:00+00:00", {"noblego": "Noblego"}, path)
+    w.log_events(ev[:1], "2026-10-24T06:56:00+00:00", {"noblego": "Noblego"}, path)
+    rows = path.read_text(encoding="utf-8").splitlines()
+    assert len(rows) == 4                                   # Kopfzeile nur einmal
+    assert rows[1].split(";")[:7] == ["2026-10-23T18:26:00+00:00", "2026-10-23 20:26", "Fr", "20",
+                                      "Noblego", "wieder_da", "Cohiba Siglo VI"]
+    assert rows[2].split(";")[9] == "3,5"

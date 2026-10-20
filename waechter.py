@@ -27,6 +27,7 @@ Umgebungsvariablen:
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import os
 import re
@@ -43,6 +44,11 @@ import requests
 from bs4 import BeautifulSoup
 
 STATE_FILE = Path(__file__).with_name("state.json")
+LOG_FILE = Path(__file__).with_name("verlauf.csv")
+LOG_COLUMNS = ["zeit_utc", "zeit_berlin", "wochentag", "stunde", "shop", "ereignis",
+               "artikel", "packung", "preis", "verfuegbar_stunden", "url", "schluessel"]
+ALERT_KINDS = {"wieder_da", "neu", "neu_nicht_lieferbar"}
+WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -762,15 +768,30 @@ def save_state(state: dict) -> None:
 
 @dataclass
 class Event:
-    kind: str           # "wieder_da" | "neu" | "neu_nicht_lieferbar"
+    kind: str           # "wieder_da" | "neu" | "neu_nicht_lieferbar" | "ausverkauft"
     shop: str
     item: Item
+    hours_available: float | None = None   # nur bei "ausverkauft", falls bekannt
+
+
+def _hours_between(start: str | None, end: str) -> float | None:
+    if not start:
+        return None
+    try:
+        delta = datetime.fromisoformat(end) - datetime.fromisoformat(start)
+    except ValueError:
+        return None
+    return round(delta.total_seconds() / 3600, 1)
 
 
 def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -> list[Event]:
-    """Gleicht den aktuellen Stand mit dem gespeicherten ab und aktualisiert shop_state."""
+    """Gleicht den aktuellen Stand mit dem gespeicherten ab und aktualisiert shop_state.
+
+    Liefert alle Ereignisse, auch "ausverkauft" (das nur ins Verlaufsprotokoll kommt).
+    """
     known: dict = shop_state.setdefault("items", {})
     first_run = not shop_state.get("initialized")
+    tracks_stock = shop.mode != "nur_neu"
     events: list[Event] = []
     current_keys = set()
 
@@ -785,20 +806,33 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
                 "name": item.name, "pack": item.pack, "price": item.price, "url": item.url,
                 "group": item.group, "available": item.available, "first_seen": timestamp,
                 "last_available": timestamp if item.available else None,
+                # Beim Ausgangsbestand ist unbekannt, seit wann etwas verfügbar ist.
+                "available_since": timestamp if (item.available and not first_run) else None,
             }
             continue
-        if item.available and not old.get("available") and shop.mode != "nur_neu":
+        if tracks_stock and item.available and not old.get("available"):
             events.append(Event("wieder_da", shop.id, item))
+            old["available_since"] = timestamp
+        elif tracks_stock and not item.available and old.get("available"):
+            events.append(Event("ausverkauft", shop.id, item,
+                                _hours_between(old.get("available_since"), timestamp)))
+            old["available_since"] = None
         old.update({"name": item.name, "pack": item.pack, "price": item.price,
                     "url": item.url, "group": item.group, "available": item.available})
         if item.available:
             old["last_available"] = timestamp
 
     # Was nicht mehr gelistet ist, gilt als nicht verfügbar.
-    if shop.mode != "nur_neu":
+    if tracks_stock:
         for key, old in known.items():
             if key not in current_keys and old.get("available"):
+                gone = Item(key=key, name=old.get("name", ""), pack=old.get("pack", ""),
+                            price=old.get("price", ""), url=old.get("url", ""),
+                            available=False, group=old.get("group", key))
+                events.append(Event("ausverkauft", shop.id, gone,
+                                    _hours_between(old.get("available_since"), timestamp)))
                 old["available"] = False
+                old["available_since"] = None
 
     shop_state["initialized"] = True
     return events
@@ -818,6 +852,41 @@ def plausible(shop: Shop, shop_state: dict, current: list[Item]) -> str | None:
         if not current and available_before >= 5:
             return f"plötzlich 0 statt {available_before} lieferbare Artikel"
     return None
+
+
+# --------------------------------------------------------------------------
+# Verlaufsprotokoll
+# --------------------------------------------------------------------------
+
+def berlin_time(timestamp: str) -> datetime:
+    dt = datetime.fromisoformat(timestamp)
+    try:
+        from zoneinfo import ZoneInfo
+        return dt.astimezone(ZoneInfo("Europe/Berlin"))
+    except Exception:  # noqa: BLE001 – ohne Zeitzonendaten bleibt es bei UTC
+        return dt
+
+
+def log_events(events: list[Event], timestamp: str, shop_names: dict[str, str],
+               path: Path | None = None) -> int:
+    """Hängt Ereignisse an verlauf.csv an (Semikolon-getrennt, öffnet direkt in Excel)."""
+    if not events:
+        return 0
+    path = path or LOG_FILE
+    local = berlin_time(timestamp)
+    new_file = not path.exists()
+    with path.open("a", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f, delimiter=";")
+        if new_file:
+            writer.writerow(LOG_COLUMNS)
+        for e in events:
+            hours = "" if e.hours_available is None else str(e.hours_available).replace(".", ",")
+            writer.writerow([
+                timestamp, local.strftime("%Y-%m-%d %H:%M"), WOCHENTAGE[local.weekday()],
+                local.hour, shop_names.get(e.shop, e.shop), e.kind, e.item.name, e.item.pack,
+                e.item.price, hours, e.item.url, e.item.key,
+            ])
+    return len(events)
 
 
 # --------------------------------------------------------------------------
@@ -854,7 +923,7 @@ def group_events(events: list[Event]) -> list[list[Event]]:
     groups: dict[tuple, list[Event]] = {}
     for e in events:
         groups.setdefault((e.shop, e.kind, e.item.group), []).append(e)
-    order = {"wieder_da": 0, "neu": 1, "neu_nicht_lieferbar": 2}
+    order = {"wieder_da": 0, "neu": 1, "neu_nicht_lieferbar": 2, "ausverkauft": 3}
     return sorted(groups.values(), key=lambda g: (order[g[0].kind], g[0].shop, g[0].item.name))
 
 
@@ -878,7 +947,7 @@ def describe(group: list[Event], shop_names: dict[str, str]) -> tuple[str, str, 
 
 
 def notify(events: list[Event], shop_names: dict[str, str]) -> None:
-    groups = group_events(events)
+    groups = group_events([e for e in events if e.kind in ALERT_KINDS])
     for group in groups[:MAX_PUSHES_PER_RUN]:
         title, message, url, tags = describe(group, shop_names)
         prio = 5 if group[0].kind == "wieder_da" else 4 if group[0].kind == "neu" else 3
@@ -939,13 +1008,16 @@ def run(dry_run: bool = False) -> int:
         all_events.extend(events)
 
     if dry_run:
-        for group in group_events(all_events):
+        for group in group_events([e for e in all_events if e.kind in ALERT_KINDS]):
             title, message, _, _ = describe(group, shop_names)
             print(f"[dry-run] {title}\n{message}\n")
-        print(f"[dry-run] {len(all_events)} Ereignisse, nichts gespeichert oder gesendet.")
+        sold = sum(1 for e in all_events if e.kind == "ausverkauft")
+        print(f"[dry-run] {len(all_events)} Ereignisse (davon {sold} ausverkauft), "
+              "nichts gespeichert oder gesendet.")
         return 0
 
     notify(all_events, shop_names)
+    log_events(all_events, timestamp, shop_names)
     for shop_name, reason in warnings:
         if reason == "wieder erreichbar":
             push(f"{shop_name} wieder erreichbar", "Die Überwachung läuft wieder normal.",
@@ -955,7 +1027,8 @@ def run(dry_run: bool = False) -> int:
                  f"Der Shop konnte {FAILURE_ALERT_AFTER}× in Folge nicht gelesen werden:\n{reason}",
                  tags=["warning"], priority=3)
     save_state(state)
-    print(f"Fertig: {len(all_events)} Ereignisse.")
+    alerts = sum(1 for e in all_events if e.kind in ALERT_KINDS)
+    print(f"Fertig: {alerts} Alarme, {len(all_events)} Ereignisse im Verlauf.")
     return 0
 
 
