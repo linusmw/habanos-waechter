@@ -1,6 +1,6 @@
 # Habanos-Wächter
 
-Prüft jede halbe Stunde (zur vollen und zur halben Stunde) den Habanos-Bestand bei
+Prüft jede halbe Stunde (jeweils um :26 und :56) den Habanos-Bestand bei
 
 - **Zigarrentraum** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Casa Benden** (Liste „nur sofort lieferbare Artikel“)
