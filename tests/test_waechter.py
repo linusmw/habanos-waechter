@@ -15,8 +15,10 @@ def read(name):
 # ---------------------------------------------------------------- Parser
 
 def test_zigarrentraum_parser():
-    items = w.parse_zigarrentraum(read("zigarrentraum_page.html"))
-    assert len(items) == 5
+    products = json.loads(read("zigarrentraum_products.json"))
+    variations = json.loads(read("zigarrentraum_variations.json"))
+    items = w.parse_zigarrentraum_api(products, variations)
+    assert len(items) == 7
     joy = [i for i in items if i.name == "Montecristo Joyitas"]
     assert [(i.pack, i.price, i.available) for i in joy] == [
         ("1er", "11,00 €", True),
@@ -25,7 +27,17 @@ def test_zigarrentraum_parser():
     assert joy[0].key == "16190" and joy[0].group == "16189"
     assert joy[0].url.endswith("/montecristo-joyitas/")
     upmann = [i for i in items if i.name == "H.Upmann Half Corona"]
-    assert len(upmann) == 3 and not any(i.available for i in upmann)
+    assert [i.pack for i in upmann] == ["1er", "25er Kiste", "1er aus der Blechdose", "5er Blechdose"]
+    assert not any(i.available for i in upmann)
+    quai = [i for i in items if i.key == "13575"]
+    assert quai[0].name == "Quai D’orsay Coronas Claro"   # HTML-Entity aufgelöst
+    assert quai[0].price == "12,00 €" and not quai[0].available
+
+
+def test_zigarrentraum_missing_variations_is_error():
+    products = json.loads(read("zigarrentraum_products.json"))
+    with pytest.raises(w.FetchError):
+        w.parse_zigarrentraum_api(products, [])   # Joyitas ist vorrätig, Varianten fehlen
 
 
 def test_casabenden_parser():

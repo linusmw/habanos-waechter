@@ -32,6 +32,7 @@ import os
 import re
 import sys
 import time
+from html import unescape
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -120,32 +121,50 @@ def get(session: requests.Session, url: str, allow_404: bool = False) -> str | N
 # Parser – reine Funktionen, damit sie ohne Internet testbar sind
 # --------------------------------------------------------------------------
 
-def parse_zigarrentraum(html: str) -> list[Item]:
-    """Kategorieseite von zigarrentraum.de: ein Eintrag je Packungsvariante."""
-    soup = BeautifulSoup(html, "html.parser")
+def pack_label(value: str) -> str:
+    value = clean(unescape(value))
+    return f"{value}er" if value.isdigit() else value
+
+
+def money(amount: str | int | None, minor_unit: int = 2) -> str:
+    if amount in (None, ""):
+        return ""
+    return euro(str(int(amount) / 10 ** minor_unit))
+
+
+def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> list[Item]:
+    """Daten aus der WooCommerce-Schnittstelle von zigarrentraum.de.
+
+    ``products``: alle Produkte der Kategorie, ``variations``: die Packungsvarianten
+    aller Produkte, die als vorrätig gemeldet sind. Ist ein Produkt nicht vorrätig,
+    ist es auch keine seiner Packungen; dafür braucht es keinen Abruf.
+    Ein Eintrag je Packungsvariante, Schlüssel = Varianten-ID des Shops.
+    """
+    by_id = {v["id"]: v for v in variations}
     items: list[Item] = []
-    for card in soup.select("div.product-line-loop"):
-        product_id = card.get("id", "")
-        title = clean(card.select_one(".product-line-loop__title").get_text()
-                      if card.select_one(".product-line-loop__title") else "")
-        link = card.select_one("a[href]")
-        url = link["href"] if link else ""
-        for li in card.select("ul.variations-list > li"):
-            vid_input = li.select_one('input[name^="variation_id"]')
-            vid = vid_input.get("value") if vid_input else ""
-            pack_el = li.select_one('span[title="Verpackungseinheit"]')
-            pack = clean(pack_el.get_text() if pack_el else "")
-            if pack.isdigit():
-                pack = f"{pack}er"
-            price_el = li.select_one(".product-price bdi")
-            price = re.sub(r"\s*€", " €", clean(price_el.get_text() if price_el else ""))
-            classes = li.get("class") or []
-            avail_text = clean(li.select_one(".availability-text").get_text()
-                               if li.select_one(".availability-text") else "")
-            available = "out-of-stock" not in classes and "nicht" not in avail_text.lower()
-            key = vid or f"{product_id}:{pack}"
-            items.append(Item(key=key, name=title, pack=pack, price=price, url=url,
-                              available=available, group=product_id or title))
+    for p in products:
+        name = clean(unescape(p.get("name", "")))
+        url = p.get("permalink", "")
+        minor = (p.get("prices") or {}).get("currency_minor_unit", 2)
+        group = str(p["id"])
+        if p.get("variations"):
+            for v in p["variations"]:
+                attrs = v.get("attributes") or []
+                pack = pack_label(attrs[0]["value"]) if attrs else ""
+                detail = by_id.get(v["id"])
+                if detail is not None:
+                    available = bool(detail.get("is_in_stock"))
+                    price = money((detail.get("prices") or {}).get("price"), minor)
+                elif p.get("is_in_stock"):
+                    raise FetchError(f"Varianten von '{name}' fehlen in der Antwort")
+                else:
+                    available, price = False, ""
+                items.append(Item(key=str(v["id"]), name=name, pack=pack, price=price,
+                                  url=url, available=available, group=group))
+        else:
+            items.append(Item(key=group, name=name, pack="",
+                              price=money((p.get("prices") or {}).get("price"), minor),
+                              url=url, available=bool(p.get("is_in_stock")), group=group))
     return items
 
 
@@ -223,22 +242,55 @@ class Shop:
     fetch: Callable[[requests.Session], list[Item]]
 
 
+def get_json(session: requests.Session, url: str) -> tuple[list, requests.structures.CaseInsensitiveDict]:
+    """Lädt JSON mit bis zu drei Versuchen und gibt Daten und Header zurück."""
+    last_error = None
+    for attempt in range(3):
+        try:
+            r = session.get(url, timeout=30, headers={"Accept": "application/json"})
+            if r.status_code == 200:
+                return r.json(), r.headers
+            last_error = f"HTTP {r.status_code}"
+        except (requests.RequestException, ValueError) as e:
+            last_error = str(e)
+        time.sleep(3 * (attempt + 1))
+    raise FetchError(f"{url}: {last_error}")
+
+
 def fetch_zigarrentraum(session: requests.Session) -> list[Item]:
-    base = "https://www.zigarrentraum.de/sortiment/zigarren/kubanische-zigarren/"
-    items: list[Item] = []
-    for page in range(1, 61):
-        url = base if page == 1 else f"{base}page/{page}/"
-        html = get(session, url, allow_404=page > 1)
-        if html is None:
+    # Die Schnittstelle sortiert stabil nach ID. Die normalen Kategorieseiten zeigen
+    # beim Blättern teils Produkte doppelt und lassen andere weg.
+    api = "https://www.zigarrentraum.de/wp-json/wc/store/v1/products"
+    products: dict[int, dict] = {}
+    total = None
+    for page in range(1, 31):
+        data, headers = get_json(session, f"{api}?category=kubanische-zigarren&per_page=100"
+                                          f"&page={page}&orderby=id&order=asc")
+        if total is None:
+            total = int(headers.get("X-WP-Total", 0))
+        if not data:
             break
-        page_items = parse_zigarrentraum(html)
-        if not page_items:
-            if page == 1:
-                raise FetchError("Keine Produkte auf Seite 1 gefunden (Seitenaufbau geändert?)")
+        for p in data:
+            products[p["id"]] = p
+        if len(products) >= total:
             break
-        items.extend(page_items)
         time.sleep(PAUSE_BETWEEN_PAGES)
-    return dedupe(items)
+    if not products:
+        raise FetchError("Keine Produkte gefunden (Schnittstelle geändert?)")
+    if total and len(products) < total:
+        raise FetchError(f"Nur {len(products)} von {total} Produkten gelesen")
+
+    in_stock = [pid for pid, p in products.items() if p.get("is_in_stock") and p.get("variations")]
+    variations: list[dict] = []
+    for i in range(0, len(in_stock), 20):
+        parents = "&".join(f"parent[]={pid}" for pid in in_stock[i:i + 20])
+        for page in range(1, 11):
+            data, headers = get_json(session, f"{api}?type=variation&{parents}&per_page=100&page={page}")
+            variations.extend(data)
+            if page >= int(headers.get("X-WP-TotalPages", 1) or 1):
+                break
+        time.sleep(PAUSE_BETWEEN_PAGES)
+    return parse_zigarrentraum_api(list(products.values()), variations)
 
 
 def fetch_casabenden(session: requests.Session) -> list[Item]:
