@@ -1,6 +1,6 @@
 # Habanos-Wächter
 
-Prüft jede Stunde den Habanos-Bestand bei
+Prüft jede halbe Stunde (zur vollen und zur halben Stunde) den Habanos-Bestand bei
 
 - **Zigarrentraum** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Casa Benden** (Liste „nur sofort lieferbare Artikel“)
@@ -35,7 +35,7 @@ Läuft kostenlos über GitHub Actions; du brauchst keinen eigenen Rechner.
 2. Oben rechts **+ → New repository**, Name z. B. `habanos-waechter`.
    - **Public** empfohlen: Dann sind GitHub Actions unbegrenzt kostenlos. Im Repo stehen nur
      öffentliche Shop-Daten; dein ntfy-Thema liegt geschützt in den Secrets (Schritt 3).
-   - **Private** geht auch, verbraucht aber Freiminuten (stündlich ca. 700–1.400 von 2.000 im Monat).
+   - **Private** geht auch, verbraucht aber Freiminuten (halbstündlich ca. 1.500–2.900 von 2.000 im Monat, das reicht dann nicht).
 3. Lade alle Dateien dieses Ordners hoch (**Add file → Upload files**, den ganzen Ordnerinhalt
    inklusive `.github` hineinziehen) und klicke **Commit changes**.
 
@@ -55,14 +55,14 @@ Im Repository: **Settings → Secrets and variables → Actions → New reposito
 3. Noch einmal **Run workflow**, diesmal **ohne** Haken. Dieser erste Lauf speichert den
    Ausgangsbestand in `state.json` und schickt bewusst noch keine Alarme.
 
-Ab jetzt läuft alles stündlich von selbst.
+Ab jetzt läuft alles jede halbe Stunde von selbst.
 
 ---
 
 ## Gut zu wissen
 
 - **Erster Lauf je Shop = Ausgangsbestand.** Alarme gibt es erst für Änderungen danach.
-- **Ausfälle:** Ist ein Shop 6 Stunden am Stück nicht lesbar (Seite umgebaut, Blockade),
+- **Ausfälle:** Ist ein Shop 6 Läufe in Folge (3 Stunden) nicht lesbar (Seite umgebaut, Blockade),
   bekommst du eine Warnung und eine Entwarnung, sobald es wieder klappt. Fehlerhafte Läufe
   verändern den gespeicherten Bestand nicht, damit es keine Fehlalarme gibt.
 - **Zu viele Änderungen auf einmal** (z. B. großer Wareneingang): die ersten 8 kommen einzeln,

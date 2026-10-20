@@ -2,8 +2,9 @@ name: Habanos-Wächter
 
 on:
   schedule:
-    # stündlich zur Minute 17 (UTC); GitHub startet geplante Läufe teils einige Minuten später
-    - cron: "17 * * * *"
+    # jede halbe Stunde, zur vollen und zur halben Stunde
+    # (GitHub startet geplante Läufe teils einige Minuten später)
+    - cron: "0,30 * * * *"
   workflow_dispatch:
     inputs:
       test_push:
