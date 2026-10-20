@@ -10,6 +10,11 @@ Prüft jede halbe Stunde (jeweils um :26 und :56) den Habanos-Bestand bei
 - **Wolsdorff** (ganze Kuba-Kategorie, jede Packungsgröße einzeln)
 - **Dalay Zigarren** (Liste „nur lieferbar“)
 - **Tabacstore** (Liste „sofort verfügbar“, jede Packungsgröße einzeln)
+- **Peter Heinrichs** (ganze Kuba-Kategorie)
+- **Tabakhaus Falkum** (ganze Habanos-Kategorie)
+- **c-cigars** und **La Galana** (Shop-Schnittstelle, jede Packungsgröße einzeln)
+- **habanos-zigarren.com** (Shop-Schnittstelle)
+- **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
 
 und schickt dir eine Push-Nachricht aufs Handy, wenn
 

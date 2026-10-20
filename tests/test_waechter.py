@@ -259,3 +259,62 @@ def test_collect_pages_stops_when_shop_repeats_last_page(monkeypatch):
     parse = lambda url: [mk(k, True) for k in pages[int(url)]]
     items, _ = w.collect_pages(None, lambda p: str(p), parse)
     assert [i.key for i in items] == ["a", "b", "c"] and calls == ["1", "2", "3"]
+
+
+# ---------------------------------------------------------------- Fachhändler
+
+def test_peterheinrichs_parser():
+    items = w.parse_shopware_listing(read("peterheinrichs_page.html"))
+    assert [(i.key, i.name, i.available, i.price) for i in items] == [
+        ("a30e9a5979934d99bca0010000029081", "Trinidad Wide Short", False, "19,80 €"),
+        ("a30e9a5979934d99bca0010000025772", "H.Upmann Jar Humidor", True, "270,00 €"),
+    ]
+
+
+def test_falkum_parser():
+    items, total = w.parse_falkum(read("falkum_page.html"))
+    assert total == 239
+    assert [(i.key, i.name, i.available, i.price) for i in items] == [
+        ("AC-PJPAR", "Habanos Jar Partagas", True, "270,00 €"),
+        ("ZI-HAQD50A", "Quai d'Orsay Especial d'Orsay (50 Anos)", False, "50,00 €"),
+    ]
+
+
+def test_shopify_parser():
+    items = w.parse_shopify(json.loads(read("shopify_products.json")), "https://c-cigars.de")
+    assert [(i.name, i.pack, i.price, i.available) for i in items] == [
+        ("Cohiba White Mini Zigarillos", "", "18,90 €", True),
+        ("Montecristo Short", "Einzeln verpackt", "4,50 €", True),
+        ("Montecristo Short", "10er Kiste", "45,00 €", False),
+        ("Romeo y Julieta - No. 1 Tubos", "", "17,30 €", False),
+    ]
+    assert items[0].url == "https://c-cigars.de/products/cohiba-white-mini-20-stuck"
+    assert items[2].url.endswith("?variant=47378710820002")
+    assert items[1].group == items[2].group
+
+
+def test_epages_parser():
+    items = w.parse_epages(json.loads(read("epages_products.json")))
+    assert [(i.name, i.available, i.price) for i in items] == [
+        ("Cohiba Club", True, "20,60 €"), ("Bolivar Belicosos Finos", False, "13,20 €")]
+    assert items[0].url.startswith("https://www.habanos-zigarren.com/epages/")
+
+
+def test_odoo_parser():
+    items = w.parse_odoo(read("dominique_page.html"))
+    assert [(i.key, i.name, i.price, i.available) for i in items] == [
+        ("21346", "Partagas Serie Mini - Pack Of 20 Cigarillos", "11,20 €", True),
+        ("21339", "Partagas Linea Maestra Maestro - Box Of 20 Cigars", "1.700,00 €", True),
+    ]
+    assert items[0].url == "https://www.dominiquelondon.de/shop/21346-partagas-serie-mini-pack-of-20-cigarillos-21346"
+
+
+def test_news_only_mode():
+    shop = next(s for s in w.SHOPS if s.mode == "nur_neu")
+    st = {}
+    w.compare(shop, st, [mk("a", True)], "t0")
+    assert w.compare(shop, st, [], "t1") == []                    # Seite fehlt mal -> nichts
+    assert st["items"]["a"]["available"] is True
+    assert w.compare(shop, st, [mk("a", True)], "t2") == []       # kein "wieder da"
+    ev = w.compare(shop, st, [mk("a", True), mk("b", True)], "t3")
+    assert [(e.kind, e.item.key) for e in ev] == [("neu", "b")]

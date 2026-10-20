@@ -332,10 +332,13 @@ def parse_shopware_listing(html: str) -> list[Item]:
             continue
         url = link.get("href", "")
         name = clean(link.get("title") or link.get_text()) or text(info.get("name"))
-        items.append(Item(key=info.get("id") or url, name=name, pack="",
+        pid_input = box.select_one('input[name="product-id"]')
+        key = info.get("id") or (pid_input.get("value") if pid_input else "") or url
+        sold_out = (box.select_one(".out-of-stock-information, .badge-out-of-stock") is not None
+                    or "is-out-of-stock" in (box.get("class") or []))
+        items.append(Item(key=key, name=name, pack="",
                           price=_price(box.select_one(".product-price")), url=url,
-                          available=box.select_one(".out-of-stock-information") is None,
-                          group=info.get("id") or url))
+                          available=not sold_out, group=key))
     return items
 
 
@@ -394,6 +397,81 @@ def parse_jtl_list(html: str) -> list[Item]:
     return items
 
 
+def parse_falkum(html: str) -> tuple[list[Item], int | None]:
+    """falkum.de, Kategorie Habanos (Magento mit Hyvä-Oberfläche)."""
+    soup = BeautifulSoup(html, "html.parser")
+    total = None
+    amount = soup.select_one(".toolbar-amount")
+    if amount:
+        m = re.search(r"(\d+)\s+Artikel", clean(amount.get_text()))
+        total = int(m.group(1)) if m else None
+    items: list[Item] = []
+    for box in _top_level(soup.select(".product-item")):
+        link = box.select_one("a.product-item-link")
+        if not link:
+            continue
+        url = link.get("href", "")
+        stock = box.select_one(".stock")
+        classes = stock.get("class", []) if stock else []
+        available = "available" in classes and "unavailable" not in classes
+        key = box.get("data-sku") or url
+        items.append(Item(key=key, name=clean(link.get_text()), pack="",
+                          price=_price(box.select_one(".price")), url=url,
+                          available=available, group=key))
+    return items, total
+
+
+def parse_shopify(data: dict, base: str) -> list[Item]:
+    """Shopify-Schnittstelle /collections/<name>/products.json (c-cigars.de, lagalana.de).
+    Ein Eintrag je Variante (Packung)."""
+    items: list[Item] = []
+    for p in data.get("products") or []:
+        name = text(p.get("title"))
+        url = f"{base}/products/{p.get('handle', '')}"
+        for v in p.get("variants") or []:
+            pack = text(v.get("title"))
+            if pack.lower() == "default title":
+                pack = ""
+            try:
+                price = euro(str(float(v.get("price"))))
+            except (TypeError, ValueError):
+                price = ""
+            items.append(Item(key=str(v.get("id")), name=name, pack=pack, price=price,
+                              url=f"{url}?variant={v.get('id')}" if pack else url,
+                              available=bool(v.get("available")), group=str(p.get("id"))))
+    return items
+
+
+def parse_epages(data: dict) -> list[Item]:
+    """ePages-Schnittstelle /rs/shops/<id>/products (habanos-zigarren.com)."""
+    items: list[Item] = []
+    for p in data.get("items") or []:
+        price = ((p.get("priceInfo") or {}).get("price") or {}).get("formatted") or ""
+        url = (p.get("sfUrl") or "").replace("http://", "https://", 1)
+        items.append(Item(key=p.get("productId") or url, name=text(p.get("name")), pack="",
+                          price=clean(price), url=url, available=bool(p.get("forSale")),
+                          group=p.get("productId") or url))
+    return items
+
+
+def parse_odoo(html: str, base: str = "https://www.dominiquelondon.de") -> list[Item]:
+    """Odoo-Shop (dominiquelondon.de). Zeigt keinen Lagerstand, daher nur für Neuheiten."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for box in soup.select(".oe_product"):
+        link = box.select_one(".o_wsale_products_item_title a")
+        if not link:
+            continue
+        tpl = box.select_one('input[name="product_template_id"]')
+        url = urljoin(base, link.get("href", "")).split("?")[0]
+        value = box.select_one(".oe_currency_value")
+        key = tpl.get("value") if tpl else url
+        items.append(Item(key=key, name=clean(link.get("content") or link.get_text()), pack="",
+                          price=f"{clean(value.get_text())} €" if value else "", url=url,
+                          available=True, group=key))
+    return items
+
+
 # --------------------------------------------------------------------------
 # Shops
 # --------------------------------------------------------------------------
@@ -404,11 +482,12 @@ class Shop:
     name: str
     # "voll": Liste enthält auch nicht lieferbare Artikel
     # "nur_lieferbar": was fehlt, ist nicht lieferbar
+    # "nur_neu": kein Lagerstand sichtbar, nur neue Artikel werden gemeldet
     mode: str
     fetch: Callable[[requests.Session], list[Item]]
 
 
-def get_json(session: requests.Session, url: str) -> tuple[list, requests.structures.CaseInsensitiveDict]:
+def get_json(session: requests.Session, url: str) -> tuple:
     """Lädt JSON mit bis zu drei Versuchen und gibt Daten und Header zurück."""
     last_error = None
     for attempt in range(3):
@@ -565,6 +644,74 @@ def make_jtl_fetcher(base: str) -> Callable[[requests.Session], list[Item]]:
     return fetch
 
 
+def fetch_peterheinrichs(session: requests.Session) -> list[Item]:
+    # alphabetisch sortiert: bei der Standardsortierung fehlen beim Blättern Artikel
+    base = "https://www.peterheinrichs.de/zigarren/kuba/?order=name-asc"
+    items, _ = collect_pages(session, lambda p: f"{base}&p={p}", parse_shopware_listing)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    return items
+
+
+def fetch_falkum(session: requests.Session) -> list[Item]:
+    html = get(session, "https://www.falkum.de/zigarren/habanos.html?product_list_limit=all")
+    items, total = parse_falkum(html)
+    items = dedupe(items)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    if total and len(items) < total:
+        raise FetchError(f"Nur {len(items)} von {total} Artikeln gelesen")
+    return items
+
+
+def make_shopify_fetcher(base: str, collection: str) -> Callable[[requests.Session], list[Item]]:
+    def fetch(session: requests.Session) -> list[Item]:
+        items: list[Item] = []
+        for page in range(1, 21):
+            data, _ = get_json(session, f"{base}/collections/{collection}/products.json"
+                                        f"?limit=250&page={page}")
+            if not data.get("products"):
+                break
+            items.extend(parse_shopify(data, base))
+            time.sleep(PAUSE_BETWEEN_PAGES)
+        items = dedupe(items)
+        if not items:
+            raise FetchError("Keine Produkte gefunden (Schnittstelle geändert?)")
+        return items
+    return fetch
+
+
+def fetch_habanos_zigarren(session: requests.Session) -> list[Item]:
+    api = "https://www.habanos-zigarren.com/rs/shops/62530561/products?resultsPerPage=100"
+    items: list[Item] = []
+    total = None
+    for page in range(1, 21):
+        data, _ = get_json(session, f"{api}&page={page}")
+        if total is None:
+            total = data.get("results")
+        page_items = parse_epages(data)
+        if not page_items:
+            break
+        items.extend(page_items)
+        if total and len(items) >= total:
+            break
+        time.sleep(PAUSE_BETWEEN_PAGES)
+    items = dedupe(items)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Schnittstelle geändert?)")
+    if total and len(items) < total:
+        raise FetchError(f"Nur {len(items)} von {total} Artikeln gelesen")
+    return items
+
+
+def fetch_dominique(session: requests.Session) -> list[Item]:
+    base = "https://www.dominiquelondon.de/shop/category/kubanische-zigarren-196"
+    items, _ = collect_pages(session, lambda p: base if p == 1 else f"{base}/page/{p}", parse_odoo)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    return items
+
+
 def dedupe(items: list[Item]) -> list[Item]:
     out: dict[str, Item] = {}
     for i in items:
@@ -586,6 +733,15 @@ SHOPS = [
     Shop("tabacstore", "Tabacstore", "nur_lieferbar", fetch_tabacstore),
     Shop("dalay", "Dalay Zigarren", "nur_lieferbar",
          make_jtl_fetcher("https://www.dalayzigarren.de/kubanische-zigarren")),
+    Shop("peterheinrichs", "Peter Heinrichs", "voll", fetch_peterheinrichs),
+    Shop("falkum", "Tabakhaus Falkum", "voll", fetch_falkum),
+    Shop("ccigars", "c-cigars", "voll",
+         make_shopify_fetcher("https://c-cigars.de", "kubanische-zigarren")),
+    Shop("habanoszigarren", "habanos-zigarren.com", "voll", fetch_habanos_zigarren),
+    Shop("lagalana", "La Galana", "voll",
+         make_shopify_fetcher("https://lagalana.de", "habanos-zigarren")),
+    # Dominique London (ehemals Casa del Puro) zeigt keinen Lagerstand: nur Neuheiten melden
+    Shop("dominique", "Dominique London", "nur_neu", fetch_dominique),
 ]
 
 
@@ -631,7 +787,7 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
                 "last_available": timestamp if item.available else None,
             }
             continue
-        if item.available and not old.get("available"):
+        if item.available and not old.get("available") and shop.mode != "nur_neu":
             events.append(Event("wieder_da", shop.id, item))
         old.update({"name": item.name, "pack": item.pack, "price": item.price,
                     "url": item.url, "group": item.group, "available": item.available})
@@ -639,9 +795,10 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
             old["last_available"] = timestamp
 
     # Was nicht mehr gelistet ist, gilt als nicht verfügbar.
-    for key, old in known.items():
-        if key not in current_keys and old.get("available"):
-            old["available"] = False
+    if shop.mode != "nur_neu":
+        for key, old in known.items():
+            if key not in current_keys and old.get("available"):
+                old["available"] = False
 
     shop_state["initialized"] = True
     return events
@@ -650,7 +807,7 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
 def plausible(shop: Shop, shop_state: dict, current: list[Item]) -> str | None:
     """Schutz gegen halb geladene Seiten: Gibt einen Grund zurück, wenn etwas faul ist."""
     known = shop_state.get("items", {})
-    if shop.mode == "voll":
+    if shop.mode in ("voll", "nur_neu"):
         if not current:
             return "keine Produkte gefunden"
         listed_before = shop_state.get("last_count", 0)
