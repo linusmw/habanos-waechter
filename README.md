@@ -8,7 +8,7 @@ Prüft jede Stunde den Habanos-Bestand bei
 - **Noblego** (ganze Kuba-Kategorie, jede Packungsgröße einzeln)
 - **zigarre.de** (ganze Kuba-Kategorie)
 - **Wolsdorff** (ganze Kuba-Kategorie, jede Packungsgröße einzeln)
-- **Zigarrenschachtel** und **Dalay Zigarren** (Liste „nur lieferbar“)
+- **Dalay Zigarren** (Liste „nur lieferbar“)
 - **Tabacstore** (Liste „sofort verfügbar“, jede Packungsgröße einzeln)
 
 und schickt dir eine Push-Nachricht aufs Handy, wenn
@@ -81,6 +81,11 @@ python waechter.py --dry-run          # zeigt Ergebnisse, speichert und sendet n
 NTFY_TOPIC=dein-thema python waechter.py --test-push
 python -m pytest -q                   # Tests (pip install pytest)
 ```
+
+## Nicht überwachbar
+
+- **Zigarrenschachtel**: Der Bot-Schutz des Shops (Cloudflare) blockiert Abrufe von GitHub.
+  Der Parser ist im Code vorhanden, aber deaktiviert.
 
 ## Einen weiteren Shop hinzufügen
 

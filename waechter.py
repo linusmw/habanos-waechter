@@ -579,8 +579,10 @@ SHOPS = [
     Shop("noblego", "Noblego", "voll", fetch_noblego),
     Shop("zigarrede", "zigarre.de", "voll", fetch_zigarrede),
     Shop("wolsdorff", "Wolsdorff", "voll", fetch_wolsdorff),
-    Shop("zigarrenschachtel", "Zigarrenschachtel", "nur_lieferbar",
-         make_jtl_fetcher("https://www.zigarrenschachtel.de/kubanische-zigarren")),
+    # Zigarrenschachtel ist deaktiviert: Der Cloudflare-Bot-Schutz des Shops weist
+    # Abrufe von GitHub-Servern ab (HTTP 403). Parser und Tests bleiben erhalten.
+    # Shop("zigarrenschachtel", "Zigarrenschachtel", "nur_lieferbar",
+    #      make_jtl_fetcher("https://www.zigarrenschachtel.de/kubanische-zigarren")),
     Shop("tabacstore", "Tabacstore", "nur_lieferbar", fetch_tabacstore),
     Shop("dalay", "Dalay Zigarren", "nur_lieferbar",
          make_jtl_fetcher("https://www.dalayzigarren.de/kubanische-zigarren")),

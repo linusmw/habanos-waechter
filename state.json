@@ -11746,11 +11746,6 @@
    "last_count": 174,
    "last_ok_day": "2026-10-20"
   },
-  "zigarrenschachtel": {
-   "failures": 1,
-   "items": {},
-   "last_error": "FetchError: https://www.zigarrenschachtel.de/kubanische-zigarren?availability=1: HTTP 403"
-  },
   "zigarrentraum": {
    "failures": 0,
    "initialized": true,
