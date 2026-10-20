@@ -246,6 +246,154 @@ def parse_brinkmann(html: str) -> list[Item]:
     return items
 
 
+def _price(el) -> str:
+    """Preistext normalisieren: '21,60 €*' -> '21,60 €'."""
+    t = clean(el.get_text(" ") if el is not None else "").replace("*", "").strip()
+    return re.sub(r"\s*€", " €", t).strip()
+
+
+def _top_level(elements):
+    """Nur äußerste Treffer (verschachtelte Boxen ignorieren)."""
+    ids = {id(e) for e in elements}
+    return [e for e in elements if not any(id(p) in ids for p in e.parents)]
+
+
+def parse_noblego(html: str) -> tuple[list[Item], int | None]:
+    """Kategorieseite von noblego.de (Magento). Ein Eintrag je Packung."""
+    soup = BeautifulSoup(html, "html.parser")
+    total = None
+    for el in soup.select(".amount"):
+        m = re.search(r"(\d+)\s+Artikel", clean(el.get_text()))
+        if m:
+            total = int(m.group(1))
+            break
+    items: list[Item] = []
+    for li in soup.select("ul.products-grid > li.item"):
+        info = li.select_one(".product-item-info")
+        link = li.select_one("h2.product-name a")
+        if not info or not link:
+            continue
+        name = clean(link.get("title") or link.get_text())
+        url = link.get("href", "")
+        packs = li.select("ul.product-prices > li")
+        if packs:
+            for p in packs:
+                pack_el = p.select_one('span[title="Verpackungseinheit"]')
+                pack = clean(pack_el.get_text() if pack_el else "")
+                icon = p.select_one(".availability-icon")
+                classes = icon.get("class", []) if icon else []
+                available = any(c.endswith("-instock") for c in classes)
+                items.append(Item(key=f"{url}#{pack}", name=name, pack=pack,
+                                  price=_price(p.select_one(".product-price .price")),
+                                  url=url, available=available, group=url))
+        else:
+            available = any(c.endswith("-instock") for c in info.get("class", []))
+            unit = info.select_one(".price-unit")
+            items.append(Item(key=url, name=name, pack=clean(unit.get_text()).strip("()") if unit else "",
+                              price=_price(info.select_one(".price-box .price")),
+                              url=url, available=available, group=url))
+    return items, total
+
+
+def parse_zigarrede(html: str) -> tuple[list[Item], int | None]:
+    """Kategorieseite von zigarre.de (Magento 2). Ein Eintrag je Produkt."""
+    soup = BeautifulSoup(html, "html.parser")
+    amount = soup.select_one(".toolbar-amount")
+    m = re.search(r"von\s+(\d+)", clean(amount.get_text()) if amount else "")
+    total = int(m.group(1)) if m else None
+    items: list[Item] = []
+    for li in soup.select("div.products-list ol.product-items > li"):
+        link = li.select_one("a.product-item-link")
+        if not link:
+            continue
+        pid_el = li.select_one("[data-product-id]")
+        url = link.get("href", "")
+        price = _price(li.select_one(".price"))
+        if li.select_one(".price-label") and "ab" in clean(li.select_one(".price-label").get_text()).lower():
+            price = f"ab {price}"
+        items.append(Item(key=pid_el.get("data-product-id") if pid_el else url,
+                          name=clean(link.get_text()), pack="", price=price, url=url,
+                          available=li.select_one(".stock.unavailable") is None,
+                          group=url))
+    return items, total
+
+
+def parse_shopware_listing(html: str) -> list[Item]:
+    """Shopware-6-Kategorieseite (z. B. wolsdorff.shop). Ein Eintrag je Artikel/Packung."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for box in soup.select("div.product-box"):
+        try:
+            info = json.loads(box.get("data-product-information") or "{}")
+        except ValueError:
+            info = {}
+        link = box.select_one("a.product-name")
+        if not link:
+            continue
+        url = link.get("href", "")
+        name = clean(link.get("title") or link.get_text()) or text(info.get("name"))
+        items.append(Item(key=info.get("id") or url, name=name, pack="",
+                          price=_price(box.select_one(".product-price")), url=url,
+                          available=box.select_one(".out-of-stock-information") is None,
+                          group=info.get("id") or url))
+    return items
+
+
+def parse_tabacstore(html: str) -> list[Item]:
+    """tabacstore.de, Liste 'sofort verfügbar' (Shopware 6 mit Packungsauswahl)."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for box in soup.select("div.product-box"):
+        link = box.select_one("a.product-name")
+        if not link:
+            continue
+        name = clean(link.get_text())
+        url = link.get("href", "")
+        group = url
+        cfg = box.select_one('input[name="maxia-configurator-config"]')
+        if cfg is not None:
+            try:
+                group = json.loads(cfg.get("value") or "{}").get("parentProductId") or url
+            except ValueError:
+                pass
+        shown_price = _price(box.select_one(".product-price"))
+        options = box.select("a.product-detail-configurator-option")
+        if not options:
+            items.append(Item(key=url, name=name, pack="", price=shown_price, url=url,
+                              available=True, group=group))
+            continue
+        for opt in options:
+            label = opt.select_one("label")
+            pack = clean(label.get("title") if label and label.get("title") else
+                         (label.get_text() if label else ""))
+            unavailable = "nicht verfügbar" in clean(label.get_text() if label else "").lower()
+            href = opt.get("href", "")
+            items.append(Item(key=href or f"{url}#{pack}", name=name, pack=pack,
+                              price=shown_price if href == url else "",
+                              url=href or url, available=not unavailable, group=group))
+    return items
+
+
+def parse_jtl_list(html: str) -> list[Item]:
+    """JTL-Shop (NOVA), Liste nur lieferbarer Artikel, z. B. zigarrenschachtel.de, dalayzigarren.de."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for box in _top_level(soup.select("div.productbox")):
+        link = box.select_one(".productbox-title a")
+        if not link:
+            continue
+        url = link.get("href", "")
+        price = _price(box.select_one(".productbox-price"))
+        if box.select_one(".pricestarting"):
+            price = f"ab {price}"
+        ribbon = box.select_one(".ribbon")
+        note = clean(ribbon.get_text()) if ribbon else ""
+        pack = "nur einzelne Packungen" if "variation" in note.lower() else ""
+        items.append(Item(key=url, name=clean(link.get_text()), pack=pack, price=price,
+                          url=url, available=True, group=url))
+    return items
+
+
 # --------------------------------------------------------------------------
 # Shops
 # --------------------------------------------------------------------------
@@ -350,6 +498,73 @@ def fetch_brinkmann(session: requests.Session) -> list[Item]:
     return items
 
 
+def collect_pages(session: requests.Session, url_for_page: Callable[[int], str],
+                  parse: Callable[[str], tuple[list[Item], int | None] | list[Item]],
+                  max_pages: int = 40) -> tuple[list[Item], int | None]:
+    """Blättert, bis eine Seite nichts Neues mehr bringt (viele Shops liefern dann
+    die letzte Seite erneut aus)."""
+    items: dict[str, Item] = {}
+    total = None
+    for page in range(1, max_pages + 1):
+        html = get(session, url_for_page(page), allow_404=page > 1)
+        if html is None:
+            break
+        result = parse(html)
+        page_items, page_total = result if isinstance(result, tuple) else (result, None)
+        if total is None:
+            total = page_total
+        new = [i for i in page_items if i.key not in items]
+        for i in new:
+            items[i.key] = i
+        if not new:
+            break
+        time.sleep(PAUSE_BETWEEN_PAGES)
+    return list(items.values()), total
+
+
+def fetch_noblego(session: requests.Session) -> list[Item]:
+    base = "https://www.noblego.de/kubanische-zigarren/"
+    items, total = collect_pages(session, lambda p: base if p == 1 else f"{base}?p={p}", parse_noblego)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    products = {i.group for i in items}
+    if total and len(products) < total:
+        raise FetchError(f"Nur {len(products)} von {total} Artikeln gelesen")
+    return items
+
+
+def fetch_zigarrede(session: requests.Session) -> list[Item]:
+    base = "https://www.zigarre.de/kubanische-zigarren.html?product_list_limit=96"
+    items, total = collect_pages(session, lambda p: f"{base}&p={p}", parse_zigarrede)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    if total and len(items) < total:
+        raise FetchError(f"Nur {len(items)} von {total} Artikeln gelesen")
+    return items
+
+
+def fetch_wolsdorff(session: requests.Session) -> list[Item]:
+    base = "https://wolsdorff.shop/zigarren/nach-herkunft/kuba/"
+    items, _ = collect_pages(session, lambda p: f"{base}?order=name-asc&p={p}", parse_shopware_listing)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    return items
+
+
+def fetch_tabacstore(session: requests.Session) -> list[Item]:
+    base = "https://www.tabacstore.de/kubanische-zigarren/?immediately-available=1&order=zuletzt-hinzugefugt"
+    items, _ = collect_pages(session, lambda p: f"{base}&p={p}", parse_tabacstore)
+    return items
+
+
+def make_jtl_fetcher(base: str) -> Callable[[requests.Session], list[Item]]:
+    def fetch(session: requests.Session) -> list[Item]:
+        items, _ = collect_pages(
+            session, lambda p: (base if p == 1 else f"{base}_s{p}") + "?availability=1", parse_jtl_list)
+        return items
+    return fetch
+
+
 def dedupe(items: list[Item]) -> list[Item]:
     out: dict[str, Item] = {}
     for i in items:
@@ -361,6 +576,14 @@ SHOPS = [
     Shop("zigarrentraum", "Zigarrentraum", "voll", fetch_zigarrentraum),
     Shop("casabenden", "Casa Benden", "nur_lieferbar", fetch_casabenden),
     Shop("brinkmann", "Brinkmann Finest", "nur_lieferbar", fetch_brinkmann),
+    Shop("noblego", "Noblego", "voll", fetch_noblego),
+    Shop("zigarrede", "zigarre.de", "voll", fetch_zigarrede),
+    Shop("wolsdorff", "Wolsdorff", "voll", fetch_wolsdorff),
+    Shop("zigarrenschachtel", "Zigarrenschachtel", "nur_lieferbar",
+         make_jtl_fetcher("https://www.zigarrenschachtel.de/kubanische-zigarren")),
+    Shop("tabacstore", "Tabacstore", "nur_lieferbar", fetch_tabacstore),
+    Shop("dalay", "Dalay Zigarren", "nur_lieferbar",
+         make_jtl_fetcher("https://www.dalayzigarren.de/kubanische-zigarren")),
 ]
 
 

@@ -150,7 +150,7 @@ def test_full_run(monkeypatch, tmp_path):
             return data
         return f
 
-    shops = [w.Shop(s.id, s.name, s.mode, fake(s.id)) for s in w.SHOPS]
+    shops = [w.Shop(s.id, s.name, s.mode, fake(s.id)) for s in w.SHOPS[:3]]
     monkeypatch.setattr(w, "SHOPS", shops)
 
     assert w.run() == 0                       # Ausgangsbestand
@@ -184,3 +184,78 @@ def test_zigarrentraum_null_attributes():
     medio = {i.key: i for i in items if i.name == "Cohiba Medio Siglo"}
     assert medio["23839"].pack == ""             # Wert fehlt im Shop -> leer, kein Absturz
     assert medio["23840"].pack == "25er Kiste"   # leere "Intensität" wird übersprungen
+
+
+# ---------------------------------------------------------------- neue Shops
+
+def test_noblego_parser():
+    items, total = w.parse_noblego(read("noblego_page.html"))
+    assert total == 417
+    by = {(i.name, i.pack): i for i in items}
+    assert by[("Cohiba White Club Cigarillos", "20er")].available
+    assert by[("Cohiba White Club Cigarillos", "20er")].price == "22,21 €"
+    assert not by[("Bolivar Belicoso Fino", "25er")].available
+    assert by[("Bolivar Belicoso Fino", "Einzeln")].available            # Packung einzeln auf Lager
+    assert by[("Bolivar Belicoso Fino", "25er")].price == "523,80 €"
+    assert not by[("Bolivar Coronas Gigantes", "Einzeln")].available     # "aufgeraucht"
+    assert by[("Ohne Packungsliste", "")].price == "9,90 €"
+    assert by[("Bolivar Belicoso Fino", "Einzeln")].key == "https://www.noblego.de/bolivar-belicoso-fino/#Einzeln"
+    assert len(items) == 6
+
+
+def test_zigarrede_parser():
+    items, total = w.parse_zigarrede(read("zigarrede_page.html"))
+    assert total == 174
+    assert [(i.key, i.name, i.available, i.price) for i in items] == [
+        ("1768", "Trinidad Reyes", True, "ab 34,00 €"),
+        ("4838", "Guantanamera Cristales", False, "ab 2,65 €"),
+    ]   # das Widget "Villiger Virginia" gehört nicht zur Kategorie
+
+
+def test_wolsdorff_parser():
+    items = w.parse_shopware_listing(read("wolsdorff_page.html"))
+    assert [(i.name, i.available, i.price) for i in items] == [
+        ("Cohiba 55 Aniversario Edición Limitada 2021", True, "ab 330,80 €"),
+        ("Bolivar Belicosos Finos Single 1'S", False, "21,60 €"),
+    ]
+    assert items[1].key == "69e5c7fdf70850e272d3d879bd81a1d3"
+
+
+def test_tabacstore_parser():
+    items = w.parse_tabacstore(read("tabacstore_lieferbar.html"))
+    got = [(i.name, i.pack, i.available) for i in items]
+    assert got == [
+        ("Trinidad Media Luna", "12er Gebinde", True),
+        ("Trinidad Media Luna", "Einzel", False),
+        ("Cohiba 1492 Siglo II", "5er Gebinde", True),
+        ("Cohiba 1492 Siglo II", "25er Kiste", False),
+        ("Cohiba 1492 Siglo II", "Einzel", True),
+        ("Testprodukt ohne Varianten", "", True),
+    ]
+    assert items[0].key == "https://www.tabacstore.de/trinidad-media-luna/fa6452120.1"
+    assert items[0].price == "516,00 €" and items[1].price == ""
+    assert items[0].group == items[1].group == "0194dfc426017143bc6dab3a292d5b42"
+
+
+def test_jtl_parsers():
+    zs = w.parse_jtl_list(read("zigarrenschachtel_lieferbar.html"))
+    assert [(i.name, i.price) for i in zs] == [
+        ("Guantanamera Decimos", "ab 2,00 €"),
+        ("Cohiba Siglo de Oro Ano Chino", "1.250,00 €"),
+    ]
+    dl = w.parse_jtl_list(read("dalay_lieferbar.html"))
+    assert [(i.name, i.pack, i.price) for i in dl] == [
+        ("Romeo y Julieta Short Churchills Reserva 2019 Cosecha", "nur einzelne Packungen", "ab 140,00 €"),
+        ("Trinidad Wide Short", "", "19,80 €"),
+    ]
+    assert all(i.available for i in zs + dl)
+
+
+def test_collect_pages_stops_when_shop_repeats_last_page(monkeypatch):
+    pages = {1: ["a", "b"], 2: ["c"], 3: ["c"], 4: ["c"]}   # Shop wiederholt die letzte Seite
+    calls = []
+    monkeypatch.setattr(w, "PAUSE_BETWEEN_PAGES", 0)
+    monkeypatch.setattr(w, "get", lambda s, url, allow_404=False: calls.append(url) or url)
+    parse = lambda url: [mk(k, True) for k in pages[int(url)]]
+    items, _ = w.collect_pages(None, lambda p: str(p), parse)
+    assert [i.key for i in items] == ["a", "b", "c"] and calls == ["1", "2", "3"]

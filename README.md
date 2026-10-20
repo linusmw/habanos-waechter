@@ -2,9 +2,14 @@
 
 Prüft jede Stunde den Habanos-Bestand bei
 
-- **Zigarrentraum** (alle kubanischen Zigarren, jede Packungsgröße einzeln)
+- **Zigarrentraum** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Casa Benden** (Liste „nur sofort lieferbare Artikel“)
 - **Brinkmann Finest** (Kategorie Kuba; dort ist nur gelistet, was kaufbar ist)
+- **Noblego** (ganze Kuba-Kategorie, jede Packungsgröße einzeln)
+- **zigarre.de** (ganze Kuba-Kategorie)
+- **Wolsdorff** (ganze Kuba-Kategorie, jede Packungsgröße einzeln)
+- **Zigarrenschachtel** und **Dalay Zigarren** (Liste „nur lieferbar“)
+- **Tabacstore** (Liste „sofort verfügbar“, jede Packungsgröße einzeln)
 
 und schickt dir eine Push-Nachricht aufs Handy, wenn
 
