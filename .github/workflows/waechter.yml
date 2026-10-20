@@ -1,0 +1,61 @@
+name: Habanos-Wächter
+
+on:
+  schedule:
+    # stündlich zur Minute 17 (UTC); GitHub startet geplante Läufe teils einige Minuten später
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      test_push:
+        description: "Nur eine Test-Benachrichtigung senden"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: habanos-waechter
+  cancel-in-progress: false
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Test-Benachrichtigung
+        if: ${{ inputs.test_push }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: python waechter.py --test-push
+
+      - name: Shops prüfen
+        if: ${{ !inputs.test_push }}
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: python waechter.py
+
+      - name: Bestand speichern
+        if: ${{ !inputs.test_push }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen am Bestand."
+          else
+            git commit -m "Bestand aktualisiert"
+            git push
+          fi
