@@ -517,6 +517,7 @@ def run(dry_run: bool = False) -> int:
         except Exception as e:  # noqa: BLE001 – ein Shop darf die anderen nicht blockieren
             fails = shop_state.get("failures", 0) + 1
             shop_state["failures"] = fails
+            shop_state["last_error"] = f"{type(e).__name__}: {e}"[:500]
             print(f"   Fehler ({fails}. in Folge): {e}")
             if fails == FAILURE_ALERT_AFTER:
                 warnings.append((shop.name, str(e)))
@@ -528,6 +529,7 @@ def run(dry_run: bool = False) -> int:
         first_run = not shop_state.get("initialized")
         events = compare(shop, shop_state, current, timestamp)
         shop_state["failures"] = 0
+        shop_state.pop("last_error", None)
         shop_state["last_ok_day"] = today
         shop_state["last_count"] = len(current)
         if first_run:
