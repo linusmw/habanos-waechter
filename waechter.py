@@ -121,15 +121,34 @@ def get(session: requests.Session, url: str, allow_404: bool = False) -> str | N
 # Parser – reine Funktionen, damit sie ohne Internet testbar sind
 # --------------------------------------------------------------------------
 
-def pack_label(value: str) -> str:
-    value = clean(unescape(value))
+def text(value) -> str:
+    """Wie clean(), löst aber auch HTML-Entities auf und verträgt None."""
+    return clean(unescape(value)) if isinstance(value, str) else ""
+
+
+def pack_label(value) -> str:
+    value = text(value)
     return f"{value}er" if value.isdigit() else value
 
 
-def money(amount: str | int | None, minor_unit: int = 2) -> str:
-    if amount in (None, ""):
+def pack_from_attributes(attrs: list[dict] | None, detail: dict | None = None) -> str:
+    """Packungsangabe einer Variante. Der Shop lässt manche Werte leer (null)."""
+    if detail and isinstance(detail.get("variation"), str) and detail["variation"].strip():
+        parts = [p.split(":", 1)[-1] for p in detail["variation"].split(",")]
+        values = [pack_label(p) for p in parts if text(p)]
+        if values:
+            return " / ".join(values)
+    attrs = [a for a in (attrs or []) if isinstance(a, dict) and text(a.get("value"))]
+    preferred = [a for a in attrs if "verpack" in text(a.get("name")).lower()]
+    chosen = preferred or attrs
+    return " / ".join(pack_label(a["value"]) for a in chosen)
+
+
+def money(amount: str | int | None, minor_unit: int | None = 2) -> str:
+    try:
+        return euro(str(int(amount) / 10 ** int(minor_unit if minor_unit is not None else 2)))
+    except (TypeError, ValueError):
         return ""
-    return euro(str(int(amount) / 10 ** minor_unit))
 
 
 def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> list[Item]:
@@ -143,15 +162,14 @@ def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> lis
     by_id = {v["id"]: v for v in variations}
     items: list[Item] = []
     for p in products:
-        name = clean(unescape(p.get("name", "")))
-        url = p.get("permalink", "")
+        name = text(p.get("name"))
+        url = p.get("permalink") or ""
         minor = (p.get("prices") or {}).get("currency_minor_unit", 2)
         group = str(p["id"])
         if p.get("variations"):
             for v in p["variations"]:
-                attrs = v.get("attributes") or []
-                pack = pack_label(attrs[0]["value"]) if attrs else ""
                 detail = by_id.get(v["id"])
+                pack = pack_from_attributes(v.get("attributes"), detail)
                 if detail is not None:
                     available = bool(detail.get("is_in_stock"))
                     price = money((detail.get("prices") or {}).get("price"), minor)

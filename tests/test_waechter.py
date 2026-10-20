@@ -18,7 +18,7 @@ def test_zigarrentraum_parser():
     products = json.loads(read("zigarrentraum_products.json"))
     variations = json.loads(read("zigarrentraum_variations.json"))
     items = w.parse_zigarrentraum_api(products, variations)
-    assert len(items) == 7
+    assert len(items) == 9
     joy = [i for i in items if i.name == "Montecristo Joyitas"]
     assert [(i.pack, i.price, i.available) for i in joy] == [
         ("1er", "11,00 €", True),
@@ -176,3 +176,11 @@ def test_full_run(monkeypatch, tmp_path):
     assert "Brinkmann Finest wieder erreichbar" in pushes
     # erster erfolgreicher Brinkmann-Lauf = Ausgangsbestand, kein "neu"-Alarm
     assert not any("Panatelas" in p for p in pushes)
+
+
+def test_zigarrentraum_null_attributes():
+    products = json.loads(read("zigarrentraum_products.json"))
+    items = w.parse_zigarrentraum_api(products, json.loads(read("zigarrentraum_variations.json")))
+    medio = {i.key: i for i in items if i.name == "Cohiba Medio Siglo"}
+    assert medio["23839"].pack == ""             # Wert fehlt im Shop -> leer, kein Absturz
+    assert medio["23840"].pack == "25er Kiste"   # leere "Intensität" wird übersprungen
