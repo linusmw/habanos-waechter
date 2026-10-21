@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-21 17:27 (deutsche Zeit) · 0 Zugänge · 5× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-21 21:45 (deutsche Zeit) · 0 Zugänge · 6× ausverkauft
 
 > Noch zu wenige Daten für belastbare Muster. Aussagekräftig wird es nach einigen Wochen, idealerweise nach 2–3 Monaten.
 
@@ -11,6 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-21 17:27 (deutsche Zeit) · 0 Zugänge ·
 | Noblego | 0 | 0 | 2 | 0 | – |
 | Wolsdorff | 0 | 0 | 2 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
+| c-cigars | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
