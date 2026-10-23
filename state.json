@@ -3541,91 +3541,6 @@
    "last_count": 325,
    "last_ok_day": "2026-10-23"
   },
-  "cigarworld": {
-   "failures": 0,
-   "initialized": true,
-   "items": {
-    "/zigarren/kuba/anejados/trinidad-vintage-10-90015252": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/anejados/trinidad-vintage-10-90015252",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Trinidad Vintage 10",
-     "pack": "2 Varianten",
-     "price": "ab 55.000,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/anejados/trinidad-vintage-10-90015252"
-    },
-    "/zigarren/kuba/especiales/el-rey-del-mundo-auktionshumidor-festival-del-habano-humidor-mit-325-zigarren-90015896_44996": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/especiales/el-rey-del-mundo-auktionshumidor-festival-del-habano-humidor-mit-325-zigarren-90015896_44996",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "El Rey del Mundo Auktionshumidor Festival del Habano (Humidor mit 325 Zigarren)",
-     "pack": "Exklusiv",
-     "price": "476.000,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/especiales/el-rey-del-mundo-auktionshumidor-festival-del-habano-humidor-mit-325-zigarren-90015896_44996"
-    },
-    "/zigarren/kuba/especiales/montecristo-lesprit-st-dupont-le-crepuscule-humidor-mit-50-zigarren-90013008_54967": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/especiales/montecristo-lesprit-st-dupont-le-crepuscule-humidor-mit-50-zigarren-90013008_54967",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Montecristo L'Esprit (S.T. Dupont Le Crepuscule Humidor mit 50 Zigarren)",
-     "pack": "",
-     "price": "30.000,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/especiales/montecristo-lesprit-st-dupont-le-crepuscule-humidor-mit-50-zigarren-90013008_54967"
-    },
-    "/zigarren/kuba/limitadas/cohiba-edicion-limitada-55-aniversario-2021-90009990_50378": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/limitadas/cohiba-edicion-limitada-55-aniversario-2021-90009990_50378",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Cohiba Edición Limitada 55 Aniversario (2021)",
-     "pack": "Restbestand",
-     "price": "330,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/limitadas/cohiba-edicion-limitada-55-aniversario-2021-90009990_50378"
-    },
-    "/zigarren/kuba/regulares/partagas-maestra-90016827": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/regulares/partagas-maestra-90016827",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Partagas Maestra",
-     "pack": "3 Varianten",
-     "price": "ab 80,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/regulares/partagas-maestra-90016827"
-    },
-    "/zigarren/kuba/regulares/romeo-y-julieta-de-oro-hidalgos-90015512_40935": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/regulares/romeo-y-julieta-de-oro-hidalgos-90015512_40935",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Romeo y Julieta De Oro Hidalgos",
-     "pack": "Restbestand",
-     "price": "65,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/regulares/romeo-y-julieta-de-oro-hidalgos-90015512_40935"
-    },
-    "/zigarren/kuba/regulares/trinidad-reyes-01021_5800": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "/zigarren/kuba/regulares/trinidad-reyes-01021_5800",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Trinidad Reyes",
-     "pack": "",
-     "price": "34,00 €",
-     "url": "https://www.cigarworld.de/zigarren/kuba/regulares/trinidad-reyes-01021_5800"
-    }
-   },
-   "last_count": 7,
-   "last_ok_day": "2026-10-23"
-  },
   "dalay": {
    "failures": 0,
    "initialized": true,
@@ -21225,39 +21140,6 @@
      "price": "ab 240,00 €",
      "url": "https://www.starkezigarren.de/Cohiba-Siglo-de-Oro-Ano-Chino_1"
     },
-    "https://www.starkezigarren.de/Dupont-Humidor-Cohiba-55": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Dupont-Humidor-Cohiba-55",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Dupont Humidor Cohiba 55",
-     "pack": "",
-     "price": "2.490,00 €",
-     "url": "https://www.starkezigarren.de/Dupont-Humidor-Cohiba-55"
-    },
-    "https://www.starkezigarren.de/Dupont-Ligne-2-Feuerzeug-Cohiba-55": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Dupont-Ligne-2-Feuerzeug-Cohiba-55",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Dupont Ligne 2 Feuerzeug Cohiba 55",
-     "pack": "",
-     "price": "1.390,00 €",
-     "url": "https://www.starkezigarren.de/Dupont-Ligne-2-Feuerzeug-Cohiba-55"
-    },
-    "https://www.starkezigarren.de/Dupont-Megajet-Feuerzeug-Cohiba-55": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Dupont-Megajet-Feuerzeug-Cohiba-55",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Dupont Megajet Feuerzeug Cohiba 55",
-     "pack": "",
-     "price": "220,00 €",
-     "url": "https://www.starkezigarren.de/Dupont-Megajet-Feuerzeug-Cohiba-55"
-    },
     "https://www.starkezigarren.de/Guantanamera-Corona-Tubo_1": {
      "available": true,
      "available_since": null,
@@ -21268,39 +21150,6 @@
      "pack": "",
      "price": "ab 3,50 €",
      "url": "https://www.starkezigarren.de/Guantanamera-Corona-Tubo_1"
-    },
-    "https://www.starkezigarren.de/Lederetui-Cohiba-2020-1-Cigar": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Lederetui-Cohiba-2020-1-Cigar",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Lederetui Cohiba 2020 - 1 Cigar",
-     "pack": "",
-     "price": "99,00 €",
-     "url": "https://www.starkezigarren.de/Lederetui-Cohiba-2020-1-Cigar"
-    },
-    "https://www.starkezigarren.de/Lederetui-Cohiba-2020-2-Cigars": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Lederetui-Cohiba-2020-2-Cigars",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Lederetui Cohiba 2020 - 2 Cigars",
-     "pack": "",
-     "price": "115,00 €",
-     "url": "https://www.starkezigarren.de/Lederetui-Cohiba-2020-2-Cigars"
-    },
-    "https://www.starkezigarren.de/Lederetui-Cohiba-Behike-3er-2019": {
-     "available": true,
-     "available_since": null,
-     "first_seen": "2026-10-23T13:43:18+00:00",
-     "group": "https://www.starkezigarren.de/Lederetui-Cohiba-Behike-3er-2019",
-     "last_available": "2026-10-23T13:43:18+00:00",
-     "name": "Lederetui Cohiba Behike 3er 2019",
-     "pack": "",
-     "price": "129,00 €",
-     "url": "https://www.starkezigarren.de/Lederetui-Cohiba-Behike-3er-2019"
     },
     "https://www.starkezigarren.de/Montecristo-Club": {
      "available": true,
@@ -21490,7 +21339,7 @@
      "url": "https://www.starkezigarren.de/trinidad-short-year-of-the-dragon-66er-kiste"
     }
    },
-   "last_count": 26,
+   "last_count": 20,
    "last_ok_day": "2026-10-23"
   },
   "tabacstore": {

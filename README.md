@@ -15,8 +15,7 @@ Prüft jede halbe Stunde (zur vollen und halben Stunde, Takt über cron-job.org)
 - **c-cigars** und **La Galana** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **habanos-zigarren.com** (Shop-Schnittstelle)
 - **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
-- **CIGARWORLD** (Liste „nur sofort lieferbar“, gleiches System wie Casa Benden)
-- **StarkeZigarren** (Liste „verfügbar“)
+- **StarkeZigarren** (Liste „verfügbar“, ohne Zubehör wie Feuerzeuge, Humidore, Etuis)
 - **Zigarren Herzog** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 
 und schickt dir **eine Push-Nachricht pro Shop** aufs Handy (mit allen Zigarren, Packungen und
@@ -123,6 +122,9 @@ python -m pytest -q                   # Tests (pip install pytest)
 
 - **Zigarrenschachtel**: Der Bot-Schutz des Shops (Cloudflare) blockiert Abrufe von GitHub.
   Der Parser ist im Code vorhanden, aber deaktiviert.
+
+- **CIGARWORLD**: gehört zu Casa Benden und hat dasselbe Lager; würde nur doppelt melden.
+  Der Abruf ist im Code vorhanden (`fetch_cigarworld`), aber nicht aktiv.
 
 ## Einen weiteren Shop hinzufügen
 

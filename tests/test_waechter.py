@@ -437,3 +437,11 @@ def test_shopify_brand_from_vendor():
     items = w.parse_shopify(data, "https://zigarren-herzog.com", brand_from_vendor=True)
     assert [i.name for i in items] == ["Trinidad Reyes", "Cohiba Siglo VI"]
     assert w.parse_shopify(data, "https://c-cigars.de")[0].name == "Reyes"
+
+
+def test_accessory_filter():
+    names = ["Dupont Megajet Feuerzeug Cohiba 55", "Dupont Humidor Cohiba 55",
+             "Lederetui Cohiba 2020 - 2 Cigars", "Trinidad Short", "Partagas Linea Maestra Geschenkbox",
+             "Cohiba Short Year of the Snake 88er-Kiste"]
+    assert [n for n in names if not w.is_accessory(mk("x", True, n))] == [
+        "Trinidad Short", "Partagas Linea Maestra Geschenkbox", "Cohiba Short Year of the Snake 88er-Kiste"]

@@ -661,10 +661,22 @@ def fetch_tabacstore(session: requests.Session) -> list[Item]:
     return items
 
 
-def make_jtl_fetcher(base: str) -> Callable[[requests.Session], list[Item]]:
+ACCESSORY_WORDS = re.compile(
+    r"feuerzeug|humidor|etui|cutter|abschneider|aschenbecher|ascher|bohrer|tasche|"
+    r"zigarrenschere|anzünder|dupont|zubehör|accessoire", re.I)
+
+
+def is_accessory(item: Item) -> bool:
+    """Zubehör (Feuerzeuge, Humidore, Etuis ...) statt Zigarren."""
+    return bool(ACCESSORY_WORDS.search(item.name))
+
+
+def make_jtl_fetcher(base: str, skip_accessories: bool = False) -> Callable[[requests.Session], list[Item]]:
     def fetch(session: requests.Session) -> list[Item]:
         items, _ = collect_pages(
             session, lambda p: (base if p == 1 else f"{base}_s{p}") + "?availability=1", parse_jtl_list)
+        if skip_accessories:
+            items = [i for i in items if not is_accessory(i)]
         return items
     return fetch
 
@@ -768,9 +780,10 @@ SHOPS = [
          make_shopify_fetcher("https://lagalana.de", "habanos-zigarren")),
     # Dominique London (ehemals Casa del Puro) zeigt keinen Lagerstand: nur Neuheiten melden
     Shop("dominique", "Dominique London", "nur_neu", fetch_dominique),
-    Shop("cigarworld", "CIGARWORLD", "nur_lieferbar", fetch_cigarworld),
+    # CIGARWORLD hat dasselbe Lager wie Casa Benden (gleiche Firma): nicht doppelt melden
     Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
-         make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen")),
+         make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen",
+                          skip_accessories=True)),
     Shop("herzog", "Zigarren Herzog", "voll",
          make_shopify_fetcher("https://zigarren-herzog.com", "kuba", brand_from_vendor=True)),
 ]
