@@ -141,7 +141,7 @@ def test_one_message_per_shop():
                    "• Partagas Serie D No.4: 25er 10,00 €\n\n"
                    "🆕 Neu\n• Trinidad EL 2026: 12er 10,00 €\n\n"
                    "👀 Neu gelistet, noch nicht lieferbar\n• Cohiba EL 2026: 10,00 €")
-    assert url == w.SHOP_URLS["noblego"] and prio == 5
+    assert url == w.SHOP_URLS["noblego"] and prio == 4
 
 
 def test_single_product_links_to_product():
@@ -499,3 +499,22 @@ def test_wanted_filter_all_shops():
         assert not w.is_wanted(mk("x", True, n)), n
     for n in keep:
         assert w.is_wanted(mk("x", True, n)), n
+
+
+def test_wishlist_matching_and_priority(tmp_path):
+    f = tmp_path / "w.txt"
+    f.write_text("# Kommentar\nPor Larranaga 35 Aniversario\nCohiba Behike 52  # Lieblingsformat\n", encoding="utf-8")
+    wishes = w.load_wishes(f)
+    assert [l for l, _ in wishes] == ["Por Larranaga 35 Aniversario", "Cohiba Behike 52"]
+    assert w.wish_for(mk("a", True, "Por Larrañaga 35 ANIVERSARIO Edición Regional Exclusivo Alemania 2024"), wishes)
+    assert w.wish_for(mk("b", True, "Cohiba Behike BHK 52"), wishes)
+    assert not w.wish_for(mk("c", True, "Cohiba Behike 54"), wishes)
+    names = {"zigarrentraum": "Zigarrentraum"}
+    ev = [w.Event("wieder_da", "zigarrentraum", mk("x", True, "Por Larrañaga 35 Aniversario Edición Regional 2024", "1er")),
+          w.Event("wieder_da", "zigarrentraum", mk("y", True, "Trinidad Reyes", "1er"))]
+    title, msg, _, tags, prio = w.shop_message("zigarrentraum", ev, names, wishes)
+    assert title == "⭐ Zigarrentraum: ⭐ 1 Wunsch, 1 wieder da"
+    assert msg.startswith("⭐ Wunschliste\n• Por Larrañaga 35 Aniversario Edición Regional 2024: 1er 10,00 € (wieder da)")
+    assert prio == 5 and "star" in tags
+    _, _, _, _, prio2 = w.shop_message("zigarrentraum", ev[1:], names, wishes)
+    assert prio2 == 4

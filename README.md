@@ -98,6 +98,18 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
 - **API-Version:** Der Header `X-GitHub-Api-Version: 2022-11-28` wird laut GitHub ab
   10.03.2028 nicht mehr unterstützt. Vorher in cron-job.org auf die dann aktuelle Version umstellen.
 
+## Wunschliste
+
+In **`wunschliste.txt`** stehen Zigarren, die dir besonders wichtig sind, eine pro Zeile,
+zum Beispiel `Por Larranaga 35 Aniversario`. Ein Artikel zählt als Treffer, wenn alle Wörter
+der Zeile in seinem Namen vorkommen; Groß-/Kleinschreibung und Akzente sind egal.
+
+Taucht eine Wunsch-Zigarre auf, steht sie in der Nachricht des Shops ganz oben unter
+„⭐ Wunschliste“, der Titel beginnt mit ⭐, und die Nachricht kommt mit höchster Priorität
+(normale Funde mit hoher Priorität). Bearbeiten geht direkt auf GitHub: Datei öffnen,
+Stift-Symbol, Zeile ergänzen, **Commit changes**. Wo die Wunsch-Zigarren gerade gelistet
+sind: `python waechter.py --wuensche`.
+
 ## Verlauf und Muster
 
 Jede Änderung landet mit Zeitpunkt in **`verlauf.csv`**: wieder da, neu und ausverkauft

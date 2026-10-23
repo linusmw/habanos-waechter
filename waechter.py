@@ -1164,22 +1164,67 @@ def describe(group: list[Event], shop_names: dict[str, str]) -> tuple[str, str, 
             first.item.url, ["cigar"])
 
 
-def shop_message(shop_id: str, events: list[Event], shop_names: dict[str, str]
+WISH_FILE = Path(__file__).with_name("wunschliste.txt")
+
+
+def normalize(value: str) -> str:
+    """Kleinbuchstaben ohne Akzente und Satzzeichen: 'Larrañaga' -> 'larranaga'."""
+    import unicodedata
+    t = unicodedata.normalize("NFKD", value or "")
+    t = "".join(c for c in t if not unicodedata.combining(c)).lower()
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", t).split())
+
+
+def load_wishes(path: Path | None = None) -> list[tuple[str, list[str]]]:
+    """Wunschliste: eine Zigarre je Zeile, '#' leitet Kommentare ein.
+    Ein Artikel passt, wenn alle Wörter der Zeile in seinem Namen vorkommen."""
+    path = path or WISH_FILE
+    if not path.exists():
+        return []
+    wishes = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        label = line.split("#", 1)[0].strip()
+        if label:
+            wishes.append((label, normalize(label).split()))
+    return wishes
+
+
+def wish_for(item: Item, wishes: list[tuple[str, list[str]]]) -> str | None:
+    words = set(normalize(f"{item.name} {item.pack}").split())
+    for label, needed in wishes:
+        if needed and all(w in words for w in needed):
+            return label
+    return None
+
+
+def shop_message(shop_id: str, events: list[Event], shop_names: dict[str, str],
+                 wishes: list[tuple[str, list[str]]] | None = None
                  ) -> tuple[str, str, str, list[str], int]:
-    """Eine Sammelnachricht für alle Änderungen eines Shops in diesem Lauf."""
+    """Eine Sammelnachricht für alle Änderungen eines Shops in diesem Lauf.
+    Zigarren von der Wunschliste stehen ganz oben und machen die Nachricht dringend."""
+    wishes = load_wishes() if wishes is None else wishes
     groups = group_events([e for e in events if e.kind in ALERT_KINDS])
+    wished = [g for g in groups if wish_for(g[0].item, wishes)]
     by_kind: dict[str, list[list[Event]]] = {}
     for g in groups:
-        by_kind.setdefault(g[0].kind, []).append(g)
+        if g not in wished:
+            by_kind.setdefault(g[0].kind, []).append(g)
 
     counts, blocks = [], []
+    if wished:
+        counts.append(f"⭐ {len(wished)} Wunsch")
+        lines = []
+        for g in wished:
+            label = next((t for k, _, t in SECTIONS if k == g[0].kind), g[0].kind)
+            lines.append(f"{describe_group(g)} ({label})")
+        blocks.append("\n".join(["⭐ Wunschliste"] + lines))
     for kind, heading, short in SECTIONS:
         gs = by_kind.get(kind)
         if not gs:
             continue
         counts.append(f"{len(gs)} {short}")
         blocks.append("\n".join([heading] + [describe_group(g) for g in gs]))
-    title = f"{shop_names.get(shop_id, shop_id)}: {', '.join(counts)}"
+    title = ("⭐ " if wished else "") + f"{shop_names.get(shop_id, shop_id)}: {', '.join(counts)}"
 
     message = "\n\n".join(blocks)
     if len(message) > NTFY_MAX_CHARS:
@@ -1190,9 +1235,12 @@ def shop_message(shop_id: str, events: list[Event], shop_names: dict[str, str]
     products = {g[0].item.group for g in groups}
     url = groups[0][0].item.url if len(products) == 1 else SHOP_URLS.get(shop_id, groups[0][0].item.url)
     kinds = set(by_kind)
-    if kinds & {"wieder_da", "neu_oder_wieder"}:
-        tags, prio = ["white_check_mark", "cigar"], 5
-    elif "neu" in kinds:
+    wished_kinds = {g[0].kind for g in wished}
+    if wished_kinds & {"wieder_da", "neu_oder_wieder", "neu"}:
+        tags, prio = ["star", "cigar"], 5          # Wunsch-Zigarre kaufbar: höchste Stufe
+    elif kinds & {"wieder_da", "neu_oder_wieder"}:
+        tags, prio = ["white_check_mark", "cigar"], 4
+    elif "neu" in kinds or wished:
         tags, prio = ["new", "cigar"], 4
     else:
         tags, prio = ["eyes"], 3
@@ -1291,6 +1339,27 @@ def show_status() -> None:
             print(f"  • {v['name']} {v.get('pack', '')} {v.get('price', '')}".rstrip())
 
 
+def show_wishes() -> None:
+    """Wo die Zigarren der Wunschliste gelistet sind und ob sie gerade lieferbar sind."""
+    state = load_state()
+    names = {s.id: s.name for s in SHOPS}
+    for label, _ in load_wishes():
+        print(f"\n⭐ {label}")
+        found = False
+        for shop_id, shop_state in state.get("shops", {}).items():
+            if shop_id not in names:
+                continue
+            for v in shop_state.get("items", {}).values():
+                item = Item(key="", name=v["name"], pack=v.get("pack", ""), price=v.get("price", ""),
+                            url=v.get("url", ""), available=bool(v.get("available")), group="")
+                if wish_for(item, [(label, normalize(label).split())]):
+                    found = True
+                    mark = "LIEFERBAR" if item.available else "ausverkauft"
+                    print(f"  {names[shop_id]}: {item.name} {item.pack} {item.price} – {mark}".replace("  –", " –"))
+        if not found:
+            print("  in keinem überwachten Shop gelistet")
+
+
 def send_test_push() -> bool:
     """Beispiel-Sammelnachricht im echten Format (Inhalt ist erfunden)."""
     def ex(key, name, pack, price, group=None):
@@ -1312,7 +1381,11 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="nichts speichern oder senden")
     ap.add_argument("--test-push", action="store_true", help="Test-Benachrichtigung senden")
     ap.add_argument("--status", action="store_true", help="verfügbare Artikel anzeigen")
+    ap.add_argument("--wuensche", action="store_true", help="Stand der Wunschliste anzeigen")
     args = ap.parse_args()
+    if args.wuensche:
+        show_wishes()
+        return 0
     if args.test_push:
         return 0 if send_test_push() else 1
     if args.status:

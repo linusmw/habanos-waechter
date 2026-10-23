@@ -1,0 +1,11 @@
+# Wunschliste des Habanos-Wächters
+#
+# Eine Zigarre pro Zeile. Ein Artikel zählt als Treffer, wenn ALLE Wörter der Zeile
+# in seinem Namen vorkommen (Groß-/Kleinschreibung und Akzente egal: "Larranaga"
+# passt auch auf "Larrañaga"). Kurz halten: "Por Larranaga 35 Aniversario" findet
+# die Zigarre in jedem Shop, egal wie er sie genau nennt.
+#
+# Treffer stehen in der Push-Nachricht ganz oben (⭐) und kommen mit höchster Priorität.
+# Zeilen mit # am Anfang sind Kommentare.
+
+Por Larranaga 35 Aniversario
