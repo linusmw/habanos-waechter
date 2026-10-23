@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-23 15:43 (deutsche Zeit) · 13 Zugänge · 15× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-23 17:00 (deutsche Zeit) · 14 Zugänge · 15× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,18 +9,18 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-23 15:43 (deutsche Zeit) · 13 Zugänge �
 | Wolsdorff | 7 | 0 | 4 | 1 | unter 1 Std. |
 | Casa Benden | 0 | 5 | 4 | 1 | 17 Std. |
 | Dominique London | 0 | 1 | 0 | 0 | – |
+| c-cigars | 1 | 0 | 2 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
 | Noblego | 0 | 0 | 3 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
-| c-cigars | 0 | 0 | 2 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃28  Di ▄37  Mi ▅46  Do ▇68  Fr █77  Sa ▂23  So ▁7
+**Alle Shops:** Mo ▃28  Di ▄37  Mi ▅46  Do ▇68  Fr █78  Sa ▂23  So ▁7
 
-Nacht ▁6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █95  Abend ▇85
+Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend ▇85
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -52,10 +52,10 @@ Nacht ▁6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █95  Abend
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag ▃3  Nachmittag █9  Abend ▁1
 - Am häufigsten: **Fr** (76%), **Nachmittag** (53%)
 
-### c-cigars (13 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr ▆5  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag ▇5  Abend █6
-- Am häufigsten: **Do** (54%), **Abend** (46%)
+### c-cigars (14 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr ▇6  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend █6
+- Am häufigsten: **Do** (50%), **Nachmittag** (43%)
 
 ### StarkeZigarren (13 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂1  Mi ▃2  Do ▅3  Fr █5  Sa ▂1  So ▂1
@@ -130,6 +130,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 1 |
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 1 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 1 |
+| Montecristo Open Club Zigarillos 20 Stück | c-cigars | 1 |
 
 ## Historische Funde
 
