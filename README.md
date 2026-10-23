@@ -1,6 +1,6 @@
 # Habanos-Wächter
 
-Prüft jede halbe Stunde (jeweils um :26 und :56) den Habanos-Bestand bei
+Prüft jede halbe Stunde (jeweils um :26 und :56, Takt über cron-job.org) den Habanos-Bestand bei
 
 - **Zigarrentraum** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Casa Benden** (Liste „nur sofort lieferbare Artikel“)
@@ -76,7 +76,15 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
 - **GitHub pausiert geplante Workflows** in öffentlichen Repos nach 60 Tagen ohne Aktivität.
   Der Wächter speichert täglich einen kleinen Zeitstempel, das sollte reichen. Falls doch
   pausiert: unter **Actions** einfach wieder aktivieren.
-- **Geplante Läufe** starten bei GitHub manchmal ein paar Minuten verspätet; das ist normal.
+- **Taktgeber:** GitHub startet geplante Läufe bei kostenlosen Projekten nur alle 2–6 Stunden.
+  Den 30-Minuten-Takt liefert deshalb **cron-job.org**: Ein Cronjob ruft um :26 und :56 per
+  `POST https://api.github.com/repos/linusmw/habanos-waechter/actions/workflows/waechter.yml/dispatches`
+  (Body `{"ref":"main"}`) den Wächter auf. Dazu dient ein Fine-grained Token, das nur
+  „Actions: Read and write“ für dieses Projekt darf. Es läuft am **30.09.2027** ab und muss
+  dann erneuert und in cron-job.org neu eingetragen werden. Der GitHub-Zeitplan alle 3 Stunden
+  bleibt als Reserve.
+- **API-Version:** Der Header `X-GitHub-Api-Version: 2022-11-28` wird laut GitHub ab
+  10.03.2028 nicht mehr unterstützt. Vorher in cron-job.org auf die dann aktuelle Version umstellen.
 
 ## Verlauf und Muster
 

@@ -2,9 +2,10 @@ name: Habanos-Wächter
 
 on:
   schedule:
-    # jede halbe Stunde, jeweils zur Minute 26 und 56
-    # (bewusst nicht :00/:30, da GitHub dann stark ausgelastet ist)
-    - cron: "26,56 * * * *"
+    # Der Takt (alle 30 Minuten, :26 und :56) kommt von cron-job.org über
+    # workflow_dispatch, weil GitHub geplante Läufe nur alle paar Stunden startet.
+    # Dieser Zeitplan ist nur die Reserve, falls cron-job.org ausfällt.
+    - cron: "11 */3 * * *"
   workflow_dispatch:
     inputs:
       test_push:
