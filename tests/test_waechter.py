@@ -518,3 +518,18 @@ def test_wishlist_matching_and_priority(tmp_path):
     assert prio == 5 and "star" in tags
     _, _, _, _, prio2 = w.shop_message("zigarrentraum", ev[1:], names, wishes)
     assert prio2 == 4
+
+
+def test_wish_prefix_negation_and_pack_numbers():
+    wishes = [(l, []) for l in ["Montecristo Edmundo -Petit", "Montecristo No 1", "Upmann Conno A",
+                                "Bolivar Royal Corona", "Saint Luis Rey Regios"]]
+    hit = lambda n: w.wish_for(mk("x", True, n), wishes)
+    assert hit("Montecristo Double Edmundos") == "Montecristo Edmundo -Petit"
+    assert hit("Montecristo Petit Edmundo") is None
+    assert hit("Montecristo No. 1 1'S") == "Montecristo No 1"
+    assert hit("Montecristo No 2 Single 1'S") is None
+    assert hit("H.Upmann Connossieur A (LCDH/HS)") == "Upmann Conno A"
+    assert hit("H. Upmann Connoisseur B") is None
+    assert hit("Bolivar Royal Coronas A/T") == "Bolivar Royal Corona"
+    assert hit("Saint Luis Rey Edición Regional Belicosos") is None
+    assert hit("Montecristo N°1") == "Montecristo No 1"

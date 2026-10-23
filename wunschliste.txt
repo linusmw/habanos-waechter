@@ -1,11 +1,111 @@
 # Wunschliste des Habanos-Wächters
 #
-# Eine Zigarre pro Zeile. Ein Artikel zählt als Treffer, wenn ALLE Wörter der Zeile
-# in seinem Namen vorkommen (Groß-/Kleinschreibung und Akzente egal: "Larranaga"
-# passt auch auf "Larrañaga"). Kurz halten: "Por Larranaga 35 Aniversario" findet
-# die Zigarre in jedem Shop, egal wie er sie genau nennt.
+# Eine Zigarre pro Zeile. Ein Artikel zählt als Treffer, wenn jedes Wort der Zeile in
+# seinem Namen vorkommt. Groß-/Kleinschreibung und Akzente sind egal, Wörter ab drei
+# Buchstaben dürfen auch ein Wortanfang sein ("Corona" passt auf "Coronas").
+# Mit "-Wort" schließt man etwas aus: "Montecristo Edmundo -Petit".
+# "A T" steht für A/T (Tubo aus Aluminium), "Conno" deckt beide Schreibweisen von
+# Connoisseur ab, die die Shops verwenden.
 #
 # Treffer stehen in der Push-Nachricht ganz oben (⭐) und kommen mit höchster Priorität.
-# Zeilen mit # am Anfang sind Kommentare.
 
+# Bolívar
+Bolivar Royal Corona
+Bolivar Corona Gigante
+Bolivar Belicoso Fino
+
+# Cuaba
+Cuaba Salomon
+Cuaba Distinguido
+
+# Diplomáticos
+Diplomaticos Canciller
+Diplomaticos No 2
+
+# El Rey del Mundo
+Rey del Mundo Choix Supreme
+
+# Fonseca
+Fonseca No 1
+
+# H. Upmann
+Upmann Conno A
+Upmann Conno B
+Upmann Conno No 1
+Upmann Conno No 2
+Upmann Magnum 46 A T
+Upmann Magnum 46 Tub
+Upmann Magnum 50 A T
+Upmann Magnum 50 Tub
+Upmann No 2 -Conno -Magnum
+Upmann Robusto Anejado
+Upmann Sir Winston
+
+# Hoyo de Monterrey
+Hoyo Double Corona
+Hoyo Epicure No 1
+Hoyo Epicure No 2
+Hoyo Epicure No 3
+Hoyo Hermoso 4 Anejado
+Hoyo San Luis
+
+# La Gloria Cubana
+Gloria Cubana Medaille 4
+Gloria Cubana Turquino
+
+# Montecristo
+Montecristo Edmundo -Petit
+Montecristo Especial
+Montecristo No 1
+Montecristo No 3
+Montecristo No 4
+
+# Partagás
+Partagas Aliado
+Partagas Lusitania
+Partagas Maduro
+Partagas Presidente
+Partagas Serie D No 4
+Partagas Serie E No 2
+Partagas Serie P No 2
+Partagas 8 9 8
+Partagas Salomon
+
+# Por Larrañaga
 Por Larranaga 35 Aniversario
+Por Larranaga Montecarlo
+
+# Punch
+Punch Double Corona
+Punch 48
+
+# Rafael González
+Rafael Gonzalez Lonsdale
+
+# Ramón Allones
+Ramon Allones Gigante
+Ramon Allones No 3
+Ramon Allones Specially Selected
+
+# Romeo y Julieta
+Romeo Julieta Churchill -Short -Wide -Petit -Mini
+
+# Saint Luis Rey
+Saint Luis Rey Regios
+Saint Luis Rey Regional
+
+# San Cristóbal de La Habana
+San Cristobal Prado
+San Cristobal Punta
+San Cristobal Fuerza
+
+# Sancho Panza
+Sancho Panza Belicoso
+Sancho Panza Non Plus
+
+# Trinidad
+Trinidad Fundador
+
+# Vegas Robaina
+Vegas Robaina Famoso
+Vegas Robaina Unico

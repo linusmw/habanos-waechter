@@ -1177,7 +1177,9 @@ def normalize(value: str) -> str:
 
 def load_wishes(path: Path | None = None) -> list[tuple[str, list[str]]]:
     """Wunschliste: eine Zigarre je Zeile, '#' leitet Kommentare ein.
-    Ein Artikel passt, wenn alle Wörter der Zeile in seinem Namen vorkommen."""
+    Ein Artikel passt, wenn jedes Wort der Zeile in seinem Namen vorkommt; Wörter ab
+    drei Buchstaben dürfen auch Wortanfang sein ('Corona' passt auf 'Coronas').
+    '-Wort' schließt aus: 'Montecristo Edmundo -Petit'."""
     path = path or WISH_FILE
     if not path.exists():
         return []
@@ -1189,10 +1191,26 @@ def load_wishes(path: Path | None = None) -> list[tuple[str, list[str]]]:
     return wishes
 
 
+def _wish_words(text: str) -> list[str]:
+    # "N°2", "Nr. 2", "No.2" -> "no 2"
+    # Packungsangaben wie "1'S" oder "10er" sind keine Formatnummern
+    text = re.sub(r"\b\d+\s*(['’´]\s*s|er)\b", " ", text.replace("º", "o"), flags=re.I)
+    return ["no" if w in ("n", "nr", "nro", "num") else w for w in normalize(text).split()]
+
+
+def _has(word: str, words: list[str]) -> bool:
+    if word.isalpha() and len(word) >= 3:
+        return any(w.startswith(word) for w in words)
+    return word in words
+
+
 def wish_for(item: Item, wishes: list[tuple[str, list[str]]]) -> str | None:
-    words = set(normalize(f"{item.name} {item.pack}").split())
-    for label, needed in wishes:
-        if needed and all(w in words for w in needed):
+    words = _wish_words(f"{item.name} {item.pack}")
+    for label, _ in wishes:
+        tokens = label.split()
+        need = _wish_words(" ".join(t for t in tokens if not t.startswith("-")))
+        avoid = _wish_words(" ".join(t[1:] for t in tokens if t.startswith("-")))
+        if need and all(_has(w, words) for w in need) and not any(_has(w, words) for w in avoid):
             return label
     return None
 
