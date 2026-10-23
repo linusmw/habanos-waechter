@@ -55,7 +55,6 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 )
 PAUSE_BETWEEN_PAGES = 1.5   # Sekunden; schont die Shops
-MAX_PUSHES_PER_RUN = 8      # mehr Ereignisse werden zu einer Sammelnachricht
 FAILURE_ALERT_AFTER = 6     # nach so vielen Fehlläufen in Folge warnen
 
 
@@ -933,41 +932,94 @@ def group_events(events: list[Event]) -> list[list[Event]]:
     return sorted(groups.values(), key=lambda g: (order[g[0].kind], g[0].shop, g[0].item.name))
 
 
-def describe(group: list[Event], shop_names: dict[str, str]) -> tuple[str, str, str, list[str]]:
-    first = group[0]
-    shop = shop_names[first.shop]
-    item = first.item
-    if first.kind == "wieder_da":
-        title, tags = f"Wieder da bei {shop}: {item.name}", ["white_check_mark", "cigar"]
-    elif first.kind == "neu_oder_wieder":
-        title, tags = f"Neu oder wieder da bei {shop}: {item.name}", ["white_check_mark", "cigar"]
-    elif first.kind == "neu":
-        title, tags = f"Neu bei {shop}: {item.name}", ["new", "cigar"]
-    else:
-        title, tags = f"Neu gelistet bei {shop}: {item.name}", ["eyes"]
-    lines = []
+SHOP_URLS = {
+    "zigarrentraum": "https://www.zigarrentraum.de/sortiment/zigarren/kubanische-zigarren/",
+    "casabenden": "https://www.casabenden.de/zigarren/kuba?nur_lieferbar=1",
+    "brinkmann": "https://brinkmannfinest.de/zigarren/herkunft/kuba/",
+    "noblego": "https://www.noblego.de/kubanische-zigarren/",
+    "zigarrede": "https://www.zigarre.de/kubanische-zigarren.html",
+    "wolsdorff": "https://wolsdorff.shop/zigarren/nach-herkunft/kuba/",
+    "tabacstore": "https://www.tabacstore.de/kubanische-zigarren/?immediately-available=1",
+    "dalay": "https://www.dalayzigarren.de/kubanische-zigarren?availability=1",
+    "peterheinrichs": "https://www.peterheinrichs.de/zigarren/kuba/",
+    "falkum": "https://www.falkum.de/zigarren/habanos.html",
+    "ccigars": "https://c-cigars.de/collections/kubanische-zigarren",
+    "habanoszigarren": "https://www.habanos-zigarren.com/",
+    "lagalana": "https://lagalana.de/collections/habanos-zigarren",
+    "dominique": "https://www.dominiquelondon.de/shop/category/kubanische-zigarren-196",
+}
+
+SECTIONS = [  # Reihenfolge, Überschrift in der Nachricht, Kurzform für den Titel
+    ("wieder_da", "✅ Wieder da", "wieder da"),
+    ("neu_oder_wieder", "✅ Neu oder wieder da", "neu/wieder da"),
+    ("neu", "🆕 Neu", "neu"),
+    ("neu_nicht_lieferbar", "👀 Neu gelistet, noch nicht lieferbar", "neu gelistet"),
+]
+NTFY_MAX_CHARS = 3800   # ntfy erlaubt rund 4 KB je Nachricht
+
+
+def describe_group(group: list[Event]) -> str:
+    """Eine Zeile je Produkt: alle Packungen mit Preis zusammengefasst."""
+    item = group[0].item
+    parts = []
     for e in group:
-        parts = [p for p in (e.item.pack, e.item.price) if p]
-        lines.append("• " + " – ".join(parts) if parts else "• " + e.item.name)
-    if first.kind == "neu_nicht_lieferbar":
-        lines.append("(noch nicht lieferbar)")
-    return title, "\n".join(lines), item.url, tags
+        part = " ".join(p for p in (e.item.pack, e.item.price) if p)
+        if part and part not in parts:
+            parts.append(part)
+    return f"• {item.name}" + (f": {', '.join(parts)}" if parts else "")
+
+
+def describe(group: list[Event], shop_names: dict[str, str]) -> tuple[str, str, str, list[str]]:
+    """Kurzbeschreibung eines einzelnen Produkts (für Tests und --dry-run)."""
+    first = group[0]
+    label = next((t for k, _, t in SECTIONS if k == first.kind), first.kind)
+    return (f"{shop_names[first.shop]}: {first.item.name} ({label})", describe_group(group),
+            first.item.url, ["cigar"])
+
+
+def shop_message(shop_id: str, events: list[Event], shop_names: dict[str, str]
+                 ) -> tuple[str, str, str, list[str], int]:
+    """Eine Sammelnachricht für alle Änderungen eines Shops in diesem Lauf."""
+    groups = group_events([e for e in events if e.kind in ALERT_KINDS])
+    by_kind: dict[str, list[list[Event]]] = {}
+    for g in groups:
+        by_kind.setdefault(g[0].kind, []).append(g)
+
+    counts, blocks = [], []
+    for kind, heading, short in SECTIONS:
+        gs = by_kind.get(kind)
+        if not gs:
+            continue
+        counts.append(f"{len(gs)} {short}")
+        blocks.append("\n".join([heading] + [describe_group(g) for g in gs]))
+    title = f"{shop_names.get(shop_id, shop_id)}: {', '.join(counts)}"
+
+    message = "\n\n".join(blocks)
+    if len(message) > NTFY_MAX_CHARS:
+        cut = message[:NTFY_MAX_CHARS].rsplit("\n", 1)[0]
+        hidden = message[len(cut):].count("• ")
+        message = f"{cut}\n… und {hidden} weitere (siehe Shop)"
+
+    products = {g[0].item.group for g in groups}
+    url = groups[0][0].item.url if len(products) == 1 else SHOP_URLS.get(shop_id, groups[0][0].item.url)
+    kinds = set(by_kind)
+    if kinds & {"wieder_da", "neu_oder_wieder"}:
+        tags, prio = ["white_check_mark", "cigar"], 5
+    elif "neu" in kinds:
+        tags, prio = ["new", "cigar"], 4
+    else:
+        tags, prio = ["eyes"], 3
+    return title, message, url, tags, prio
 
 
 def notify(events: list[Event], shop_names: dict[str, str]) -> None:
-    groups = group_events([e for e in events if e.kind in ALERT_KINDS])
-    for group in groups[:MAX_PUSHES_PER_RUN]:
-        title, message, url, tags = describe(group, shop_names)
-        prio = {"wieder_da": 5, "neu_oder_wieder": 5, "neu": 4}.get(group[0].kind, 3)
+    """Eine Push-Nachricht pro Shop, in dem sich etwas getan hat."""
+    alerts = [e for e in events if e.kind in ALERT_KINDS]
+    for shop_id in dict.fromkeys(e.shop for e in alerts):
+        title, message, url, tags, prio = shop_message(
+            shop_id, [e for e in alerts if e.shop == shop_id], shop_names)
         print(f"→ {title}\n{message}\n")
         push(title, message, click=url, tags=tags, priority=prio)
-    rest = groups[MAX_PUSHES_PER_RUN:]
-    if rest:
-        lines = [f"• {shop_names[g[0].shop]}: {g[0].item.name}" for g in rest[:25]]
-        if len(rest) > 25:
-            lines.append(f"… und {len(rest) - 25} weitere")
-        push(f"{len(rest)} weitere Änderungen", "\n".join(lines), tags=["cigar"], priority=3)
-        print(f"→ Sammelnachricht über {len(rest)} weitere Änderungen")
 
 
 # --------------------------------------------------------------------------
@@ -1016,8 +1068,10 @@ def run(dry_run: bool = False) -> int:
         all_events.extend(events)
 
     if dry_run:
-        for group in group_events([e for e in all_events if e.kind in ALERT_KINDS]):
-            title, message, _, _ = describe(group, shop_names)
+        alerts = [e for e in all_events if e.kind in ALERT_KINDS]
+        for shop_id in dict.fromkeys(e.shop for e in alerts):
+            title, message, _, _, _ = shop_message(
+                shop_id, [e for e in alerts if e.shop == shop_id], shop_names)
             print(f"[dry-run] {title}\n{message}\n")
         sold = sum(1 for e in all_events if e.kind == "ausverkauft")
         print(f"[dry-run] {len(all_events)} Ereignisse (davon {sold} ausverkauft), "
@@ -1050,6 +1104,22 @@ def show_status() -> None:
             print(f"  • {v['name']} {v.get('pack', '')} {v.get('price', '')}".rstrip())
 
 
+def send_test_push() -> bool:
+    """Beispiel-Sammelnachricht im echten Format (Inhalt ist erfunden)."""
+    def ex(key, name, pack, price, group=None):
+        return Item(key=key, name=name, pack=pack, price=price,
+                    url=SHOP_URLS["noblego"], available=True, group=group or key)
+    events = [
+        Event("wieder_da", "noblego", ex("1", "Cohiba Siglo VI", "10er", "290,00 €", "a")),
+        Event("wieder_da", "noblego", ex("2", "Cohiba Siglo VI", "Einzeln", "29,00 €", "a")),
+        Event("wieder_da", "noblego", ex("3", "Partagás Serie D No.4", "25er", "540,00 €")),
+        Event("neu", "noblego", ex("4", "Trinidad Edición Limitada", "12er", "780,00 €")),
+    ]
+    title, message, url, tags, _ = shop_message("noblego", events, {"noblego": "Noblego"})
+    return push(f"TEST · {title}", message + "\n\n(Beispiel, keine echten Bestände)",
+                click=url, tags=tags, priority=3)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Habanos-Bestandswächter")
     ap.add_argument("--dry-run", action="store_true", help="nichts speichern oder senden")
@@ -1057,9 +1127,7 @@ def main() -> int:
     ap.add_argument("--status", action="store_true", help="verfügbare Artikel anzeigen")
     args = ap.parse_args()
     if args.test_push:
-        ok = push("Habanos-Wächter: Test", "Wenn du das liest, kommen die Alarme an. 🎉",
-                  tags=["cigar"], priority=3)
-        return 0 if ok else 1
+        return 0 if send_test_push() else 1
     if args.status:
         show_status()
         return 0

@@ -1,6 +1,6 @@
 # Habanos-Wächter
 
-Prüft jede halbe Stunde (jeweils um :26 und :56, Takt über cron-job.org) den Habanos-Bestand bei
+Prüft jede halbe Stunde (zur vollen und halben Stunde, Takt über cron-job.org) den Habanos-Bestand bei
 
 - **Zigarrentraum** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Casa Benden** (Liste „nur sofort lieferbare Artikel“)
@@ -16,7 +16,8 @@ Prüft jede halbe Stunde (jeweils um :26 und :56, Takt über cron-job.org) den H
 - **habanos-zigarren.com** (Shop-Schnittstelle)
 - **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
 
-und schickt dir eine Push-Nachricht aufs Handy, wenn
+und schickt dir **eine Push-Nachricht pro Shop** aufs Handy (mit allen Zigarren, Packungen und
+Preisen darin), wenn
 
 - eine Zigarre **wieder verfügbar** ist, oder
 - ein **neues Produkt** auftaucht (bei Zigarrentraum auch, wenn es noch nicht lieferbar ist).
@@ -70,14 +71,15 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
 - **Ausfälle:** Ist ein Shop 6 Läufe in Folge (3 Stunden) nicht lesbar (Seite umgebaut, Blockade),
   bekommst du eine Warnung und eine Entwarnung, sobald es wieder klappt. Fehlerhafte Läufe
   verändern den gespeicherten Bestand nicht, damit es keine Fehlalarme gibt.
-- **Zu viele Änderungen auf einmal** (z. B. großer Wareneingang): die ersten 8 kommen einzeln,
-  der Rest als eine Sammelnachricht.
+- **Eine Nachricht pro Shop:** Kommen bei einem Shop mehrere Zigarren gleichzeitig, gibt es eine
+  Sammelnachricht, z. B. „Noblego: 2 wieder da, 1 neu“, darunter jede Zigarre mit allen Packungen
+  und Preisen. Antippen öffnet den Shop (bei nur einer Zigarre direkt deren Seite).
 - **Aktuellen Bestand ansehen:** `state.json` im Repo öffnen, oder lokal `python waechter.py --status`.
 - **GitHub pausiert geplante Workflows** in öffentlichen Repos nach 60 Tagen ohne Aktivität.
   Der Wächter speichert täglich einen kleinen Zeitstempel, das sollte reichen. Falls doch
   pausiert: unter **Actions** einfach wieder aktivieren.
 - **Taktgeber:** GitHub startet geplante Läufe bei kostenlosen Projekten nur alle 2–6 Stunden.
-  Den 30-Minuten-Takt liefert deshalb **cron-job.org**: Ein Cronjob ruft um :26 und :56 per
+  Den 30-Minuten-Takt liefert deshalb **cron-job.org**: Ein Cronjob ruft alle 30 Minuten per
   `POST https://api.github.com/repos/linusmw/habanos-waechter/actions/workflows/waechter.yml/dispatches`
   (Body `{"ref":"main"}`) den Wächter auf. Dazu dient ein Fine-grained Token, das nur
   „Actions: Read and write“ für dieses Projekt darf. Es läuft am **30.09.2027** ab und muss

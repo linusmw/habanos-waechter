@@ -124,12 +124,50 @@ def test_grouping_by_product():
               w.Event("neu", "casabenden", mk("z", True, "Cohiba EL"))]
     groups = w.group_events(events)
     assert len(groups) == 2
-    title, msg, url, _ = w.describe(groups[0], {s.id: s.name for s in w.SHOPS})
-    assert title == "Wieder da bei Zigarrentraum: Joyitas"
-    assert "1er" in msg and "25er Kiste" in msg
+    assert w.describe_group(groups[0]) == "• Joyitas: 1er 10,00 €, 25er Kiste 10,00 €"
 
 
-# ---------------------------------------------------------------- Gesamtlauf
+def test_one_message_per_shop():
+    names = {s.id: s.name for s in w.SHOPS}
+    ev = [w.Event("wieder_da", "noblego", mk("a1", True, "Cohiba Siglo VI", "10er", group="a")),
+          w.Event("wieder_da", "noblego", mk("a2", True, "Cohiba Siglo VI", "Einzeln", group="a")),
+          w.Event("wieder_da", "noblego", mk("b", True, "Partagas Serie D No.4", "25er")),
+          w.Event("neu", "noblego", mk("c", True, "Trinidad EL 2026", "12er")),
+          w.Event("neu_nicht_lieferbar", "noblego", mk("d", False, "Cohiba EL 2026", ""))]
+    title, msg, url, tags, prio = w.shop_message("noblego", ev, names)
+    assert title == "Noblego: 2 wieder da, 1 neu, 1 neu gelistet"
+    assert msg == ("✅ Wieder da\n"
+                   "• Cohiba Siglo VI: 10er 10,00 €, Einzeln 10,00 €\n"
+                   "• Partagas Serie D No.4: 25er 10,00 €\n\n"
+                   "🆕 Neu\n• Trinidad EL 2026: 12er 10,00 €\n\n"
+                   "👀 Neu gelistet, noch nicht lieferbar\n• Cohiba EL 2026: 10,00 €")
+    assert url == w.SHOP_URLS["noblego"] and prio == 5
+
+
+def test_single_product_links_to_product():
+    names = {s.id: s.name for s in w.SHOPS}
+    ev = [w.Event("neu_oder_wieder", "casabenden", mk("x", True, "Trinidad Reyes", ""))]
+    title, _, url, _, _ = w.shop_message("casabenden", ev, names)
+    assert title == "Casa Benden: 1 neu/wieder da" and url == "https://x/x"
+
+
+def test_long_message_is_truncated():
+    names = {s.id: s.name for s in w.SHOPS}
+    ev = [w.Event("wieder_da", "ccigars", mk(f"k{i}", True, f"Zigarre mit langem Namen Nr. {i}", "25er Kiste"))
+          for i in range(200)]
+    _, msg, _, _, _ = w.shop_message("ccigars", ev, names)
+    assert len(msg) <= w.NTFY_MAX_CHARS + 60 and msg.rstrip().endswith("weitere (siehe Shop)")
+
+
+def test_notify_sends_one_push_per_shop(monkeypatch):
+    sent = []
+    monkeypatch.setattr(w, "push", lambda title, message, **kw: sent.append(title) or True)
+    names = {s.id: s.name for s in w.SHOPS}
+    ev = [w.Event("wieder_da", "noblego", mk(f"n{i}", True, f"Zigarre {i}")) for i in range(10)]
+    ev += [w.Event("wieder_da", "falkum", mk("f", True, "Cohiba Siglo I")),
+           w.Event("ausverkauft", "wolsdorff", mk("x", False))]
+    w.notify(ev, names)
+    assert sent == ["Noblego: 10 wieder da", "Tabakhaus Falkum: 1 wieder da"]
 
 def test_full_run(monkeypatch, tmp_path):
     monkeypatch.setattr(w, "STATE_FILE", tmp_path / "state.json")
@@ -164,7 +202,7 @@ def test_full_run(monkeypatch, tmp_path):
     stock["zigarrentraum"][0] = mk("a", True, "Montecristo No.4")
     stock["casabenden"] = []
     assert w.run() == 0
-    assert pushes == ["Wieder da bei Zigarrentraum: Montecristo No.4"]   # "ausverkauft" pusht nicht
+    assert pushes == ["Zigarrentraum: 1 wieder da"]   # "ausverkauft" pusht nicht
     log = (tmp_path / "verlauf.csv").read_text(encoding="utf-8").splitlines()
     assert log[0].startswith("zeit_utc;zeit_berlin;wochentag;stunde;shop;ereignis")
     assert any(";Zigarrentraum;wieder_da;Montecristo No.4;" in row for row in log)
@@ -173,7 +211,7 @@ def test_full_run(monkeypatch, tmp_path):
     stock["casabenden"] = [mk("r", True, "Trinidad Reyes")]
     for _ in range(4):
         w.run()
-    assert "Wieder da bei Casa Benden: Trinidad Reyes" in pushes
+    assert "Casa Benden: 1 wieder da" in pushes
     assert "Problem mit Brinkmann Finest" in pushes   # nach 6 Fehlläufen genau eine Warnung
     assert pushes.count("Problem mit Brinkmann Finest") == 1
 
@@ -361,5 +399,5 @@ def test_available_only_shop_new_item_is_new_or_back():
     w.compare(CB, st, [mk("x", True)], "t0")
     ev = w.compare(CB, st, [mk("x", True), mk("y", True)], "t1")
     assert [(e.kind, e.item.key) for e in ev] == [("neu_oder_wieder", "y")]
-    title, _, _, _ = w.describe(w.group_events(ev)[0], {s.id: s.name for s in w.SHOPS})
-    assert title == "Neu oder wieder da bei Casa Benden: Testzigarre"
+    title, _, _, _, _ = w.shop_message("casabenden", ev, {s.id: s.name for s in w.SHOPS})
+    assert title == "Casa Benden: 1 neu/wieder da"
