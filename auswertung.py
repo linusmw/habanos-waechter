@@ -82,6 +82,18 @@ def neuheiten_abschnitt(neuheiten: list[dict]) -> list[str]:
               f"- Wochentage: {balken(tage, WOCHENTAGE)}",
               f"- Tageszeit: {balken(zeit, [t[0] for t in TAGESZEITEN])}",
               f"- Am häufigsten: **{top_tag}** ({n_tag / len(rs):.0%}), **{top_zeit}** ({n_zeit / len(rs):.0%})", ""]
+    wieder = [r for r in neuheiten if r.get("art") == "wieder online"]
+    if wieder:
+        z += ["### Wieder online gestellt (Shopify-Shops)", "",
+              "Zeitpunkt, zu dem ein schon bekanntes Produkt zuletzt erneut veröffentlicht wurde, "
+              "häufig nach einem Ausverkauf.", ""]
+        for shop in sorted({r["shop"] for r in wieder}, key=lambda s: -sum(r["shop"] == s for r in wieder)):
+            rs = [r for r in wieder if r["shop"] == shop]
+            if len(rs) < MIN_DATEN:
+                continue
+            z += [f"- **{shop}** ({len(rs)}×): {balken(Counter(r['wochentag'] for r in rs), WOCHENTAGE)} · "
+                  f"{balken(Counter(tageszeit(r['stunde']) for r in rs), [t[0] for t in TAGESZEITEN])}"]
+        z.append("")
     z += ["Zuletzt neu angelegt:", "", "| Zeit | Shop | Zigarre |", "|---|---|---|"]
     for r in reversed(neu[-15:]):
         z.append(f"| {r['wochentag']} {r['zeit_berlin']} | {r['shop']} | {r['artikel']} |")

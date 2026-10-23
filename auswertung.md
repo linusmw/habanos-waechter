@@ -32,15 +32,15 @@ Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend �
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
-- Am häufigsten: **Sa** (24%), **Abend** (38%)
-
 ### Dalay Zigarren (29 Funde, davon 29 historisch)
 - Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
+
+### Zigarrentraum (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
+- Am häufigsten: **Sa** (24%), **Abend** (38%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -77,15 +77,15 @@ Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend �
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### zigarre.de (7 Funde, davon 7 historisch)
-- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
-- Am häufigsten: **Do** (29%), **Nachmittag** (57%)
-
 ### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Mi** (29%), **Abend** (43%)
+
+### zigarre.de (7 Funde, davon 7 historisch)
+- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
+- Am häufigsten: **Do** (29%), **Nachmittag** (57%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
@@ -191,26 +191,26 @@ Am häufigsten gefunden:
 
 ## Wann kommen Neuheiten online?
 
-Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (502 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
+Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (454 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
 
-**Alle Shops:** Mo ▆86  Di ▆83  Mi ▆84  Do █106  Fr ▇89  Sa ▄47  So ▁7
+**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █89  Sa ▄47  So ▁7
 
-Nacht ▁16  Morgen ▄86  Vormittag ▄85  Mittag ▄78  Nachmittag █168  Abend ▃69
+Nacht ▁16  Morgen ▅86  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
 
 ### Zigarrentraum (174 Neuheiten)
 - Wochentage: Mo ▅29  Di █43  Mi ▅28  Do ▆31  Fr ▅28  Sa ▃14  So  1
 - Tageszeit: Nacht  0  Morgen ▇49  Vormittag ▆37  Mittag ▄29  Nachmittag █53  Abend ▁6
 - Am häufigsten: **Di** (25%), **Nachmittag** (30%)
 
-### Nobbis Tabakwelt (154 Neuheiten)
-- Wochentage: Mo ▆28  Di ▂12  Mi ▆31  Do █39  Fr ▆29  Sa ▂11  So ▁4
-- Tageszeit: Nacht ▄15  Morgen █32  Vormittag ▇28  Mittag ▆23  Nachmittag █31  Abend ▆25
-- Am häufigsten: **Do** (25%), **Morgen** (21%)
+### Nobbis Tabakwelt (131 Neuheiten)
+- Wochentage: Mo █28  Di ▃12  Mi ▅18  Do █29  Fr █29  Sa ▃11  So ▁4
+- Tageszeit: Nacht ▄15  Morgen █32  Vormittag ▆24  Mittag ▄16  Nachmittag █30  Abend ▄14
+- Am häufigsten: **Fr** (22%), **Morgen** (24%)
 
-### La Galana (81 Neuheiten)
-- Wochentage: Mo ▂5  Di ▅12  Mi ▆14  Do █20  Fr █19  Sa ▄11  So  0
-- Tageszeit: Nacht  1  Morgen  0  Vormittag  0  Mittag ▃17  Nachmittag █44  Abend ▃19
-- Am häufigsten: **Do** (25%), **Nachmittag** (54%)
+### La Galana (70 Neuheiten)
+- Wochentage: Mo ▂5  Di ▅12  Mi ▆14  Do ▄9  Fr █19  Sa ▅11  So  0
+- Tageszeit: Nacht  1  Morgen  0  Vormittag  0  Mittag ▄17  Nachmittag █33  Abend ▅19
+- Am häufigsten: **Fr** (27%), **Nachmittag** (47%)
 
 ### c-cigars (45 Neuheiten)
 - Wochentage: Mo ▄5  Di ▇9  Mi █10  Do ▇9  Fr ▆8  Sa ▂2  So ▂2
@@ -222,10 +222,13 @@ Nacht ▁16  Morgen ▄86  Vormittag ▄85  Mittag ▄78  Nachmittag █168  Abe
 - Tageszeit: Nacht  0  Morgen ▂3  Vormittag █16  Mittag ▂5  Nachmittag ▄9  Abend  0
 - Am häufigsten: **Sa** (24%), **Vormittag** (48%)
 
-### Zigarren Herzog (15 Neuheiten)
-- Wochentage: Mo █14  Di  0  Mi  0  Do  0  Fr  0  Sa ▁1  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █8  Abend ▇7
-- Am häufigsten: **Mo** (93%), **Nachmittag** (53%)
+### Wieder online gestellt (Shopify-Shops)
+
+Zeitpunkt, zu dem ein schon bekanntes Produkt zuletzt erneut veröffentlicht wurde, häufig nach einem Ausverkauf.
+
+- **La Galana** (93×): Mo ▂8  Di ▃12  Mi █32  Do ▁6  Fr  1  Sa █34  So  0 · Nacht  0  Morgen  2  Vormittag  1  Mittag ▁8  Nachmittag █46  Abend ▆36
+- **c-cigars** (87×): Mo ▂10  Di ▃17  Mi █42  Do ▁7  Fr ▁4  Sa ▁4  So ▁3 · Nacht  0  Morgen  1  Vormittag  2  Mittag ▂13  Nachmittag ▄23  Abend █48
+- **Zigarren Herzog** (14×): Mo ▁1  Di  0  Mi ▁1  Do ▂2  Fr ▂2  Sa  0  So █8 · Nacht  0  Morgen  0  Vormittag █8  Mittag ▂2  Nachmittag ▃3  Abend ▁1
 
 Zuletzt neu angelegt:
 

@@ -36,7 +36,7 @@ import waechter as w
 OUT_FILE = Path(__file__).with_name("neuheiten.csv")
 COLUMNS = ["zeit_utc", "zeit_berlin", "wochentag", "stunde", "shop", "artikel", "art"]
 BERLIN = ZoneInfo("Europe/Berlin")
-IMPORT_SCHWELLE = 15            # so viele Anlagen an einem Tag = Import, keine Neuheit
+IMPORT_SCHWELLE = 10            # so viele Anlagen an einem Tag = Import, keine Neuheit
 WIEDER_ONLINE_AB = timedelta(days=2)
 
 SHOPIFY = [  # (Shopname, Basis, Kollektion, Marke aus 'vendor' voranstellen)
@@ -204,15 +204,17 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true", help="nur anzeigen, nichts speichern")
     args = ap.parse_args()
     rows, problems = collect()
+    shops_ok = {r["shop"] for r in rows}
+    if not args.dry_run:
+        rows = merge_previous(rows, shops_ok)
     rows, imports = drop_imports(rows)
     for s, d, n in imports:
         print(f"Import übersprungen: {s} am {d} ({n} Produkte)")
     for p in problems:
         print(f"Nicht lesbar: {p}")
-    shops_ok = {r["shop"] for r in rows}
     print("Einträge:", dict(Counter((r["shop"], r["art"]) for r in rows)))
     if not args.dry_run:
-        save(merge_previous(rows, shops_ok))
+        save(rows)
         print(f"Gespeichert: {OUT_FILE.name}")
 
 
