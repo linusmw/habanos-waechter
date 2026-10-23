@@ -485,3 +485,17 @@ def test_more_accessories():
               "Habanos Polo-Shirt mit Brusttasche", "Die Welt der Habanos"]:
         assert w.is_accessory(mk("x", True, n)), n
     assert not w.is_accessory(mk("x", True, 'Set Cuba "Pinar del Rio" 4 Stück = Packung'))
+
+
+def test_wanted_filter_all_shops():
+    drop = ["H.Upmann Jar (Porzellantopf) (LEER)", "Habanos Jar Partagas", "Passatore Zigarrencutter gelb",
+            "Zigarren Aschenbecher Habanos", "Hoyo de Monterrey Jar Humidor", "Lederetui Cohiba Behike 3er 2019",
+            "VegaFina 1998 VF 52", "Maria Mancini Corona Classico"]
+    keep = ["H Upmann Regalias, 5er Metalletui", "H. Upmann Noellas 25er Glass-Jar (LCDH)",
+            "Bolivar Belicosos Finos 30 Aniversario Jar", "Cohiba Piramides Extra - Porzellan-Jar",
+            "El Rey del Mundo Auktionshumidor Festival del Habano (Humidor mit 325 Zigarren)",
+            "Trinidad Reyes"]
+    for n in drop:
+        assert not w.is_wanted(mk("x", True, n)), n
+    for n in keep:
+        assert w.is_wanted(mk("x", True, n)), n

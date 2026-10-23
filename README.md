@@ -15,18 +15,22 @@ Prüft jede halbe Stunde (zur vollen und halben Stunde, Takt über cron-job.org)
 - **c-cigars** und **La Galana** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **habanos-zigarren.com** (Shop-Schnittstelle)
 - **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
-- **StarkeZigarren** (Liste „verfügbar“, ohne Zubehör wie Feuerzeuge, Humidore, Etuis)
+- **StarkeZigarren** (Liste „verfügbar“)
 - **Zigarren Herzog** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **Pipe House** und **Nobbis Tabakwelt** (Shop-Schnittstelle, bei Pipe House jede Packungsgröße einzeln)
 - **Paul Bugge** (ganze Kuba-Kategorie)
-- **Cigarrenversand24** (Habanos-Liste plus die vom Shop gepflegte Liste verfügbarer Habanos, ohne Zubehör)
-- **Tabak-Kontor Leipzig** (alle Marken und Linien der Kategorie Cuba, ohne Zubehör)
+- **Cigarrenversand24** (Habanos-Liste plus die vom Shop gepflegte Liste verfügbarer Habanos)
+- **Tabak-Kontor Leipzig** (alle Marken und Linien der Kategorie Cuba)
 
 und schickt dir **eine Push-Nachricht pro Shop** aufs Handy (mit allen Zigarren, Packungen und
 Preisen darin), wenn
 
 - eine Zigarre **wieder verfügbar** ist, oder
 - ein **neues Produkt** auftaucht (bei Zigarrentraum auch, wenn es noch nicht lieferbar ist).
+
+Bei allen Shops wird Zubehör (Feuerzeuge, leere Jars und Humidore, Ascher, Cutter, Etuis, Bücher …)
+und Nicht-Havannas wie VegaFina oder Maria Mancini ignoriert. Humidore, Jars und Etuis mit Zigarren
+darin („mit 50 Zigarren“, „5er Metalletui“, „25er Jar“) zählen weiter als Zigarren.
 
 Läuft kostenlos über GitHub Actions; du brauchst keinen eigenen Rechner.
 

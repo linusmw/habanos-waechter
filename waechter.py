@@ -743,17 +743,22 @@ def fetch_tabacstore(session: requests.Session) -> list[Item]:
 ACCESSORY_WORDS = re.compile(
     r"feuerzeug|humidor|etui|cutter|abschneider|aschenbecher|ascher|bohrer|tasche|"
     r"zigarrenschere|anzünder|dupont|zubehör|accessoire|porzellanjar|maxitubo|\bleer\b|"
-    r"\bbuch\b|shirt|\bpolo\b|\bcap\b|mütze|welt der habanos", re.I)
+    r"\bbuch\b|shirt|\bpolo\b|\bcap\b|mütze|welt der habanos|porzellantopf|^habanos jar", re.I)
+# Humidore, Jars und Etuis mit Zigarren darin sind keine Zubehörartikel
+# (z. B. "mit 50 Zigarren", "5er Metalletui", "25er Glass-Jar")
+WITH_CIGARS = re.compile(r"mit\s+\d+\s+zigarren|\b\d+er[\s-]*(metall-?etui|glass?-?jar|jar)", re.I)
+# Marken, die keine Havannas sind, aber in Kuba-Kategorien auftauchen (z. B. La Galana)
+NON_HABANOS = re.compile(r"vegafina|vega fina|maria mancini", re.I)
 
 
 def is_accessory(item: Item) -> bool:
-    """Zubehör (Feuerzeuge, Humidore, Etuis ...) statt Zigarren."""
-    return bool(ACCESSORY_WORDS.search(item.name))
+    """Zubehör (Feuerzeuge, Humidore, Etuis, leere Jars ...) statt Zigarren."""
+    return bool(ACCESSORY_WORDS.search(item.name)) and not WITH_CIGARS.search(item.name)
 
 
-def without_accessories(fetch: Callable[[requests.Session], list[Item]]) -> Callable[[requests.Session], list[Item]]:
-    """Für Shops, die Zubehör in derselben Kategorie wie die Zigarren führen."""
-    return lambda session: [i for i in fetch(session) if not is_accessory(i)]
+def is_wanted(item: Item) -> bool:
+    """Nur Havanna-Zigarren: kein Zubehör, keine Fremdmarken. Gilt für alle Shops."""
+    return not is_accessory(item) and not NON_HABANOS.search(item.name)
 
 
 def make_jtl_fetcher(base: str) -> Callable[[requests.Session], list[Item]]:
@@ -911,14 +916,14 @@ SHOPS = [
     Shop("dominique", "Dominique London", "nur_neu", fetch_dominique),
     # CIGARWORLD hat dasselbe Lager wie Casa Benden (gleiche Firma): nicht doppelt melden
     Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
-         without_accessories(make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen"))),
+         make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen")),
     Shop("pipehouse", "Pipe House", "voll",
          make_woo_fetcher("https://pipehouse.de", "10856", brand_prefix=True, trust_total=False)),
     Shop("nobbis", "Nobbis Tabakwelt", "voll",
          make_woo_fetcher("https://www.nobbis-tabakwelt.de", "53")),
     Shop("paulbugge", "Paul Bugge", "voll", fetch_paulbugge),
-    Shop("cigarrenversand24", "Cigarrenversand24", "voll", without_accessories(fetch_cigarrenversand24)),
-    Shop("tabakkontor", "Tabak-Kontor Leipzig", "voll", without_accessories(fetch_tabakkontor)),
+    Shop("cigarrenversand24", "Cigarrenversand24", "voll", fetch_cigarrenversand24),
+    Shop("tabakkontor", "Tabak-Kontor Leipzig", "voll", fetch_tabakkontor),
     Shop("herzog", "Zigarren Herzog", "voll",
          make_shopify_fetcher("https://zigarren-herzog.com", "kuba", brand_from_vendor=True)),
 ]
@@ -1221,7 +1226,7 @@ def run(dry_run: bool = False) -> int:
         shop_state = state["shops"].setdefault(shop.id, {"items": {}})
         print(f"== {shop.name}")
         try:
-            current = shop.fetch(session)
+            current = [i for i in shop.fetch(session) if is_wanted(i)]
             problem = plausible(shop, shop_state, current)
             if problem:
                 raise FetchError(problem)
