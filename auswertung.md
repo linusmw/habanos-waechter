@@ -189,5 +189,63 @@ Am häufigsten gefunden:
 | H. Upmann Magnum 54 | 4 | Brinkmann Finest, CIGARWORLD, Tabacstore, Zigarrentraum |
 | Romeo y Julieta Mille Fleurs | 4 | Tabakhaus Falkum, Wolsdorff, c-cigars, zigarre.de |
 
+## Wann kommen Neuheiten online?
+
+Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (502 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
+
+**Alle Shops:** Mo ▆86  Di ▆83  Mi ▆84  Do █106  Fr ▇89  Sa ▄47  So ▁7
+
+Nacht ▁16  Morgen ▄86  Vormittag ▄85  Mittag ▄78  Nachmittag █168  Abend ▃69
+
+### Zigarrentraum (174 Neuheiten)
+- Wochentage: Mo ▅29  Di █43  Mi ▅28  Do ▆31  Fr ▅28  Sa ▃14  So  1
+- Tageszeit: Nacht  0  Morgen ▇49  Vormittag ▆37  Mittag ▄29  Nachmittag █53  Abend ▁6
+- Am häufigsten: **Di** (25%), **Nachmittag** (30%)
+
+### Nobbis Tabakwelt (154 Neuheiten)
+- Wochentage: Mo ▆28  Di ▂12  Mi ▆31  Do █39  Fr ▆29  Sa ▂11  So ▁4
+- Tageszeit: Nacht ▄15  Morgen █32  Vormittag ▇28  Mittag ▆23  Nachmittag █31  Abend ▆25
+- Am häufigsten: **Do** (25%), **Morgen** (21%)
+
+### La Galana (81 Neuheiten)
+- Wochentage: Mo ▂5  Di ▅12  Mi ▆14  Do █20  Fr █19  Sa ▄11  So  0
+- Tageszeit: Nacht  1  Morgen  0  Vormittag  0  Mittag ▃17  Nachmittag █44  Abend ▃19
+- Am häufigsten: **Do** (25%), **Nachmittag** (54%)
+
+### c-cigars (45 Neuheiten)
+- Wochentage: Mo ▄5  Di ▇9  Mi █10  Do ▇9  Fr ▆8  Sa ▂2  So ▂2
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁4  Mittag ▁4  Nachmittag █23  Abend ▄12
+- Am häufigsten: **Mi** (22%), **Nachmittag** (51%)
+
+### Pipe House (33 Neuheiten)
+- Wochentage: Mo ▅5  Di ▇7  Mi ▁1  Do ▇7  Fr ▅5  Sa █8  So  0
+- Tageszeit: Nacht  0  Morgen ▂3  Vormittag █16  Mittag ▂5  Nachmittag ▄9  Abend  0
+- Am häufigsten: **Sa** (24%), **Vormittag** (48%)
+
+### Zigarren Herzog (15 Neuheiten)
+- Wochentage: Mo █14  Di  0  Mi  0  Do  0  Fr  0  Sa ▁1  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █8  Abend ▇7
+- Am häufigsten: **Mo** (93%), **Nachmittag** (53%)
+
+Zuletzt neu angelegt:
+
+| Zeit | Shop | Zigarre |
+|---|---|---|
+| Fr 2026-10-16 15:14 | Zigarrentraum | Cohiba Maduro 5 Genios |
+| Do 2026-09-17 10:53 | Zigarrentraum | Sancho Panza Belicoso |
+| Di 2026-09-01 11:07 | Zigarrentraum | Por Larrañaga 35 Aniversario Edición Regional 2024 |
+| Mo 2026-08-31 09:33 | Pipe House | Por Larranaga 35 Aniversario Edición Regional 2024 |
+| Do 2026-08-27 11:20 | Zigarrentraum | Trinidad Villa |
+| Mi 2026-08-26 12:22 | Zigarrentraum | La Gloria Cubana Turquinos |
+| Mo 2026-08-10 14:33 | Pipe House | Trinidad Year of the Horse Corcel |
+| Do 2026-08-06 11:39 | Pipe House | Trinidad Villa HS & LCDH |
+| Di 2026-07-28 20:14 | Nobbis Tabakwelt | Fonseca KDT Cadetes |
+| Sa 2026-06-27 12:05 | Pipe House | Diplomaticos Cancilleres |
+| So 2026-06-07 19:25 | c-cigars | Cohiba Maduro 5 Magicos |
+| Mi 2026-05-27 20:34 | c-cigars | Romeo y Julieta Short Churchill Cosecha Reserva |
+| Do 2026-05-07 14:06 | Zigarrentraum | Diplomáticos Cancilleres |
+| Di 2026-05-05 15:05 | c-cigars | Partagas Year Of The Cedros Year of the Snake |
+| Di 2026-05-05 11:16 | Zigarrentraum | Romeo y Julieta Reserva Short Churchills (Cosecha 2019) |
+
 ---
-*Erzeugt aus `verlauf.csv` und `historie.csv`. Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall des Wächters), historische Funde geben den Zeitpunkt der Meldung an.*
+*Erzeugt aus `verlauf.csv`, `historie.csv` und `neuheiten.csv`. Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall des Wächters), historische Funde geben den Zeitpunkt der Meldung an.*
