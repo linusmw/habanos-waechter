@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-23 17:00 (deutsche Zeit) · 14 Zugänge · 15× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-23 18:00 (deutsche Zeit) · 15 Zugänge · 15× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,8 +8,8 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-23 17:00 (deutsche Zeit) · 14 Zugänge �
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 7 | 0 | 4 | 1 | unter 1 Std. |
 | Casa Benden | 0 | 5 | 4 | 1 | 17 Std. |
+| c-cigars | 2 | 0 | 2 | 0 | – |
 | Dominique London | 0 | 1 | 0 | 0 | – |
-| c-cigars | 1 | 0 | 2 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
 | Noblego | 0 | 0 | 3 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
@@ -18,9 +18,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-23 17:00 (deutsche Zeit) · 14 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃28  Di ▄37  Mi ▅46  Do ▇68  Fr █78  Sa ▂23  So ▁7
+**Alle Shops:** Mo ▃28  Di ▄37  Mi ▅46  Do ▇68  Fr █79  Sa ▂23  So ▁7
 
-Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend ▇85
+Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend ▇86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -52,10 +52,10 @@ Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend �
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag ▃3  Nachmittag █9  Abend ▁1
 - Am häufigsten: **Fr** (76%), **Nachmittag** (53%)
 
-### c-cigars (14 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr ▇6  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend █6
-- Am häufigsten: **Do** (50%), **Nachmittag** (43%)
+### c-cigars (15 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr █7  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag ▇6  Abend █7
+- Am häufigsten: **Fr** (47%), **Abend** (47%)
 
 ### StarkeZigarren (13 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂1  Mi ▃2  Do ▅3  Fr █5  Sa ▂1  So ▂1
@@ -77,15 +77,15 @@ Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend �
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
-- Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
-- Am häufigsten: **Mi** (29%), **Abend** (43%)
-
 ### zigarre.de (7 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Do** (29%), **Nachmittag** (57%)
+
+### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
+- Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
+- Am häufigsten: **Mi** (29%), **Abend** (43%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
@@ -131,6 +131,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 1 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 1 |
 | Montecristo Open Club Zigarillos 20 Stück | c-cigars | 1 |
+| Montecristo Joyitas | c-cigars | 1 |
 
 ## Historische Funde
 
