@@ -116,6 +116,13 @@ Zusätzlich enthält **`historie.csv`** rund 270 gesammelte Fundmeldungen aus de
 die Liste der meistgefundenen Zigarren ein, nicht aber in Wareneingänge oder Haltbarkeit.
 Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall).
 
+**`neuheiten.csv`** hält fest, wann Shops ein Produkt neu angelegt haben. Das liefern die
+Shopsysteme selbst (Shopify bei c-cigars, La Galana und Zigarren Herzog; WooCommerce bei
+Zigarrentraum, Pipe House und Nobbis), deshalb reicht die Liste Jahre zurück. Bei den
+Shopify-Shops steht zusätzlich „wieder online“, wenn ein Produkt später erneut veröffentlicht
+wurde. Tage mit Sortimentsimporten sind herausgerechnet. Die Datei wird alle 3 Stunden
+aktualisiert (`python neuheiten.py`) und fließt als eigener Abschnitt in `auswertung.md` ein.
+
 ## Lokal ausprobieren
 
 ```bash
