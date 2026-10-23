@@ -156,8 +156,11 @@ def money(amount: str | int | None, minor_unit: int | None = 2) -> str:
         return ""
 
 
-def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> list[Item]:
-    """Daten aus der WooCommerce-Schnittstelle von zigarrentraum.de.
+def parse_zigarrentraum_api(products: list[dict], variations: list[dict],
+                            brand_prefix: bool = False) -> list[Item]:
+    """Daten aus der WooCommerce-Schnittstelle (zigarrentraum.de, nobbis-tabakwelt.de, pipehouse.de).
+
+    ``brand_prefix``: Marke aus 'brands' voranstellen (Pipe House nennt sie nicht im Titel).
 
     ``products``: alle Produkte der Kategorie, ``variations``: die Packungsvarianten
     aller Produkte, die als vorrätig gemeldet sind. Ist ein Produkt nicht vorrätig,
@@ -168,6 +171,9 @@ def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> lis
     items: list[Item] = []
     for p in products:
         name = text(p.get("name"))
+        brands = [text(b.get("name")) for b in p.get("brands") or [] if isinstance(b, dict)]
+        if brand_prefix and brands and brands[0] and brands[0].lower() not in name.lower():
+            name = f"{brands[0]} {name}"
         url = p.get("permalink") or ""
         minor = (p.get("prices") or {}).get("currency_minor_unit", 2)
         group = str(p["id"])
@@ -407,6 +413,66 @@ def parse_jtl_list(html: str) -> list[Item]:
     return items
 
 
+def parse_paulbugge(html: str) -> list[Item]:
+    """paul-bugge.com, Kategorie Kuba. Punkt rot = nicht lieferbar, grün = lieferbar."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for card in soup.select("div.row-cols-2 > div.col"):
+        link = card.select_one("a[href]")
+        name_el = card.select_one("[itemprop=name]")
+        if not link or not name_el:
+            continue
+        href = link["href"]
+        sub = card.select_one(".pb_OSSB12")
+        dot = card.select_one("i.fa-circle")
+        color = (dot.get("style", "") if dot else "").lower()
+        items.append(Item(key=href, name=clean(name_el.get_text()),
+                          pack=clean(sub.get_text()) if sub else "",
+                          price=_price(card.select_one(".pb_OSB24")),
+                          url=urljoin("https://www.paul-bugge.com", href),
+                          available=bool(dot) and "red" not in color, group=href))
+    return items
+
+
+def parse_oxid(html: str) -> list[Item]:
+    """OXID-Shop cigarrenversand24.de. Schlüssel = Artikel-ID (gleich in allen Kategorien)."""
+    soup = BeautifulSoup(html, "html.parser")
+    items: list[Item] = []
+    for box in soup.select("#productList .productData"):
+        link = box.select_one("a.title")
+        anid = box.select_one("input[name=anid]")
+        if not link:
+            continue
+        key = anid["value"] if anid else link.get("href", "")
+        flag = box.select_one(".stockFlag")
+        status = clean(flag.get("title", "")).lower() if flag else ""
+        price = _price(box.select_one(".price .lead"))
+        items.append(Item(key=key, name=clean(link.get_text()), pack="", price=price,
+                          url=link.get("href", ""),
+                          available=status == "lieferbar", group=key))
+    return items
+
+
+def parse_virtuemart(html: str, base: str) -> tuple[list[Item], list[str]]:
+    """VirtueMart-Kategorie (tabak-kontor.de): Artikel und Links zu Unterkategorien."""
+    soup = BeautifulSoup(html, "html.parser")
+    subs = [urljoin(base, a["href"]) for a in soup.select(".category-view .vm-categories a[href]")
+            if a["href"] not in ("#", "")]
+    items: list[Item] = []
+    for row in soup.select(".browse-view .product-container"):
+        link = row.select_one("h2 a")
+        price_box = row.select_one("[id^=productPrice]")
+        if not link:
+            continue
+        key = price_box["id"].replace("productPrice", "") if price_box else link.get("href", "")
+        available = (row.select_one("button[name=addtocart]") is not None
+                     and "nicht verfügbar" not in row.get_text(" ").lower())
+        items.append(Item(key=key, name=clean(link.get_text()), pack="",
+                          price=_price(row.select_one("span.PricesalesPrice")),
+                          url=urljoin(base, link.get("href", "")), available=available, group=key))
+    return items, subs
+
+
 def parse_falkum(html: str) -> tuple[list[Item], int | None]:
     """falkum.de, Kategorie Habanos (Magento mit Hyvä-Oberfläche)."""
     soup = BeautifulSoup(html, "html.parser")
@@ -521,19 +587,32 @@ def get_json(session: requests.Session, url: str) -> tuple:
 def fetch_zigarrentraum(session: requests.Session) -> list[Item]:
     # Die Schnittstelle sortiert stabil nach ID. Die normalen Kategorieseiten zeigen
     # beim Blättern teils Produkte doppelt und lassen andere weg.
-    api = "https://www.zigarrentraum.de/wp-json/wc/store/v1/products"
+    return fetch_woo(session, "https://www.zigarrentraum.de", "kubanische-zigarren")
+
+
+def make_woo_fetcher(site: str, category: str, brand_prefix: bool = False,
+                     trust_total: bool = True) -> Callable[[requests.Session], list[Item]]:
+    return lambda session: fetch_woo(session, site, category, brand_prefix, trust_total)
+
+
+def fetch_woo(session: requests.Session, site: str, category: str,
+              brand_prefix: bool = False, trust_total: bool = True) -> list[Item]:
+    """WooCommerce Store API. trust_total=False, wenn der Shop X-WP-Total falsch meldet
+    (Pipe House liefert dort immer 1); dann wird geblättert, bis eine Seite leer ist."""
+    api = f"{site}/wp-json/wc/store/v1/products"
     products: dict[int, dict] = {}
     total = None
     for page in range(1, 31):
-        data, headers = get_json(session, f"{api}?category=kubanische-zigarren&per_page=100"
+        data, headers = get_json(session, f"{api}?category={category}&per_page=100"
                                           f"&page={page}&orderby=id&order=asc")
-        if total is None:
+        if total is None and trust_total:
             total = int(headers.get("X-WP-Total", 0))
         if not data:
             break
+        new = [p for p in data if p["id"] not in products]
         for p in data:
             products[p["id"]] = p
-        if len(products) >= total:
+        if not new or (total and len(products) >= total) or len(data) < 100:
             break
         time.sleep(PAUSE_BETWEEN_PAGES)
     if not products:
@@ -551,7 +630,7 @@ def fetch_zigarrentraum(session: requests.Session) -> list[Item]:
             if page >= int(headers.get("X-WP-TotalPages", 1) or 1):
                 break
         time.sleep(PAUSE_BETWEEN_PAGES)
-    return parse_zigarrentraum_api(list(products.values()), variations)
+    return parse_zigarrentraum_api(list(products.values()), variations, brand_prefix)
 
 
 def fetch_casabenden(session: requests.Session) -> list[Item]:
@@ -663,7 +742,8 @@ def fetch_tabacstore(session: requests.Session) -> list[Item]:
 
 ACCESSORY_WORDS = re.compile(
     r"feuerzeug|humidor|etui|cutter|abschneider|aschenbecher|ascher|bohrer|tasche|"
-    r"zigarrenschere|anzünder|dupont|zubehör|accessoire", re.I)
+    r"zigarrenschere|anzünder|dupont|zubehör|accessoire|porzellanjar|maxitubo|\bleer\b|"
+    r"\bbuch\b|shirt|\bpolo\b|\bcap\b|mütze|welt der habanos", re.I)
 
 
 def is_accessory(item: Item) -> bool:
@@ -671,12 +751,15 @@ def is_accessory(item: Item) -> bool:
     return bool(ACCESSORY_WORDS.search(item.name))
 
 
-def make_jtl_fetcher(base: str, skip_accessories: bool = False) -> Callable[[requests.Session], list[Item]]:
+def without_accessories(fetch: Callable[[requests.Session], list[Item]]) -> Callable[[requests.Session], list[Item]]:
+    """Für Shops, die Zubehör in derselben Kategorie wie die Zigarren führen."""
+    return lambda session: [i for i in fetch(session) if not is_accessory(i)]
+
+
+def make_jtl_fetcher(base: str) -> Callable[[requests.Session], list[Item]]:
     def fetch(session: requests.Session) -> list[Item]:
         items, _ = collect_pages(
             session, lambda p: (base if p == 1 else f"{base}_s{p}") + "?availability=1", parse_jtl_list)
-        if skip_accessories:
-            items = [i for i in items if not is_accessory(i)]
         return items
     return fetch
 
@@ -717,6 +800,52 @@ def make_shopify_fetcher(base: str, collection: str,
             raise FetchError("Keine Produkte gefunden (Schnittstelle geändert?)")
         return items
     return fetch
+
+
+def fetch_paulbugge(session: requests.Session) -> list[Item]:
+    base = "https://www.paul-bugge.com/kubanische-zigarren"
+    items, _ = collect_pages(session, lambda p: base if p == 1 else f"{base}?page={p}", parse_paulbugge)
+    if not items:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    return items
+
+
+def fetch_cigarrenversand24(session: requests.Session) -> list[Item]:
+    # 'Habanos-Specialist' ist die volle Liste mit Lagerstand, aber nicht ganz vollständig;
+    # 'Unsere verfügbaren Habanos' pflegt der Shop von Hand. Beides zusammen.
+    site = "https://www.cigarrenversand24.de"
+    full, _ = collect_pages(
+        session, lambda p: f"{site}/Nach-Marke/Habanos-Specialist/?_artperpage=96&pgNr={p - 1}", parse_oxid)
+    if not full:
+        raise FetchError("Keine Produkte gefunden (Seitenaufbau geändert?)")
+    time.sleep(PAUSE_BETWEEN_PAGES)
+    extra = parse_oxid(get(session, f"{site}/Cigarren-Welt/Unsere-VERFUeGBAREN-Habanos-Cigars/?_artperpage=96"))
+    merged = {i.key: i for i in full}
+    for i in extra:
+        if i.key not in merged or (i.available and not merged[i.key].available):
+            merged[i.key] = i
+    return list(merged.values())
+
+
+def fetch_tabakkontor(session: requests.Session) -> list[Item]:
+    # Kategorie Cuba -> Marken -> Linien; jede Seite zeigt alle Artikel ohne Blättern
+    base = "https://tabak-kontor.de"
+    queue = [f"{base}/onlineshop/zigarren-cigarillos/cuba"]
+    seen: set[str] = set()
+    items: dict[str, Item] = {}
+    while queue and len(seen) < 150:
+        url = queue.pop(0)
+        if url in seen:
+            continue
+        seen.add(url)
+        page_items, subs = parse_virtuemart(get(session, url), base)
+        for i in page_items:
+            items.setdefault(i.key, i)
+        queue += [u for u in subs if u not in seen and "produktion-eingestellt" not in u]
+        time.sleep(0.8)
+    if len(items) < 50:
+        raise FetchError(f"Nur {len(items)} Artikel gefunden (Seitenaufbau geändert?)")
+    return list(items.values())
 
 
 def fetch_habanos_zigarren(session: requests.Session) -> list[Item]:
@@ -782,8 +911,14 @@ SHOPS = [
     Shop("dominique", "Dominique London", "nur_neu", fetch_dominique),
     # CIGARWORLD hat dasselbe Lager wie Casa Benden (gleiche Firma): nicht doppelt melden
     Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
-         make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen",
-                          skip_accessories=True)),
+         without_accessories(make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen"))),
+    Shop("pipehouse", "Pipe House", "voll",
+         make_woo_fetcher("https://pipehouse.de", "10856", brand_prefix=True, trust_total=False)),
+    Shop("nobbis", "Nobbis Tabakwelt", "voll",
+         make_woo_fetcher("https://www.nobbis-tabakwelt.de", "53")),
+    Shop("paulbugge", "Paul Bugge", "voll", fetch_paulbugge),
+    Shop("cigarrenversand24", "Cigarrenversand24", "voll", without_accessories(fetch_cigarrenversand24)),
+    Shop("tabakkontor", "Tabak-Kontor Leipzig", "voll", without_accessories(fetch_tabakkontor)),
     Shop("herzog", "Zigarren Herzog", "voll",
          make_shopify_fetcher("https://zigarren-herzog.com", "kuba", brand_from_vendor=True)),
 ]
@@ -989,6 +1124,11 @@ SHOP_URLS = {
     "cigarworld": "https://www.cigarworld.de/zigarren/kuba?nur_lieferbar=1",
     "starkezigarren": "https://www.starkezigarren.de/Kubanische-Zigarren-kaufen?availability=1",
     "herzog": "https://zigarren-herzog.com/collections/kuba",
+    "pipehouse": "https://pipehouse.de/cigarren/kubanische-zigarren/",
+    "nobbis": "https://www.nobbis-tabakwelt.de/zigarren/kubanische-zigarren/",
+    "paulbugge": "https://www.paul-bugge.com/kubanische-zigarren",
+    "cigarrenversand24": "https://www.cigarrenversand24.de/Cigarren-Welt/Unsere-VERFUeGBAREN-Habanos-Cigars/",
+    "tabakkontor": "https://tabak-kontor.de/onlineshop/zigarren-cigarillos/cuba",
 }
 
 SECTIONS = [  # Reihenfolge, Überschrift in der Nachricht, Kurzform für den Titel

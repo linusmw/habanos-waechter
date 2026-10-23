@@ -17,6 +17,10 @@ Prüft jede halbe Stunde (zur vollen und halben Stunde, Takt über cron-job.org)
 - **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
 - **StarkeZigarren** (Liste „verfügbar“, ohne Zubehör wie Feuerzeuge, Humidore, Etuis)
 - **Zigarren Herzog** (Shop-Schnittstelle, jede Packungsgröße einzeln)
+- **Pipe House** und **Nobbis Tabakwelt** (Shop-Schnittstelle, bei Pipe House jede Packungsgröße einzeln)
+- **Paul Bugge** (ganze Kuba-Kategorie)
+- **Cigarrenversand24** (Habanos-Liste plus die vom Shop gepflegte Liste verfügbarer Habanos, ohne Zubehör)
+- **Tabak-Kontor Leipzig** (alle Marken und Linien der Kategorie Cuba, ohne Zubehör)
 
 und schickt dir **eine Push-Nachricht pro Shop** aufs Handy (mit allen Zigarren, Packungen und
 Preisen darin), wenn

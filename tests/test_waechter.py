@@ -445,3 +445,43 @@ def test_accessory_filter():
              "Cohiba Short Year of the Snake 88er-Kiste"]
     assert [n for n in names if not w.is_accessory(mk("x", True, n))] == [
         "Trinidad Short", "Partagas Linea Maestra Geschenkbox", "Cohiba Short Year of the Snake 88er-Kiste"]
+
+
+def test_paulbugge_parser():
+    items = w.parse_paulbugge(read("paulbugge_page.html"))
+    assert [(i.name, i.pack, i.price, i.available) for i in items] == [
+        ("Punch Triunfo", "limitiert auf 5 Zigarren", "13,90 €", False),
+        ("Montecristo Open Slam", "", "25,00 €", True),
+    ]
+    assert items[1].url.startswith("https://www.paul-bugge.com/zigarren/havana/")
+
+
+def test_oxid_parser():
+    items = w.parse_oxid(read("cigarrenversand24_page.html"))
+    assert [(i.key, i.name, i.price, i.available) for i in items] == [
+        ("aaa111", "Trinidad Reyes", "ab 34,00 €", True),
+        ("bbb222", "Cohiba Siglo VI", "62,00 €", False),
+    ]
+
+
+def test_virtuemart_parser():
+    items, subs = w.parse_virtuemart(read("tabakkontor_page.html"), "https://tabak-kontor.de")
+    assert subs == ["https://tabak-kontor.de/onlineshop/zigarren-cigarillos/cohiba-siglo-i"]
+    assert [(i.key, i.name, i.price, i.available) for i in items] == [
+        ("4217", "Cohiba Siglo II 25er Cabinet", "975,00 €", False),
+        ("4259", "Cohiba SIGLO DE ORO - AÑO CHINO", "240,00 €", True),
+    ]
+
+
+def test_woo_brand_prefix():
+    products = [{"id": 1, "name": "Siglo I", "permalink": "u", "is_in_stock": False, "variations": [],
+                 "brands": [{"name": "Cohiba"}], "prices": {"price": "3400", "currency_minor_unit": 2}}]
+    assert w.parse_zigarrentraum_api(products, [], brand_prefix=True)[0].name == "Cohiba Siglo I"
+    assert w.parse_zigarrentraum_api(products, [])[0].name == "Siglo I"
+
+
+def test_more_accessories():
+    for n in ["Porzellanjar COHIBA (leer)", "MAXITUBO Cohiba Siglo VI - leer", 'Buch "El Habano Moderno"',
+              "Habanos Polo-Shirt mit Brusttasche", "Die Welt der Habanos"]:
+        assert w.is_accessory(mk("x", True, n)), n
+    assert not w.is_accessory(mk("x", True, 'Set Cuba "Pinar del Rio" 4 Stück = Packung'))
