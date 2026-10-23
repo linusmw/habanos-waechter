@@ -431,12 +431,18 @@ def parse_falkum(html: str) -> tuple[list[Item], int | None]:
     return items, total
 
 
-def parse_shopify(data: dict, base: str) -> list[Item]:
-    """Shopify-Schnittstelle /collections/<name>/products.json (c-cigars.de, lagalana.de).
-    Ein Eintrag je Variante (Packung)."""
+def parse_shopify(data: dict, base: str, brand_from_vendor: bool = False) -> list[Item]:
+    """Shopify-Schnittstelle /collections/<name>/products.json (c-cigars.de, lagalana.de,
+    zigarren-herzog.com). Ein Eintrag je Variante (Packung).
+
+    brand_from_vendor: Marke aus 'vendor' voranstellen (Herzog nennt sie nicht im Titel).
+    """
     items: list[Item] = []
     for p in data.get("products") or []:
         name = text(p.get("title"))
+        vendor = text(p.get("vendor"))
+        if brand_from_vendor and vendor and vendor.lower() not in name.lower():
+            name = f"{vendor} {name}"
         url = f"{base}/products/{p.get('handle', '')}"
         for v in p.get("variants") or []:
             pack = text(v.get("title"))
@@ -683,7 +689,8 @@ def fetch_falkum(session: requests.Session) -> list[Item]:
     return items
 
 
-def make_shopify_fetcher(base: str, collection: str) -> Callable[[requests.Session], list[Item]]:
+def make_shopify_fetcher(base: str, collection: str,
+                         brand_from_vendor: bool = False) -> Callable[[requests.Session], list[Item]]:
     def fetch(session: requests.Session) -> list[Item]:
         items: list[Item] = []
         for page in range(1, 21):
@@ -691,7 +698,7 @@ def make_shopify_fetcher(base: str, collection: str) -> Callable[[requests.Sessi
                                         f"?limit=250&page={page}")
             if not data.get("products"):
                 break
-            items.extend(parse_shopify(data, base))
+            items.extend(parse_shopify(data, base, brand_from_vendor))
             time.sleep(PAUSE_BETWEEN_PAGES)
         items = dedupe(items)
         if not items:
@@ -765,7 +772,7 @@ SHOPS = [
     Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
          make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen")),
     Shop("herzog", "Zigarren Herzog", "voll",
-         make_shopify_fetcher("https://zigarren-herzog.com", "kuba")),
+         make_shopify_fetcher("https://zigarren-herzog.com", "kuba", brand_from_vendor=True)),
 ]
 
 

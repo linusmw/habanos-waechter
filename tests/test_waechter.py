@@ -425,3 +425,15 @@ def test_starkezigarren_ignores_slider():
 
 def test_every_shop_has_click_url():
     assert {s.id for s in w.SHOPS} <= set(w.SHOP_URLS)
+
+
+def test_shopify_brand_from_vendor():
+    data = {"products": [{"id": 1, "handle": "reyes", "title": "Reyes", "vendor": "Trinidad",
+                          "variants": [{"id": 9, "title": "Einzelzigarre", "price": "17.50",
+                                        "available": True}]},
+                         {"id": 2, "handle": "x", "title": "Cohiba Siglo VI", "vendor": "Cohiba",
+                          "variants": [{"id": 8, "title": "Default Title", "price": "60",
+                                        "available": False}]}]}
+    items = w.parse_shopify(data, "https://zigarren-herzog.com", brand_from_vendor=True)
+    assert [i.name for i in items] == ["Trinidad Reyes", "Cohiba Siglo VI"]
+    assert w.parse_shopify(data, "https://c-cigars.de")[0].name == "Reyes"
