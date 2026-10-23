@@ -15,6 +15,9 @@ Prüft jede halbe Stunde (zur vollen und halben Stunde, Takt über cron-job.org)
 - **c-cigars** und **La Galana** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 - **habanos-zigarren.com** (Shop-Schnittstelle)
 - **Dominique London** (ehemals Casa del Puro; der Shop zeigt keinen Lagerstand, daher nur Neuheiten)
+- **CIGARWORLD** (Liste „nur sofort lieferbar“, gleiches System wie Casa Benden)
+- **StarkeZigarren** (Liste „verfügbar“)
+- **Zigarren Herzog** (Shop-Schnittstelle, jede Packungsgröße einzeln)
 
 und schickt dir **eine Push-Nachricht pro Shop** aufs Handy (mit allen Zigarren, Packungen und
 Preisen darin), wenn
@@ -101,7 +104,7 @@ Daraus erzeugt jeder Lauf die Datei **`auswertung.md`**, auf GitHub direkt lesba
 - eine **Prognose** für den nächsten Wareneingang, sobald ein Shop regelmäßig liefert
 - wie schnell einzelne Zigarren **wieder vergriffen** sind
 
-Zusätzlich enthält **`historie.csv`** rund 270 manuell gesammelte Fundmeldungen aus den Jahren
+Zusätzlich enthält **`historie.csv`** rund 270 gesammelte Fundmeldungen aus den Jahren
 2023–2026 (Zeitpunkt, Shop, Zigarre). Sie fließen in die Wochentag- und Tageszeitmuster sowie
 die Liste der meistgefundenen Zigarren ein, nicht aber in Wareneingänge oder Haltbarkeit.
 Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall).

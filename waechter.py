@@ -192,7 +192,7 @@ def parse_zigarrentraum_api(products: list[dict], variations: list[dict]) -> lis
 
 
 def parse_casabenden_lieferbar(html: str, base: str = "https://www.casabenden.de") -> tuple[list[Item], int | None]:
-    """Liste 'nur sofort lieferbare Artikel' von casabenden.de.
+    """Liste 'nur sofort lieferbare Artikel' von casabenden.de und cigarworld.de (gleiches System).
 
     Gibt die Artikel und die vom Shop gemeldete Gesamtzahl zurück.
     """
@@ -200,7 +200,10 @@ def parse_casabenden_lieferbar(html: str, base: str = "https://www.casabenden.de
     m = re.search(r"(\d+)\s+Artikel gefunden", soup.get_text(" "))
     total = int(m.group(1)) if m else None
     items: list[Item] = []
-    for a in soup.select("a.search-result-item-inner"):
+    # Nur die eigentliche Trefferliste: CIGARWORLD zeigt zusätzlich ein Empfehlungs-Karussell
+    links = soup.select("div.search-result a.search-result-item-inner") or \
+        soup.select("a.search-result-item-inner")
+    for a in links:
         href = a.get("href", "")
         brand = clean(a.select_one(".brand").get_text() if a.select_one(".brand") else "")
         name = clean(a.select_one(".name").get_text() if a.select_one(".name") else "")
@@ -383,15 +386,17 @@ def parse_tabacstore(html: str) -> list[Item]:
 
 
 def parse_jtl_list(html: str) -> list[Item]:
-    """JTL-Shop (NOVA), Liste nur lieferbarer Artikel, z. B. zigarrenschachtel.de, dalayzigarren.de."""
+    """JTL-Shop (NOVA), Liste nur lieferbarer Artikel, z. B. dalayzigarren.de, starkezigarren.de."""
     soup = BeautifulSoup(html, "html.parser")
     items: list[Item] = []
-    for box in _top_level(soup.select("div.productbox")):
+    # Nur die Artikelliste, keine Slider (StarkeZigarren zeigt dort auch ausverkaufte Ware)
+    boxes = soup.select("#product-list div.productbox") or soup.select("div.productbox")
+    for box in _top_level(boxes):
         link = box.select_one(".productbox-title a")
         if not link:
             continue
         url = link.get("href", "")
-        price = _price(box.select_one(".productbox-price"))
+        price = re.sub(r"^ab\s+", "", _price(box.select_one(".productbox-price")))
         if box.select_one(".pricestarting"):
             price = f"ab {price}"
         ribbon = box.select_one(".ribbon")
@@ -544,13 +549,22 @@ def fetch_zigarrentraum(session: requests.Session) -> list[Item]:
 
 
 def fetch_casabenden(session: requests.Session) -> list[Item]:
-    base = "https://www.casabenden.de/zigarren/kuba?nur_lieferbar=1&shoporder=Relevanz&von={}"
+    return fetch_benden_system(session, "https://www.casabenden.de")
+
+
+def fetch_cigarworld(session: requests.Session) -> list[Item]:
+    return fetch_benden_system(session, "https://www.cigarworld.de")
+
+
+def fetch_benden_system(session: requests.Session, site: str) -> list[Item]:
+    """Casa Benden und CIGARWORLD laufen auf demselben Shopsystem."""
+    base = site + "/zigarren/kuba?nur_lieferbar=1&shoporder=Relevanz&von={}"
     items: list[Item] = []
     total = None
     offset = 0
     for _ in range(20):
         html = get(session, base.format(offset))
-        page_items, page_total = parse_casabenden_lieferbar(html)
+        page_items, page_total = parse_casabenden_lieferbar(html, site)
         if total is None:
             total = page_total
             if total is None:
@@ -747,6 +761,11 @@ SHOPS = [
          make_shopify_fetcher("https://lagalana.de", "habanos-zigarren")),
     # Dominique London (ehemals Casa del Puro) zeigt keinen Lagerstand: nur Neuheiten melden
     Shop("dominique", "Dominique London", "nur_neu", fetch_dominique),
+    Shop("cigarworld", "CIGARWORLD", "nur_lieferbar", fetch_cigarworld),
+    Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
+         make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen")),
+    Shop("herzog", "Zigarren Herzog", "voll",
+         make_shopify_fetcher("https://zigarren-herzog.com", "kuba")),
 ]
 
 
@@ -947,6 +966,9 @@ SHOP_URLS = {
     "habanoszigarren": "https://www.habanos-zigarren.com/",
     "lagalana": "https://lagalana.de/collections/habanos-zigarren",
     "dominique": "https://www.dominiquelondon.de/shop/category/kubanische-zigarren-196",
+    "cigarworld": "https://www.cigarworld.de/zigarren/kuba?nur_lieferbar=1",
+    "starkezigarren": "https://www.starkezigarren.de/Kubanische-Zigarren-kaufen?availability=1",
+    "herzog": "https://zigarren-herzog.com/collections/kuba",
 }
 
 SECTIONS = [  # Reihenfolge, Überschrift in der Nachricht, Kurzform für den Titel

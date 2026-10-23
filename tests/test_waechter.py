@@ -401,3 +401,27 @@ def test_available_only_shop_new_item_is_new_or_back():
     assert [(e.kind, e.item.key) for e in ev] == [("neu_oder_wieder", "y")]
     title, _, _, _, _ = w.shop_message("casabenden", ev, {s.id: s.name for s in w.SHOPS})
     assert title == "Casa Benden: 1 neu/wieder da"
+
+
+def test_cigarworld_ignores_carousel():
+    items, total = w.parse_casabenden_lieferbar(read("cigarworld_lieferbar.html"),
+                                                "https://www.cigarworld.de")
+    assert total == 7
+    assert [(i.name, i.price) for i in items] == [
+        ("Trinidad Reyes", "34,00 €"),
+        ("Romeo y Julieta De Oro Hidalgos", "65,00 €"),
+    ]
+    assert items[0].url == "https://www.cigarworld.de/zigarren/kuba/regulares/trinidad-reyes-01021_5800"
+    assert "Restbestand" in items[1].pack
+
+
+def test_starkezigarren_ignores_slider():
+    items = w.parse_jtl_list(read("starkezigarren_lieferbar.html"))
+    assert [(i.name, i.price) for i in items] == [
+        ("Partagas Linea Maestra Geschenkbox", "450,00 €"),
+        ("Trinidad Short", "ab 1,70 €"),
+    ]
+
+
+def test_every_shop_has_click_url():
+    assert {s.id for s in w.SHOPS} <= set(w.SHOP_URLS)
