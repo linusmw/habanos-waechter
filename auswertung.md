@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-23 14:30 (deutsche Zeit) · 13 Zugänge · 13× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-23 15:00 (deutsche Zeit) · 13 Zugänge · 14× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 7 | 0 | 2 | 1 | – |
+| Wolsdorff | 7 | 0 | 3 | 1 | unter 1 Std. |
 | Casa Benden | 0 | 5 | 4 | 1 | 17 Std. |
 | Dominique London | 0 | 1 | 0 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
@@ -47,6 +47,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 
 | Artikel | Shop | weg nach (Median) | beobachtet |
 |---|---|---|---:|
+| Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
 | Cohiba Panetelas (Restbestand) | Casa Benden | 14 Std. | 1× |
 | Guantanamera Cristales (Restbestand) | Casa Benden | 19 Std. | 1× |
