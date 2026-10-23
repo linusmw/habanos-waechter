@@ -105,7 +105,7 @@ def test_sold_out_then_new_item_is_new():
     st = {}
     w.compare(CB, st, [mk("x", True)], "t0")
     ev = w.compare(CB, st, [mk("x", True), mk("y", True)], "t1")
-    assert [(e.kind, e.item.key) for e in ev] == [("neu", "y")]
+    assert [(e.kind, e.item.key) for e in ev] == [("neu_oder_wieder", "y")]
 
 
 def test_plausibility_guards():
@@ -354,3 +354,12 @@ def test_log_file_format(tmp_path):
     assert rows[1].split(";")[:7] == ["2026-10-23T18:26:00+00:00", "2026-10-23 20:26", "Fr", "20",
                                       "Noblego", "wieder_da", "Cohiba Siglo VI"]
     assert rows[2].split(";")[9] == "3,5"
+
+
+def test_available_only_shop_new_item_is_new_or_back():
+    st = {}
+    w.compare(CB, st, [mk("x", True)], "t0")
+    ev = w.compare(CB, st, [mk("x", True), mk("y", True)], "t1")
+    assert [(e.kind, e.item.key) for e in ev] == [("neu_oder_wieder", "y")]
+    title, _, _, _ = w.describe(w.group_events(ev)[0], {s.id: s.name for s in w.SHOPS})
+    assert title == "Neu oder wieder da bei Casa Benden: Testzigarre"

@@ -25,7 +25,7 @@ LOG_FILE = Path(__file__).with_name("verlauf.csv")
 WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
 TAGESZEITEN = [("Nacht", 0, 6), ("Morgen", 6, 10), ("Vormittag", 10, 12),
                ("Mittag", 12, 14), ("Nachmittag", 14, 18), ("Abend", 18, 24)]
-ZUGANG = {"wieder_da", "neu"}
+ZUGANG = {"wieder_da", "neu", "neu_oder_wieder"}
 WELLE_MIN = 3          # ab so vielen gleichzeitigen Zugängen gilt es als Wareneingang
 MIN_DATEN = 5          # darunter keine Muster-Aussagen
 

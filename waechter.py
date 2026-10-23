@@ -47,7 +47,7 @@ STATE_FILE = Path(__file__).with_name("state.json")
 LOG_FILE = Path(__file__).with_name("verlauf.csv")
 LOG_COLUMNS = ["zeit_utc", "zeit_berlin", "wochentag", "stunde", "shop", "ereignis",
                "artikel", "packung", "preis", "verfuegbar_stunden", "url", "schluessel"]
-ALERT_KINDS = {"wieder_da", "neu", "neu_nicht_lieferbar"}
+ALERT_KINDS = {"wieder_da", "neu", "neu_oder_wieder", "neu_nicht_lieferbar"}
 WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
 
 USER_AGENT = (
@@ -800,7 +800,13 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
         old = known.get(item.key)
         if old is None:
             if not first_run:
-                kind = "neu" if item.available else "neu_nicht_lieferbar"
+                if not item.available:
+                    kind = "neu_nicht_lieferbar"
+                elif shop.mode == "nur_lieferbar":
+                    # Shop zeigt nur Lieferbares: ob neu oder Nachlieferung, ist nicht erkennbar
+                    kind = "neu_oder_wieder"
+                else:
+                    kind = "neu"
                 events.append(Event(kind, shop.id, item))
             known[item.key] = {
                 "name": item.name, "pack": item.pack, "price": item.price, "url": item.url,
@@ -923,7 +929,7 @@ def group_events(events: list[Event]) -> list[list[Event]]:
     groups: dict[tuple, list[Event]] = {}
     for e in events:
         groups.setdefault((e.shop, e.kind, e.item.group), []).append(e)
-    order = {"wieder_da": 0, "neu": 1, "neu_nicht_lieferbar": 2, "ausverkauft": 3}
+    order = {"wieder_da": 0, "neu_oder_wieder": 1, "neu": 2, "neu_nicht_lieferbar": 3, "ausverkauft": 4}
     return sorted(groups.values(), key=lambda g: (order[g[0].kind], g[0].shop, g[0].item.name))
 
 
@@ -933,6 +939,8 @@ def describe(group: list[Event], shop_names: dict[str, str]) -> tuple[str, str, 
     item = first.item
     if first.kind == "wieder_da":
         title, tags = f"Wieder da bei {shop}: {item.name}", ["white_check_mark", "cigar"]
+    elif first.kind == "neu_oder_wieder":
+        title, tags = f"Neu oder wieder da bei {shop}: {item.name}", ["white_check_mark", "cigar"]
     elif first.kind == "neu":
         title, tags = f"Neu bei {shop}: {item.name}", ["new", "cigar"]
     else:
@@ -950,7 +958,7 @@ def notify(events: list[Event], shop_names: dict[str, str]) -> None:
     groups = group_events([e for e in events if e.kind in ALERT_KINDS])
     for group in groups[:MAX_PUSHES_PER_RUN]:
         title, message, url, tags = describe(group, shop_names)
-        prio = 5 if group[0].kind == "wieder_da" else 4 if group[0].kind == "neu" else 3
+        prio = {"wieder_da": 5, "neu_oder_wieder": 5, "neu": 4}.get(group[0].kind, 3)
         print(f"→ {title}\n{message}\n")
         push(title, message, click=url, tags=tags, priority=prio)
     rest = groups[MAX_PUSHES_PER_RUN:]
