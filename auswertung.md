@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-23 18:00 (deutsche Zeit) · 15 Zugänge · 15× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-23 20:30 (deutsche Zeit) · 15 Zugänge · 16× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,7 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-23 18:00 (deutsche Zeit) · 15 Zugänge �
 | c-cigars | 2 | 0 | 2 | 0 | – |
 | Dominique London | 0 | 1 | 0 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
-| Noblego | 0 | 0 | 3 | 0 | – |
+| Noblego | 0 | 0 | 4 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
@@ -77,15 +77,15 @@ Nacht  6  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend �
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
-- Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
-- Am häufigsten: **Mi** (29%), **Abend** (43%)
-
 ### zigarre.de (7 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Do** (29%), **Nachmittag** (57%)
+
+### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
+- Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
+- Am häufigsten: **Mi** (29%), **Abend** (43%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
