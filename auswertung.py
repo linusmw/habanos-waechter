@@ -2,6 +2,11 @@
 """
 Auswertung des Verlaufs (verlauf.csv): Wann füllen die Shops nach, wie lange hält die Ware?
 
+Zusätzlich fließen historische Fundmeldungen aus historie.csv in die Zeitmuster ein
+(Spalten: zeit_utc; zeit_berlin; wochentag; stunde; shop; artikel). Sie zählen nur bei
+Wochentag/Tageszeit und den meistgefundenen Zigarren, nicht bei Wareneingängen oder
+Haltbarkeit, weil dafür der genaue Lagerstand fehlt.
+
 Aufruf:
   python auswertung.py                 Bericht auf dem Bildschirm
   python auswertung.py -o auswertung.md  Bericht als Markdown-Datei
@@ -22,12 +27,29 @@ from datetime import datetime
 from pathlib import Path
 
 LOG_FILE = Path(__file__).with_name("verlauf.csv")
+HIST_FILE = Path(__file__).with_name("historie.csv")
 WOCHENTAGE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
 TAGESZEITEN = [("Nacht", 0, 6), ("Morgen", 6, 10), ("Vormittag", 10, 12),
                ("Mittag", 12, 14), ("Nachmittag", 14, 18), ("Abend", 18, 24)]
 ZUGANG = {"wieder_da", "neu", "neu_oder_wieder"}
 WELLE_MIN = 3          # ab so vielen gleichzeitigen Zugängen gilt es als Wareneingang
 MIN_DATEN = 5          # darunter keine Muster-Aussagen
+
+
+def lade_historie(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f, delimiter=";"))
+    for r in rows:
+        r["stunde"] = int(r.get("stunde") or 0)
+        r["ereignis"] = "historisch"
+    return rows
+
+
+def artikel_liste(r: dict) -> list[str]:
+    return [a.strip() for a in (r.get("artikel") or "").split(" + ")
+            if a.strip() and a.strip() != "(Sortiment)"]
 
 
 def lade(path: Path) -> list[dict]:
@@ -102,11 +124,15 @@ def naechster_eingang(wellen: list[dict]) -> str | None:
     return f"{WOCHENTAGE[naechst.weekday()]} {naechst:%d.%m.}, gegen {stunden} Uhr"
 
 
-def bericht(rows: list[dict]) -> str:
+def bericht(rows: list[dict], historie: list[dict] | None = None) -> str:
     z: list[str] = ["# Auswertung Habanos-Wächter", ""]
-    if not rows:
+    historie = historie or []
+    if not rows and not historie:
         z += ["Noch keine Daten. Der Verlauf füllt sich, sobald sich in einem Shop etwas ändert."]
         return "\n".join(z) + "\n"
+    if not rows:
+        z += ["Der eigene Verlauf ist noch leer; unten stehen die historischen Funde.", ""]
+        return "\n".join(z + historie_abschnitt(historie)) + "\n"
 
     zugang = [r for r in rows if r["ereignis"] in ZUGANG]
     weg = [r for r in rows if r["ereignis"] == "ausverkauft"]
@@ -134,19 +160,23 @@ def bericht(rows: list[dict]) -> str:
     z.append("")
 
     # ---------------------------------------------------------------- Wann wird nachgefüllt?
+    muster = zugang + historie
     z += ["## Wann füllen die Shops nach?", "",
-          "Zugänge (wieder da + neu) nach Wochentag und Tageszeit.", ""]
-    z += [f"**Alle Shops:** {balken(Counter(r['wochentag'] for r in zugang), WOCHENTAGE)}", "",
-          f"{balken(Counter(tageszeit(r['stunde']) for r in zugang), [t[0] for t in TAGESZEITEN])}", ""]
-    for shop in shops:
-        r_zu = [r for r in zugang if r["shop"] == shop]
+          "Zugänge (wieder da + neu) nach Wochentag und Tageszeit"
+          + (f", inklusive {len(historie)} historischer Funde." if historie else "."), ""]
+    z += [f"**Alle Shops:** {balken(Counter(r['wochentag'] for r in muster), WOCHENTAGE)}", "",
+          f"{balken(Counter(tageszeit(r['stunde']) for r in muster), [t[0] for t in TAGESZEITEN])}", ""]
+    for shop in sorted({r["shop"] for r in muster}, key=lambda s: -sum(r["shop"] == s for r in muster)):
+        r_zu = [r for r in muster if r["shop"] == shop]
         if len(r_zu) < MIN_DATEN:
             continue
         tage = Counter(r["wochentag"] for r in r_zu)
         zeit = Counter(tageszeit(r["stunde"]) for r in r_zu)
         top_tag, n_tag = tage.most_common(1)[0]
         top_zeit, n_zeit = zeit.most_common(1)[0]
-        z += [f"### {shop}",
+        n_hist = sum(r["ereignis"] == "historisch" for r in r_zu)
+        quelle = f" ({len(r_zu)} Funde, davon {n_hist} historisch)" if n_hist else f" ({len(r_zu)} Funde)"
+        z += [f"### {shop}{quelle}",
               f"- Wochentage: {balken(tage, WOCHENTAGE)}",
               f"- Tageszeit: {balken(zeit, [t[0] for t in TAGESZEITEN])}",
               f"- Am häufigsten: **{top_tag}** ({n_tag / len(r_zu):.0%}), "
@@ -195,9 +225,40 @@ def bericht(rows: list[dict]) -> str:
             z.append(f"| {artikel} | {shop} | {n} |")
         z.append("")
 
-    z += ["---", "*Erzeugt aus `verlauf.csv`. Zeitpunkte sind auf etwa 30 Minuten genau "
-          "(Prüfintervall des Wächters).*"]
+    if historie:
+        z += historie_abschnitt(historie)
+
+    z += ["---", "*Erzeugt aus `verlauf.csv` und `historie.csv`. Zeitpunkte im eigenen Verlauf "
+          "sind auf etwa 30 Minuten genau (Prüfintervall des Wächters), historische Funde "
+          "geben den Zeitpunkt der Meldung an.*"]
     return "\n".join(z) + "\n"
+
+
+def historie_abschnitt(historie: list[dict]) -> list[str]:
+    z = ["## Historische Funde", "",
+         f"{len(historie)} Fundmeldungen von {historie[0]['zeit_berlin'][:10]} bis "
+         f"{historie[-1]['zeit_berlin'][:10]}.", "",
+         "| Shop | Funde | seit 2026 | zuletzt | typisch |", "|---|---:|---:|---|---|"]
+    je_shop: dict[str, list[dict]] = defaultdict(list)
+    for r in historie:
+        je_shop[r["shop"]].append(r)
+    for shop, rs in sorted(je_shop.items(), key=lambda kv: -len(kv[1])):
+        typisch = "–"
+        if len(rs) >= MIN_DATEN:
+            tag = Counter(r["wochentag"] for r in rs).most_common(1)[0][0]
+            zeit = Counter(tageszeit(r["stunde"]) for r in rs).most_common(1)[0][0]
+            typisch = f"{tag}, {zeit}"
+        z.append(f"| {shop} | {len(rs)} | {sum(r['zeit_utc'] >= '2026' for r in rs)} "
+                 f"| {rs[-1]['zeit_berlin'][:10]} | {typisch} |")
+    z.append("")
+    gefunden = Counter(a for r in historie for a in artikel_liste(r))
+    if gefunden:
+        z += ["Am häufigsten gefunden:", "", "| Zigarre | Funde | Shops |", "|---|---:|---|"]
+        for artikel, n in gefunden.most_common(15):
+            shops = sorted({r["shop"] for r in historie if artikel in artikel_liste(r)})
+            z.append(f"| {artikel} | {n} | {', '.join(shops)} |")
+        z.append("")
+    return z
 
 
 def main() -> None:
@@ -205,7 +266,7 @@ def main() -> None:
     ap.add_argument("-i", "--input", type=Path, default=LOG_FILE, help="Verlaufsdatei")
     ap.add_argument("-o", "--output", type=Path, help="Bericht als Markdown-Datei speichern")
     args = ap.parse_args()
-    text = bericht(lade(args.input))
+    text = bericht(lade(args.input), lade_historie(HIST_FILE))
     if args.output:
         args.output.write_text(text, encoding="utf-8")
         print(f"Bericht gespeichert: {args.output}")

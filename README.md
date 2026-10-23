@@ -101,8 +101,10 @@ Daraus erzeugt jeder Lauf die Datei **`auswertung.md`**, auf GitHub direkt lesba
 - eine **Prognose** für den nächsten Wareneingang, sobald ein Shop regelmäßig liefert
 - wie schnell einzelne Zigarren **wieder vergriffen** sind
 
-Belastbare Muster brauchen Zeit: erste Hinweise nach ein paar Wochen, verlässlich nach
-2–3 Monaten. Zeitpunkte sind auf etwa 30 Minuten genau (Prüfintervall).
+Zusätzlich enthält **`historie.csv`** rund 270 manuell gesammelte Fundmeldungen aus den Jahren
+2023–2026 (Zeitpunkt, Shop, Zigarre). Sie fließen in die Wochentag- und Tageszeitmuster sowie
+die Liste der meistgefundenen Zigarren ein, nicht aber in Wareneingänge oder Haltbarkeit.
+Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall).
 
 ## Lokal ausprobieren
 
