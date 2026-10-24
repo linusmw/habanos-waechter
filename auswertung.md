@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-24 10:30 (deutsche Zeit) · 18 Zugänge · 19× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-24 15:00 (deutsche Zeit) · 18 Zugänge · 20× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 7 | 0 | 5 | 1 | 1 Std. |
-| Casa Benden | 0 | 5 | 4 | 1 | 17 Std. |
+| Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | c-cigars | 2 | 0 | 2 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
@@ -33,15 +33,15 @@ Nacht ▁9  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
-- Am häufigsten: **Sa** (24%), **Abend** (38%)
-
 ### Dalay Zigarren (29 Funde, davon 29 historisch)
 - Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
+
+### Zigarrentraum (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
+- Am häufigsten: **Sa** (24%), **Abend** (38%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -78,15 +78,15 @@ Nacht ▁9  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █96  Abend
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### zigarre.de (7 Funde, davon 7 historisch)
-- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
-- Am häufigsten: **Do** (29%), **Nachmittag** (57%)
-
 ### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Mi** (29%), **Abend** (43%)
+
+### zigarre.de (7 Funde, davon 7 historisch)
+- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
+- Am häufigsten: **Do** (29%), **Nachmittag** (57%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
@@ -121,6 +121,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 19 Std. | 1× |
 | Guantanamera Cristales (Restbestand) | Casa Benden | 19 Std. | 1× |
 | Montecristo 1935 (2 Varianten) | Casa Benden | 19 Std. | 1× |
+| Romeo y Julieta De Oro Hidalgos (Restbestand) | Casa Benden | 35 Std. | 1× |
 
 ## Am häufigsten wieder da
 
