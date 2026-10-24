@@ -75,5 +75,13 @@ jobs:
             echo "Keine Änderungen am Bestand."
           else
             git commit -m "Bestand aktualisiert"
-            git push
+            # Hat ein anderer Lauf inzwischen gespeichert, erst dessen Stand holen.
+            # Bei Konflikten gewinnt dieser (neuere) Lauf.
+            for versuch in 1 2 3; do
+              if git push; then exit 0; fi
+              echo "Push abgelehnt (Versuch $versuch), hole neuen Stand ..."
+              git pull --rebase -X theirs origin main || { git rebase --abort; exit 1; }
+              sleep $((versuch * 5))
+            done
+            exit 1
           fi
