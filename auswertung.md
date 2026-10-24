@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-24 09:30 (deutsche Zeit) · 18 Zugänge · 18× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-24 10:30 (deutsche Zeit) · 18 Zugänge · 19× ausverkauft
 
 ## Überblick je Shop
 
@@ -12,7 +12,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-24 09:30 (deutsche Zeit) · 18 Zugänge �
 | c-cigars | 2 | 0 | 2 | 0 | – |
 | La Galana | 0 | 0 | 1 | 0 | – |
 | Noblego | 0 | 0 | 4 | 0 | – |
-| Tabak-Kontor Leipzig | 0 | 0 | 1 | 0 | – |
+| Tabak-Kontor Leipzig | 0 | 0 | 2 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
