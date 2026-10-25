@@ -533,3 +533,16 @@ def test_wish_prefix_negation_and_pack_numbers():
     assert hit("Bolivar Royal Coronas A/T") == "Bolivar Royal Corona"
     assert hit("Saint Luis Rey Edición Regional Belicosos") is None
     assert hit("Montecristo N°1") == "Montecristo No 1"
+
+
+def test_recheck_fast_shops_stops_before_next_half_hour(monkeypatch):
+    from datetime import datetime, timedelta, timezone
+    t = [datetime(2026, 10, 25, 12, 4, 30, tzinfo=timezone.utc)]
+    calls = []
+    monkeypatch.setattr(w, "run", lambda only=None, dry_run=False: calls.append((t[0].strftime("%H:%M"), tuple(only))))
+    def sleep(sec):
+        t[0] += timedelta(seconds=sec)
+    passes = w.recheck_fast_shops(sleep=sleep, clock=lambda: t[0])
+    assert [c[0] for c in calls] == ["12:05", "12:10", "12:15", "12:20", "12:25"]
+    assert passes == 5 and "wolsdorff" in calls[0][1]
+    assert set(w.FAST_SHOPS) <= {s.id for s in w.SHOPS}

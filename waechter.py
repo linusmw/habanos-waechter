@@ -1279,7 +1279,15 @@ def notify(events: list[Event], shop_names: dict[str, str]) -> None:
 # Hauptprogramm
 # --------------------------------------------------------------------------
 
-def run(dry_run: bool = False) -> int:
+# Shops, deren Ware oft binnen Minuten weg ist und die sich schnell (1–6 Seiten) lesen
+# lassen: Sie werden zwischen den Halbstunden-Läufen zusätzlich alle 5 Minuten geprüft.
+FAST_SHOPS = ["wolsdorff", "casabenden", "brinkmann", "dalay", "starkezigarren",
+              "tabacstore", "ccigars", "lagalana", "herzog"]
+FAST_INTERVAL_MIN = 5
+FAST_STOP_MINUTE = 26     # in jeder halben Stunde: danach startet keine Nachprüfung mehr
+
+
+def run(dry_run: bool = False, only: list[str] | None = None) -> int:
     state = load_state()
     timestamp = now_iso()
     today = timestamp[:10]
@@ -1289,6 +1297,8 @@ def run(dry_run: bool = False) -> int:
     warnings: list[tuple[str, str]] = []
 
     for shop in SHOPS:
+        if only is not None and shop.id not in only:
+            continue
         shop_state = state["shops"].setdefault(shop.id, {"items": {}})
         print(f"== {shop.name}")
         try:
@@ -1357,6 +1367,25 @@ def show_status() -> None:
             print(f"  • {v['name']} {v.get('pack', '')} {v.get('price', '')}".rstrip())
 
 
+def recheck_fast_shops(stop_minute: int = FAST_STOP_MINUTE, interval: int = FAST_INTERVAL_MIN,
+                       sleep=time.sleep, clock=lambda: datetime.now(timezone.utc)) -> int:
+    """Prüft die schnellen Shops bis kurz vor der nächsten halben Stunde alle paar Minuten.
+    So fällt Ware auf, die zwischen zwei Halbstunden-Läufen kommt und wieder geht."""
+    passes = 0
+    while True:
+        now = clock()
+        minute = now.minute % 30 + now.second / 60
+        nxt = (int(minute // interval) + 1) * interval   # nächste volle 5-Minuten-Marke
+        if nxt > stop_minute:
+            break
+        sleep((nxt - minute) * 60)
+        print(f"\n--- Nachprüfung schnelle Shops ({clock().strftime('%H:%M')} UTC) ---")
+        run(only=FAST_SHOPS)
+        passes += 1
+    print(f"{passes} Nachprüfungen erledigt.")
+    return passes
+
+
 def show_wishes() -> None:
     """Wo die Zigarren der Wunschliste gelistet sind und ob sie gerade lieferbar sind."""
     state = load_state()
@@ -1400,6 +1429,8 @@ def main() -> int:
     ap.add_argument("--test-push", action="store_true", help="Test-Benachrichtigung senden")
     ap.add_argument("--status", action="store_true", help="verfügbare Artikel anzeigen")
     ap.add_argument("--wuensche", action="store_true", help="Stand der Wunschliste anzeigen")
+    ap.add_argument("--nachpruefen", action="store_true",
+                    help="danach die schnellen Shops bis kurz vor der nächsten halben Stunde alle 5 Min. prüfen")
     args = ap.parse_args()
     if args.wuensche:
         show_wishes()
@@ -1409,7 +1440,10 @@ def main() -> int:
     if args.status:
         show_status()
         return 0
-    return run(dry_run=args.dry_run)
+    result = run(dry_run=args.dry_run)
+    if args.nachpruefen and not args.dry_run:
+        recheck_fast_shops()
+    return result
 
 
 if __name__ == "__main__":

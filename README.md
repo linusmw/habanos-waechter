@@ -77,6 +77,11 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
 
 ## Gut zu wissen
 
+- **Schnelle Shops alle 5 Minuten:** Nach jedem Halbstunden-Lauf prüft der Wächter Wolsdorff,
+  Casa Benden, Brinkmann, Dalay, StarkeZigarren, Tabacstore, c-cigars, La Galana und Zigarren
+  Herzog bis kurz vor der nächsten halben Stunde zusätzlich alle 5 Minuten. Dort ist Ware oft
+  binnen Minuten wieder weg.
+
 - **Erster Lauf je Shop = Ausgangsbestand.** Alarme gibt es erst für Änderungen danach.
 - **Ausfälle:** Ist ein Shop 6 Läufe in Folge (3 Stunden) nicht lesbar (Seite umgebaut, Blockade),
   bekommst du eine Warnung und eine Entwarnung, sobald es wieder klappt. Fehlerhafte Läufe
