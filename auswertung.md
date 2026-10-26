@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-26 12:45 (deutsche Zeit) · 20 Zugänge · 40× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-26 17:30 (deutsche Zeit) · 21 Zugänge · 40× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,8 +9,8 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-26 12:45 (deutsche Zeit) · 20 Zugänge �
 | Wolsdorff | 7 | 0 | 8 | 1 | 10 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
+| Tabak-Kontor Leipzig | 2 | 0 | 4 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 3 | 0 | – |
-| Tabak-Kontor Leipzig | 1 | 0 | 4 | 0 | 8 Std. |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Cigarrenversand24 | 0 | 0 | 3 | 0 | – |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
@@ -23,9 +23,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-26 12:45 (deutsche Zeit) · 20 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃28  Di ▄37  Mi ▅46  Do ▇68  Fr █79  Sa ▃26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▄37  Mi ▅46  Do ▇68  Fr █79  Sa ▃26  So ▁9
 
-Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █97  Abend ▇86
+Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █98  Abend ▇86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -134,6 +134,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 
 | Artikel | Shop | Mal |
 |---|---|---:|
+| Trinidad Media Luna | Tabak-Kontor Leipzig | 2 |
 | H. Upmann Half Corona | Wolsdorff | 1 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 |
 | Jose L. Piedra Brevas | Wolsdorff | 1 |
@@ -144,7 +145,6 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Open Club Zigarillos 20 Stück | c-cigars | 1 |
 | Montecristo Joyitas | c-cigars | 1 |
 | Cohiba Medio Siglo | zigarre.de | 1 |
-| Trinidad Media Luna | Tabak-Kontor Leipzig | 1 |
 
 ## Historische Funde
 
