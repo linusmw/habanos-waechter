@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-26 20:10 (deutsche Zeit) · 21 Zugänge · 41× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-26 21:45 (deutsche Zeit) · 21 Zugänge · 42× ausverkauft
 
 ## Überblick je Shop
 
@@ -17,6 +17,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-26 20:10 (deutsche Zeit) · 21 Zugänge �
 | La Galana | 0 | 0 | 3 | 0 | – |
 | Noblego | 0 | 0 | 4 | 0 | – |
 | StarkeZigarren | 0 | 0 | 3 | 0 | – |
+| Zigarren Herzog | 0 | 0 | 1 | 0 | – |
 | Zigarrentraum | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
