@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-26 11:10 (deutsche Zeit) · 20 Zugänge · 38× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-26 12:45 (deutsche Zeit) · 20 Zugänge · 40× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 7 | 0 | 6 | 1 | 1 Std. |
+| Wolsdorff | 7 | 0 | 8 | 1 | 10 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | c-cigars | 2 | 0 | 3 | 0 | – |
@@ -128,6 +128,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Guantanamera Cristales (Restbestand) | Casa Benden | 19 Std. | 1× |
 | Montecristo 1935 (2 Varianten) | Casa Benden | 19 Std. | 1× |
 | Romeo y Julieta De Oro Hidalgos (Restbestand) | Casa Benden | 35 Std. | 1× |
+| H. Upmann Half Corona | Wolsdorff | 3,0 Tage | 1× |
 
 ## Am häufigsten wieder da
 
