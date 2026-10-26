@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-26 17:30 (deutsche Zeit) · 21 Zugänge · 40× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-26 20:10 (deutsche Zeit) · 21 Zugänge · 41× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 7 | 0 | 8 | 1 | 10 Std. |
+| Wolsdorff | 7 | 0 | 9 | 1 | 19 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Tabak-Kontor Leipzig | 2 | 0 | 4 | 0 | 8 Std. |
@@ -37,15 +37,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █98  Aben
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
-- Am häufigsten: **Sa** (24%), **Abend** (38%)
-
 ### Dalay Zigarren (29 Funde, davon 29 historisch)
 - Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
+
+### Zigarrentraum (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
+- Am häufigsten: **Sa** (24%), **Abend** (38%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -129,6 +129,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo 1935 (2 Varianten) | Casa Benden | 19 Std. | 1× |
 | Romeo y Julieta De Oro Hidalgos (Restbestand) | Casa Benden | 35 Std. | 1× |
 | H. Upmann Half Corona | Wolsdorff | 3,0 Tage | 1× |
+| Jose L. Piedra Petit Caballeros | Wolsdorff | 3,3 Tage | 1× |
 
 ## Am häufigsten wieder da
 
