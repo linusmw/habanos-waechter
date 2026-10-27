@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-27 09:20 (deutsche Zeit) · 21 Zugänge · 44× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-27 10:40 (deutsche Zeit) · 21 Zugänge · 46× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,12 +9,12 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-27 09:20 (deutsche Zeit) · 21 Zugänge �
 | Wolsdorff | 7 | 0 | 9 | 1 | 19 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
-| Tabak-Kontor Leipzig | 2 | 0 | 5 | 0 | 8 Std. |
+| Tabak-Kontor Leipzig | 2 | 0 | 6 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Cigarrenversand24 | 0 | 0 | 3 | 0 | – |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
-| La Galana | 0 | 0 | 3 | 0 | – |
+| La Galana | 0 | 0 | 4 | 0 | – |
 | Noblego | 0 | 0 | 4 | 0 | – |
 | StarkeZigarren | 0 | 0 | 3 | 0 | – |
 | Zigarren Herzog | 0 | 0 | 1 | 0 | – |
