@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-27 01:00 (deutsche Zeit) · 21 Zugänge · 43× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-27 01:22 (deutsche Zeit) · 21 Zugänge · 43× ausverkauft
 
 ## Überblick je Shop
 
