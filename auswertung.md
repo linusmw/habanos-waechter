@@ -38,15 +38,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █100  Abe
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Zigarrentraum (29 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
 - Am häufigsten: **Sa** (24%), **Abend** (38%)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -98,15 +98,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █100  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Fr** (33%), **Nachmittag** (67%)
 
-### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
-- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
-- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
-- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
-
 ### Cigarrenversand24 (5 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
 - Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
 - Am häufigsten: **Do** (40%), **Abend** (40%)
+
+### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
+- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
+- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
+- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
 
 ### Zigarren Herzog (5 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▄1  Mi  0  Do █2  Fr █2  Sa  0  So  0
