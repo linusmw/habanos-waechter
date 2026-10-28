@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-28 13:30 (deutsche Zeit) · 24 Zugänge · 54× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-28 18:00 (deutsche Zeit) · 24 Zugänge · 57× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,7 +9,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-28 13:30 (deutsche Zeit) · 24 Zugänge �
 | Wolsdorff | 7 | 0 | 10 | 1 | 19 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
-| Tabak-Kontor Leipzig | 3 | 0 | 7 | 0 | 8 Std. |
+| Tabak-Kontor Leipzig | 3 | 0 | 10 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
 | Zigarren Herzog | 1 | 0 | 3 | 0 | – |
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
@@ -132,7 +132,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 |---|---|---|---:|
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 1× |
-| Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 2× |
+| Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
 | Cohiba Medio Siglo | zigarre.de | 10 Std. | 1× |
 | Cohiba Panetelas (Restbestand) | Casa Benden | 14 Std. | 1× |
