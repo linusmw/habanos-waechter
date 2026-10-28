@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-28 18:00 (deutsche Zeit) · 24 Zugänge · 57× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-28 19:50 (deutsche Zeit) · 24 Zugänge · 58× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 7 | 0 | 10 | 1 | 19 Std. |
+| Wolsdorff | 7 | 0 | 11 | 1 | 45 Std. |
 | Casa Benden | 0 | 5 | 5 | 1 | 19 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Tabak-Kontor Leipzig | 3 | 0 | 10 | 0 | 8 Std. |
@@ -99,20 +99,20 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃39  Nachmittag █100  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Fr** (33%), **Nachmittag** (67%)
 
-### Zigarren Herzog (5 Funde, davon 4 historisch)
-- Wochentage: Mo  0  Di ▄1  Mi  0  Do █2  Fr █2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▂1
-- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
+### Cigarrenversand24 (5 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
+- Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
+- Am häufigsten: **Do** (40%), **Abend** (40%)
 
 ### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
 - Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
 - Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
 - Am häufigsten: **Di** (40%), **Nachmittag** (60%)
 
-### Cigarrenversand24 (5 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
-- Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
-- Am häufigsten: **Do** (40%), **Abend** (40%)
+### Zigarren Herzog (5 Funde, davon 4 historisch)
+- Wochentage: Mo  0  Di ▄1  Mi  0  Do █2  Fr █2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▂1
+- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
 
 ## Letzte Wareneingänge
 
