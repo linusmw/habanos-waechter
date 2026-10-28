@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-28 08:30 (deutsche Zeit) · 23 Zugänge · 48× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-28 12:00 (deutsche Zeit) · 24 Zugänge · 48× ausverkauft
 
 ## Überblick je Shop
 
@@ -12,6 +12,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-28 08:30 (deutsche Zeit) · 23 Zugänge �
 | Tabak-Kontor Leipzig | 3 | 0 | 7 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
 | Zigarren Herzog | 1 | 0 | 1 | 0 | – |
+| Zigarrentraum | 1 | 0 | 1 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Cigarrenversand24 | 0 | 0 | 3 | 0 | – |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
@@ -19,15 +20,14 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-28 08:30 (deutsche Zeit) · 23 Zugänge �
 | Noblego | 0 | 0 | 4 | 0 | – |
 | Pipe House | 0 | 0 | 1 | 0 | – |
 | StarkeZigarren | 0 | 0 | 3 | 0 | – |
-| Zigarrentraum | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅46  Do ▇68  Fr █79  Sa ▃26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do ▇68  Fr █79  Sa ▃26  So ▁9
 
-Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █100  Abend ▇86
+Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃39  Nachmittag █100  Abend ▇86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -39,10 +39,10 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █100  Abe
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █7  Mi ▇6  Do ▆5  Fr ▁1  Sa █7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▂3  Nachmittag ▇9  Abend █11
-- Am häufigsten: **Sa** (24%), **Abend** (38%)
+### Zigarrentraum (30 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █7  Mi █7  Do ▆5  Fr ▁1  Sa █7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇9  Abend █11
+- Am häufigsten: **Mi** (23%), **Abend** (37%)
 
 ### Dalay Zigarren (29 Funde, davon 29 historisch)
 - Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
@@ -104,15 +104,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃38  Nachmittag █100  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▂1
 - Am häufigsten: **Do** (40%), **Nachmittag** (80%)
 
-### Cigarrenversand24 (5 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
-- Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
-- Am häufigsten: **Do** (40%), **Abend** (40%)
-
 ### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
 - Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
 - Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
 - Am häufigsten: **Di** (40%), **Nachmittag** (60%)
+
+### Cigarrenversand24 (5 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
+- Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
+- Am häufigsten: **Do** (40%), **Abend** (40%)
 
 ## Letzte Wareneingänge
 
@@ -159,6 +159,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Joyitas | c-cigars | 1 |
 | Cohiba Medio Siglo | zigarre.de | 1 |
 | Guantanamera Minutos | Zigarren Herzog | 1 |
+| Quai D’orsay No.50 | Zigarrentraum | 1 |
 
 ## Historische Funde
 
