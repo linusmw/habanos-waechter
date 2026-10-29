@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-29 15:30 (deutsche Zeit) · 29 Zugänge · 62× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-29 16:20 (deutsche Zeit) · 31 Zugänge · 62× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,12 +11,12 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-29 15:30 (deutsche Zeit) · 29 Zugänge �
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
 | Tabak-Kontor Leipzig | 3 | 0 | 11 | 0 | 8 Std. |
+| La Galana | 2 | 0 | 4 | 0 | – |
 | c-cigars | 2 | 0 | 4 | 0 | – |
 | Zigarren Herzog | 1 | 0 | 5 | 0 | 47 Std. |
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
-| La Galana | 0 | 0 | 4 | 0 | – |
 | Noblego | 0 | 0 | 5 | 0 | – |
 | Pipe House | 0 | 0 | 1 | 0 | – |
 | StarkeZigarren | 0 | 0 | 3 | 0 | – |
@@ -25,9 +25,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-29 15:30 (deutsche Zeit) · 29 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do ▇73  Fr █79  Sa ▃26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do █75  Fr █79  Sa ▃26  So ▁9
 
-Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃43  Nachmittag █101  Abend ▇86
+Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃43  Nachmittag █103  Abend ▇86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -49,15 +49,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃43  Nachmittag █101  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Tabacstore (18 Funde, davon 18 historisch)
-- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
-- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
-
 ### Wolsdorff (18 Funde, davon 10 historisch)
 - Wochentage: Mo  0  Di  0  Mi ▁1  Do ▂3  Fr █13  Sa ▁1  So  0
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag ▂3  Nachmittag █10  Abend ▁1
 - Am häufigsten: **Fr** (72%), **Nachmittag** (56%)
+
+### Tabacstore (18 Funde, davon 18 historisch)
+- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
+- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
 ### c-cigars (15 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr █7  Sa  0  So  0
@@ -104,15 +104,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃43  Nachmittag █101  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Fr** (33%), **Nachmittag** (67%)
 
-### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
-- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
-- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
-- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
-
 ### Zigarren Herzog (5 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▄1  Mi  0  Do █2  Fr █2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▂1
 - Am häufigsten: **Do** (40%), **Nachmittag** (80%)
+
+### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
+- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
+- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
+- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
 
 ## Letzte Wareneingänge
 
