@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-28 19:50 (deutsche Zeit) · 24 Zugänge · 58× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-29 09:20 (deutsche Zeit) · 24 Zugänge · 59× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,7 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-28 19:50 (deutsche Zeit) · 24 Zugänge �
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Tabak-Kontor Leipzig | 3 | 0 | 10 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
-| Zigarren Herzog | 1 | 0 | 3 | 0 | – |
+| Zigarren Herzog | 1 | 0 | 4 | 0 | – |
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Cigarrenversand24 | 0 | 0 | 5 | 0 | – |
@@ -104,15 +104,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃39  Nachmittag █100  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▂1
 - Am häufigsten: **Do** (40%), **Nachmittag** (80%)
 
-### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
-- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
-- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
-- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
-
 ### Cigarrenversand24 (5 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
 - Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
 - Am häufigsten: **Do** (40%), **Abend** (40%)
+
+### Tabak-Kontor Leipzig (5 Funde, davon 2 historisch)
+- Wochentage: Mo ▄1  Di █2  Mi  0  Do ▄1  Fr  0  Sa  0  So ▄1
+- Tageszeit: Nacht ▃1  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend  0
+- Am häufigsten: **Di** (40%), **Nachmittag** (60%)
 
 ## Letzte Wareneingänge
 
