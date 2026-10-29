@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-29 21:30 (deutsche Zeit) · 34 Zugänge · 63× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-29 22:30 (deutsche Zeit) · 34 Zugänge · 64× ausverkauft
 
 ## Überblick je Shop
 
@@ -17,7 +17,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-29 21:30 (deutsche Zeit) · 34 Zugänge �
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
-| Noblego | 0 | 0 | 5 | 0 | – |
+| Noblego | 0 | 0 | 6 | 0 | – |
 | Pipe House | 0 | 0 | 1 | 0 | – |
 | StarkeZigarren | 0 | 0 | 3 | 0 | – |
 
@@ -94,15 +94,15 @@ Nacht ▁10  Morgen ▂29  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
 - Am häufigsten: **Do** (62%), **Mittag** (38%)
 
-### Zigarren Herzog (7 Funde, davon 4 historisch)
-- Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █6  Abend ▁1
-- Am häufigsten: **Do** (57%), **Nachmittag** (86%)
-
 ### Nobbis Tabakwelt (7 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di █2  Mi █2  Do  0  Fr  0  Sa █2  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Mi** (29%), **Abend** (43%)
+
+### Zigarren Herzog (7 Funde, davon 4 historisch)
+- Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █6  Abend ▁1
+- Am häufigsten: **Do** (57%), **Nachmittag** (86%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
