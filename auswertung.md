@@ -1,20 +1,20 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-29 12:20 (deutsche Zeit) · 25 Zugänge · 59× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-29 13:00 (deutsche Zeit) · 28 Zugänge · 61× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 7 | 0 | 11 | 1 | 45 Std. |
-| Casa Benden | 1 | 5 | 5 | 1 | 19 Std. |
+| Casa Benden | 1 | 5 | 6 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
+| Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
 | Tabak-Kontor Leipzig | 3 | 0 | 10 | 0 | 8 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
-| Zigarren Herzog | 1 | 0 | 4 | 0 | – |
+| Zigarren Herzog | 1 | 0 | 5 | 0 | 47 Std. |
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
 | zigarre.de | 1 | 0 | 1 | 0 | 10 Std. |
-| Cigarrenversand24 | 0 | 0 | 5 | 0 | – |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
 | La Galana | 0 | 0 | 4 | 0 | – |
 | Noblego | 0 | 0 | 5 | 0 | – |
@@ -25,9 +25,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-29 12:20 (deutsche Zeit) · 25 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do ▇69  Fr █79  Sa ▃26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do ▇72  Fr █79  Sa ▃26  So ▁9
 
-Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃40  Nachmittag █100  Abend ▇86
+Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃43  Nachmittag █100  Abend ▇86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -84,6 +84,11 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃40  Nachmittag █100  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
+### Cigarrenversand24 (8 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
+- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
+- Am häufigsten: **Do** (62%), **Mittag** (38%)
+
 ### zigarre.de (8 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
 - Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
@@ -98,11 +103,6 @@ Nacht ▁10  Morgen ▂29  Vormittag ▃33  Mittag ▃40  Nachmittag █100  Abe
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Fr** (33%), **Nachmittag** (67%)
-
-### Cigarrenversand24 (5 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di  0  Mi  0  Do █2  Fr ▄1  Sa ▄1  So ▄1
-- Tageszeit: Nacht  0  Morgen ▄1  Vormittag ▄1  Mittag  0  Nachmittag ▄1  Abend █2
-- Am häufigsten: **Do** (40%), **Abend** (40%)
 
 ### Zigarren Herzog (5 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▄1  Mi  0  Do █2  Fr █2  Sa  0  So  0
@@ -120,6 +120,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Do 2026-10-29 13:00 | Cigarrenversand24 | 3 | CV24-PRIME-Selection-Sampler "Surprise No. FOUR" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. THREE" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. TWO" - jeweils nur 1x so verfügbar! |
 | Sa 2026-10-24 05:30 | Dominique London | 3 | Montecristo Joyitas - Single Cigar, Montecristo No. 5 - Single Cigar, Trinidad Media Luna - Single Cigar |
 | Fr 2026-10-23 14:30 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Epicure No. 2, Jose L. Piedra Brevas … |
 | Do 2026-10-22 19:24 | Casa Benden | 4 | Cohiba Panetelas, Guantanamera Cristales, Montecristo 1935 … |
@@ -134,14 +135,14 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 1× |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
+| Guantanamera Cristales (Restbestand) | Casa Benden | 10 Std. | 2× |
 | Cohiba Medio Siglo | zigarre.de | 10 Std. | 1× |
 | Cohiba Panetelas (Restbestand) | Casa Benden | 14 Std. | 1× |
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 19 Std. | 1× |
-| Guantanamera Cristales (Restbestand) | Casa Benden | 19 Std. | 1× |
 | Montecristo 1935 (2 Varianten) | Casa Benden | 19 Std. | 1× |
 | Romeo y Julieta De Oro Hidalgos (Restbestand) | Casa Benden | 35 Std. | 1× |
+| Guantanamera Minutos (20er Kiste) | Zigarren Herzog | 47 Std. | 1× |
 | H. Upmann Half Corona | Wolsdorff | 3,0 Tage | 1× |
-| Jose L. Piedra Petit Caballeros | Wolsdorff | 3,3 Tage | 1× |
 
 ## Am häufigsten wieder da
 
