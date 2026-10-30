@@ -75,15 +75,15 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
 
-### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
-- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
-- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
-- Am häufigsten: **Fr** (30%), **Morgen** (30%)
-
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
+
+### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
+- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
+- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
+- Am häufigsten: **Fr** (30%), **Morgen** (30%)
 
 ### Noblego (9 Funde, davon 9 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
@@ -225,21 +225,21 @@ Am häufigsten gefunden:
 
 ## Wann kommen Neuheiten online?
 
-Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (454 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
+Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (455 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
 
-**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █89  Sa ▄47  So ▁7
+**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █90  Sa ▄47  So ▁7
 
-Nacht ▁16  Morgen ▅86  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
+Nacht ▁16  Morgen ▅87  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
 
 ### Zigarrentraum (174 Neuheiten)
 - Wochentage: Mo ▅29  Di █43  Mi ▅28  Do ▆31  Fr ▅28  Sa ▃14  So  1
 - Tageszeit: Nacht  0  Morgen ▇49  Vormittag ▆37  Mittag ▄29  Nachmittag █53  Abend ▁6
 - Am häufigsten: **Di** (25%), **Nachmittag** (30%)
 
-### Nobbis Tabakwelt (131 Neuheiten)
-- Wochentage: Mo █28  Di ▃12  Mi ▅18  Do █29  Fr █29  Sa ▃11  So ▁4
-- Tageszeit: Nacht ▄15  Morgen █32  Vormittag ▆24  Mittag ▄16  Nachmittag █30  Abend ▄14
-- Am häufigsten: **Fr** (22%), **Morgen** (24%)
+### Nobbis Tabakwelt (132 Neuheiten)
+- Wochentage: Mo ▇28  Di ▃12  Mi ▅18  Do █29  Fr █30  Sa ▃11  So ▁4
+- Tageszeit: Nacht ▄15  Morgen █33  Vormittag ▆24  Mittag ▄16  Nachmittag ▇30  Abend ▃14
+- Am häufigsten: **Fr** (23%), **Morgen** (25%)
 
 ### La Galana (70 Neuheiten)
 - Wochentage: Mo ▂5  Di ▅12  Mi ▆14  Do ▄9  Fr █19  Sa ▅11  So  0
@@ -270,6 +270,7 @@ Zuletzt neu angelegt:
 |---|---|---|
 | Fr 2026-10-16 15:14 | Zigarrentraum | Cohiba Maduro 5 Genios |
 | Do 2026-09-17 10:53 | Zigarrentraum | Sancho Panza Belicoso |
+| Fr 2026-09-11 07:30 | Nobbis Tabakwelt | Romeo y Julieta Petit Corona |
 | Di 2026-09-01 11:07 | Zigarrentraum | Por Larrañaga 35 Aniversario Edición Regional 2024 |
 | Mo 2026-08-31 09:33 | Pipe House | Por Larranaga 35 Aniversario Edición Regional 2024 |
 | Do 2026-08-27 11:20 | Zigarrentraum | Trinidad Villa |
@@ -282,7 +283,6 @@ Zuletzt neu angelegt:
 | Mi 2026-05-27 20:34 | c-cigars | Romeo y Julieta Short Churchill Cosecha Reserva |
 | Do 2026-05-07 14:06 | Zigarrentraum | Diplomáticos Cancilleres |
 | Di 2026-05-05 15:05 | c-cigars | Partagas Year Of The Cedros Year of the Snake |
-| Di 2026-05-05 11:16 | Zigarrentraum | Romeo y Julieta Reserva Short Churchills (Cosecha 2019) |
 
 ---
 *Erzeugt aus `verlauf.csv`, `historie.csv` und `neuheiten.csv`. Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall des Wächters), historische Funde geben den Zeitpunkt der Meldung an.*
