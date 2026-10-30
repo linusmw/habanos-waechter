@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-30 12:55 (deutsche Zeit) · 44 Zugänge · 67× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-30 13:20 (deutsche Zeit) · 46 Zugänge · 69× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 15 | 0 | 11 | 2 | 45 Std. |
+| Wolsdorff | 17 | 0 | 13 | 2 | 20 Std. |
 | Casa Benden | 1 | 5 | 6 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-30 12:55 (deutsche Zeit) · 44 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃29  Di ▄39  Mi ▄47  Do ▇78  Fr █89  Sa ▂26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▃39  Mi ▄47  Do ▇78  Fr █91  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄50  Nachmittag █106  Abend ▆86
+Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄52  Nachmittag █106  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -50,10 +50,10 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄50  Nachmittag █106  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Wolsdorff (25 Funde, davon 10 historisch)
-- Wochentage: Mo  0  Di  0  Mi  1  Do ▁3  Fr █20  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag █10  Nachmittag █10  Abend ▁1
-- Am häufigsten: **Fr** (80%), **Nachmittag** (40%)
+### Wolsdorff (27 Funde, davon 10 historisch)
+- Wochentage: Mo  0  Di  0  Mi  1  Do ▁3  Fr █22  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag █12  Nachmittag ▇10  Abend ▁1
+- Am häufigsten: **Fr** (81%), **Mittag** (44%)
 - Wareneingänge im Schnitt alle **7,0 Tage** (zuletzt 2026-10-30 12:55)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
@@ -76,30 +76,30 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄50  Nachmittag █106  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
 
-### Pipe House (10 Funde, davon 10 historisch)
-- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
-- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
-- Am häufigsten: **Di** (30%), **Abend** (40%)
-
 ### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
 - Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Fr** (30%), **Morgen** (30%)
+
+### Pipe House (10 Funde, davon 10 historisch)
+- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
+- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
+- Am häufigsten: **Di** (30%), **Abend** (40%)
 
 ### Noblego (9 Funde, davon 9 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### Cigarrenversand24 (8 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
-- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
-- Am häufigsten: **Do** (62%), **Mittag** (38%)
-
 ### zigarre.de (8 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
 - Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Do** (25%), **Nachmittag** (50%)
+
+### Cigarrenversand24 (8 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
+- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
+- Am häufigsten: **Do** (62%), **Mittag** (38%)
 
 ### Zigarren Herzog (7 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
@@ -135,6 +135,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 
 | Artikel | Shop | weg nach (Median) | beobachtet |
 |---|---|---|---:|
+| Ramon Allones No.3 1’S | Wolsdorff | unter 1 Std. | 1× |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 1× |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
@@ -144,18 +145,17 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Cohiba Panetelas (Restbestand) | Casa Benden | 14 Std. | 1× |
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 19 Std. | 1× |
 | Montecristo 1935 (2 Varianten) | Casa Benden | 19 Std. | 1× |
+| Ramon Allones Small Club Coronas 1'S | Wolsdorff | 22 Std. | 1× |
 | Romeo y Julieta De Oro Hidalgos (Restbestand) | Casa Benden | 35 Std. | 1× |
-| Guantanamera Minutos (20er Kiste) | Zigarren Herzog | 47 Std. | 1× |
-| H. Upmann Half Corona | Wolsdorff | 3,0 Tage | 1× |
 
 ## Am häufigsten wieder da
 
 | Artikel | Shop | Mal |
 |---|---|---:|
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 3 |
+| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
 | H. Upmann Half Corona | Wolsdorff | 1 |
-| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 |
 | Jose L. Piedra Brevas | Wolsdorff | 1 |
 | Jose L. Piedra Petit Caballeros | Wolsdorff | 1 |
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 1 |
