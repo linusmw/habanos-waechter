@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-30 11:10 (deutsche Zeit) · 37 Zugänge · 66× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-30 12:55 (deutsche Zeit) · 44 Zugänge · 67× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 8 | 0 | 11 | 1 | 45 Std. |
+| Wolsdorff | 15 | 0 | 11 | 2 | 45 Std. |
 | Casa Benden | 1 | 5 | 6 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
@@ -20,15 +20,15 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-30 11:10 (deutsche Zeit) · 37 Zugänge �
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
 | Noblego | 0 | 0 | 6 | 0 | – |
 | Pipe House | 0 | 0 | 1 | 0 | – |
-| StarkeZigarren | 0 | 0 | 4 | 0 | – |
+| StarkeZigarren | 0 | 0 | 5 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃29  Di ▄39  Mi ▅47  Do █78  Fr █82  Sa ▃26  So ▁9
+**Alle Shops:** Mo ▃29  Di ▄39  Mi ▄47  Do ▇78  Fr █89  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abend ▆86
+Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄50  Nachmittag █106  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -50,15 +50,16 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
+### Wolsdorff (25 Funde, davon 10 historisch)
+- Wochentage: Mo  0  Di  0  Mi  1  Do ▁3  Fr █20  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag █10  Nachmittag █10  Abend ▁1
+- Am häufigsten: **Fr** (80%), **Nachmittag** (40%)
+- Wareneingänge im Schnitt alle **7,0 Tage** (zuletzt 2026-10-30 12:55)
+
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
-
-### Wolsdorff (18 Funde, davon 10 historisch)
-- Wochentage: Mo  0  Di  0  Mi ▁1  Do ▂3  Fr █13  Sa ▁1  So  0
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag ▂2  Mittag ▂3  Nachmittag █10  Abend ▁1
-- Am häufigsten: **Fr** (72%), **Nachmittag** (56%)
 
 ### c-cigars (15 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr █7  Sa  0  So  0
@@ -75,15 +76,15 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
 
-### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
-- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
-- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
-- Am häufigsten: **Fr** (30%), **Morgen** (30%)
-
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
+
+### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
+- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
+- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
+- Am häufigsten: **Fr** (30%), **Morgen** (30%)
 
 ### Noblego (9 Funde, davon 9 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
@@ -121,6 +122,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Fr 2026-10-30 12:55 | Wolsdorff | 7 | Montecristo No 2 Single 1'S, Partagas Mille Fleurs 1'S, Partagas Serie D No. 4 … |
 | Fr 2026-10-30 08:00 | Nobbis Tabakwelt | 3 | Hoyo de Monterrey Palmas Extra, Romeo Y Julieta Sport Largos, Romeo y Julieta Petit Corona |
 | Do 2026-10-29 13:00 | Cigarrenversand24 | 3 | CV24-PRIME-Selection-Sampler "Surprise No. FOUR" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. THREE" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. TWO" - jeweils nur 1x so verfügbar! |
 | Sa 2026-10-24 05:30 | Dominique London | 3 | Montecristo Joyitas - Single Cigar, Montecristo No. 5 - Single Cigar, Trinidad Media Luna - Single Cigar |
