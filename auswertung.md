@@ -91,11 +91,6 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▄52  Nachmittag █110  Abe
 - Tageszeit: Nacht ▁1  Morgen  0  Vormittag  0  Mittag ▁1  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (44%), **Nachmittag** (78%)
 
-### Noblego (9 Funde, davon 9 historisch)
-- Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
-- Am häufigsten: **Do** (33%), **Abend** (56%)
-
 ### Cigarrenversand24 (8 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
 - Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
