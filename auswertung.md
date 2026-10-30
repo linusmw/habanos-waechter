@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-30 08:00 (deutsche Zeit) · 37 Zugänge · 65× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-30 11:10 (deutsche Zeit) · 37 Zugänge · 66× ausverkauft
 
 ## Überblick je Shop
 
@@ -20,7 +20,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-30 08:00 (deutsche Zeit) · 37 Zugänge �
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
 | Noblego | 0 | 0 | 6 | 0 | – |
 | Pipe House | 0 | 0 | 1 | 0 | – |
-| StarkeZigarren | 0 | 0 | 3 | 0 | – |
+| StarkeZigarren | 0 | 0 | 4 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
@@ -90,15 +90,15 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### Cigarrenversand24 (8 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
-- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
-- Am häufigsten: **Do** (62%), **Mittag** (38%)
-
 ### zigarre.de (8 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
 - Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Do** (25%), **Nachmittag** (50%)
+
+### Cigarrenversand24 (8 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
+- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
+- Am häufigsten: **Do** (62%), **Mittag** (38%)
 
 ### Zigarren Herzog (7 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
