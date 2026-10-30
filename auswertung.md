@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-10-29 22:30 (deutsche Zeit) · 34 Zugänge · 64× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-10-30 03:00 (deutsche Zeit) · 34 Zugänge · 65× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,7 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-10-29 22:30 (deutsche Zeit) · 34 Zugänge �
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
 | La Galana | 3 | 0 | 4 | 0 | – |
-| Tabak-Kontor Leipzig | 3 | 0 | 12 | 0 | 8 Std. |
+| Tabak-Kontor Leipzig | 3 | 0 | 13 | 0 | 8 Std. |
 | Zigarren Herzog | 3 | 0 | 5 | 0 | 47 Std. |
 | c-cigars | 2 | 0 | 4 | 0 | – |
 | Zigarrentraum | 1 | 0 | 1 | 0 | – |
