@@ -75,15 +75,15 @@ Nacht ▁10  Morgen ▂32  Vormittag ▂33  Mittag ▃43  Nachmittag █106  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
 
-### Pipe House (10 Funde, davon 10 historisch)
-- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
-- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
-- Am häufigsten: **Di** (30%), **Abend** (40%)
-
 ### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
 - Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Fr** (30%), **Morgen** (30%)
+
+### Pipe House (10 Funde, davon 10 historisch)
+- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
+- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
+- Am häufigsten: **Di** (30%), **Abend** (40%)
 
 ### Noblego (9 Funde, davon 9 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
