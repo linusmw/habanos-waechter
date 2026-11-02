@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-02 09:40 (deutsche Zeit) · 57 Zugänge · 83× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-02 11:10 (deutsche Zeit) · 57 Zugänge · 86× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 24 | 0 | 21 | 3 | 9 Std. |
+| Wolsdorff | 24 | 0 | 24 | 3 | 9 Std. |
 | Tabak-Kontor Leipzig | 7 | 0 | 15 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
@@ -76,35 +76,35 @@ Nacht ▁10  Morgen ▃39  Vormittag ▂33  Mittag ▄52  Nachmittag █110  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
 
-### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
-- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
-- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
-- Am häufigsten: **Fr** (30%), **Morgen** (30%)
-
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
 
-### Tabak-Kontor Leipzig (9 Funde, davon 2 historisch)
-- Wochentage: Mo ▂1  Di ▄2  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen  0  Vormittag  0  Mittag ▁1  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (44%), **Nachmittag** (78%)
+### Nobbis Tabakwelt (10 Funde, davon 7 historisch)
+- Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
+- Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
+- Am häufigsten: **Fr** (30%), **Morgen** (30%)
 
 ### Noblego (9 Funde, davon 9 historisch)
 - Wochentage: Mo ▃1  Di ▅2  Mi ▃1  Do █3  Fr ▃1  Sa ▃1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag ▃2  Abend █5
 - Am häufigsten: **Do** (33%), **Abend** (56%)
 
-### zigarre.de (8 Funde, davon 7 historisch)
-- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
-- Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
-- Am häufigsten: **Do** (25%), **Nachmittag** (50%)
+### Tabak-Kontor Leipzig (9 Funde, davon 2 historisch)
+- Wochentage: Mo ▂1  Di ▄2  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen  0  Vormittag  0  Mittag ▁1  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (44%), **Nachmittag** (78%)
 
 ### Cigarrenversand24 (8 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
 - Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
 - Am häufigsten: **Do** (62%), **Mittag** (38%)
+
+### zigarre.de (8 Funde, davon 7 historisch)
+- Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
+- Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
+- Am häufigsten: **Do** (25%), **Nachmittag** (50%)
 
 ### Zigarren Herzog (7 Funde, davon 4 historisch)
 - Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
@@ -141,10 +141,10 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
-| Romeo y Julieta No 3 AT | Wolsdorff | 7 Std. | 1× |
+| Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
+| Partagas Mille Fleurs 1'S | Wolsdorff | 5 Std. | 2× |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 9 Std. | 1× |
-| Partagas Mille Fleurs 1'S | Wolsdorff | 9 Std. | 1× |
 | Partagas Serie D No. 4 | Wolsdorff | 9 Std. | 1× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
 | Romeo y Julieta Petit Royales 1'S | Wolsdorff | 9 Std. | 1× |
