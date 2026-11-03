@@ -101,6 +101,11 @@ Nacht ▁10  Morgen ▃39  Vormittag ▂33  Mittag ▄53  Nachmittag █113  Abe
 - Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
 - Am häufigsten: **Do** (62%), **Mittag** (38%)
 
+### Cigarrenversand24 (8 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di  0  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
+- Tageszeit: Nacht  0  Morgen ▃1  Vormittag ▃1  Mittag █3  Nachmittag ▃1  Abend ▅2
+- Am häufigsten: **Do** (62%), **Mittag** (38%)
+
 ### zigarre.de (8 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
 - Tageszeit: Nacht ▂1  Morgen  0  Vormittag ▂1  Mittag  0  Nachmittag █4  Abend ▄2
