@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-03 07:00 (deutsche Zeit) · 61 Zugänge · 93× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-03 09:30 (deutsche Zeit) · 62 Zugänge · 93× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
-| Tabak-Kontor Leipzig | 8 | 0 | 16 | 1 | 10 Std. |
+| Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Cigarrenversand24 | 0 | 3 | 5 | 1 | – |
@@ -26,25 +26,25 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-03 07:00 (deutsche Zeit) · 61 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃40  Di ▃39  Mi ▄47  Do ▇78  Fr █95  Sa ▂26  So ▁9
+**Alle Shops:** Mo ▃40  Di ▃40  Mi ▄47  Do ▇78  Fr █95  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▃39  Vormittag ▂33  Mittag ▄53  Nachmittag █113  Abend ▆86
+Nacht ▁10  Morgen ▃40  Vormittag ▂33  Mittag ▄53  Nachmittag █113  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
 
+### Brinkmann Finest (34 Funde, davon 34 historisch)
+- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
+- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
+- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
+
 ### Wolsdorff (34 Funde, davon 10 historisch)
 - Wochentage: Mo ▃7  Di  0  Mi  1  Do ▁3  Fr █22  Sa  1  So  0
 - Tageszeit: Nacht  0  Morgen ▆9  Vormittag ▁2  Mittag █12  Nachmittag ▇10  Abend ▁1
 - Am häufigsten: **Fr** (65%), **Mittag** (35%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-02 09:15)
-
-### Brinkmann Finest (34 Funde, davon 34 historisch)
-- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
-- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
-- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
 ### Zigarrentraum (30 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █7  Mi █7  Do ▆5  Fr ▁1  Sa █7  So  0
@@ -81,6 +81,11 @@ Nacht ▁10  Morgen ▃39  Vormittag ▂33  Mittag ▄53  Nachmittag █113  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █5  Abend █5
 - Am häufigsten: **Mo** (33%), **Nachmittag** (42%)
 
+### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
+
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
@@ -90,11 +95,6 @@ Nacht ▁10  Morgen ▃39  Vormittag ▂33  Mittag ▄53  Nachmittag █113  Abe
 - Wochentage: Mo ▃1  Di ▅2  Mi ▅2  Do  0  Fr █3  Sa ▅2  So  0
 - Tageszeit: Nacht  0  Morgen █3  Vormittag  0  Mittag ▃1  Nachmittag █3  Abend █3
 - Am häufigsten: **Fr** (30%), **Morgen** (30%)
-
-### Tabak-Kontor Leipzig (10 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▄2  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen  0  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (40%), **Nachmittag** (70%)
 
 ### zigarre.de (8 Funde, davon 7 historisch)
 - Wochentage: Mo ▄1  Di ▄1  Mi ▄1  Do █2  Fr █2  Sa  0  So ▄1
@@ -164,12 +164,12 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Romeo y Julieta No 3 AT | Wolsdorff | 2 |
 | Romeo y Julieta Petit Royales 1'S | Wolsdorff | 2 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 2 |
+| Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023 | Tabak-Kontor Leipzig | 2 |
 | Jose L. Piedra Brevas | Wolsdorff | 1 |
 | Jose L. Piedra Petit Caballeros | Wolsdorff | 1 |
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 1 |
 | Montecristo Petit N°2 Single 1'S | Wolsdorff | 1 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 1 |
-| Montecristo Open Club Zigarillos 20 Stück | c-cigars | 1 |
 
 ## Historische Funde
 
