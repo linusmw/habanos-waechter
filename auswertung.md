@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-03 15:00 (deutsche Zeit) · 78 Zugänge · 98× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-03 16:00 (deutsche Zeit) · 79 Zugänge · 98× ausverkauft
 
 ## Überblick je Shop
 
@@ -12,8 +12,8 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-03 15:00 (deutsche Zeit) · 78 Zugänge �
 | Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
+| Noblego | 1 | 3 | 6 | 1 | – |
 | La Galana | 3 | 0 | 4 | 0 | – |
-| Noblego | 0 | 3 | 6 | 1 | – |
 | Zigarren Herzog | 3 | 0 | 5 | 0 | 47 Std. |
 | c-cigars | 2 | 0 | 7 | 0 | – |
 | zigarre.de | 2 | 0 | 1 | 0 | 10 Std. |
@@ -26,25 +26,25 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-03 15:00 (deutsche Zeit) · 78 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃40  Di ▅56  Mi ▄47  Do ▇78  Fr █95  Sa ▂26  So ▁9
+**Alle Shops:** Mo ▃40  Di ▅57  Mi ▄47  Do ▇78  Fr █95  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █117  Abend ▆86
+Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █118  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
 
+### Brinkmann Finest (34 Funde, davon 34 historisch)
+- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
+- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
+- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
+
 ### Wolsdorff (34 Funde, davon 10 historisch)
 - Wochentage: Mo ▃7  Di  0  Mi  1  Do ▁3  Fr █22  Sa  1  So  0
 - Tageszeit: Nacht  0  Morgen ▆9  Vormittag ▁2  Mittag █12  Nachmittag ▇10  Abend ▁1
 - Am häufigsten: **Fr** (65%), **Mittag** (35%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-02 09:15)
-
-### Brinkmann Finest (34 Funde, davon 34 historisch)
-- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
-- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
-- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
 ### Zigarrentraum (30 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █7  Mi █7  Do ▆5  Fr ▁1  Sa █7  So  0
@@ -56,16 +56,16 @@ Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █117  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
+### Tabacstore (18 Funde, davon 18 historisch)
+- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
+- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
+
 ### Nobbis Tabakwelt (18 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▂2  Do  0  Fr ▂3  Sa ▂2  So  0
 - Tageszeit: Nacht  0  Morgen ▃3  Vormittag  0  Mittag █8  Nachmittag ▄4  Abend ▃3
 - Am häufigsten: **Di** (56%), **Mittag** (44%)
 - Wareneingänge im Schnitt alle **4,2 Tage** (zuletzt 2026-11-03 13:30)
-
-### Tabacstore (18 Funde, davon 18 historisch)
-- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
-- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
 ### Cigarrenversand24 (15 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di █7  Mi  0  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
@@ -83,15 +83,15 @@ Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █117  Abe
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▁1  Nachmittag ▃3  Abend █7
 - Am häufigsten: **Fr** (38%), **Abend** (54%)
 
+### Noblego (13 Funde, davon 9 historisch)
+- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
+- Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
+
 ### Casa Benden (12 Funde, davon 6 historisch)
 - Wochentage: Mo ▂1  Di  0  Mi ▅3  Do █5  Fr ▅3  Sa  0  So  0
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▄2  Abend █4
 - Am häufigsten: **Do** (42%), **Abend** (33%)
-
-### Noblego (12 Funde, davon 9 historisch)
-- Wochentage: Mo █4  Di ▄2  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █5  Abend █5
-- Am häufigsten: **Mo** (33%), **Nachmittag** (42%)
 
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
