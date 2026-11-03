@@ -66,16 +66,16 @@ Nacht ▁10  Morgen ▃40  Vormittag ▃36  Mittag ▄55  Nachmittag █113  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag ▇6  Abend █7
 - Am häufigsten: **Fr** (47%), **Abend** (47%)
 
+### StarkeZigarren (13 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di ▂1  Mi ▃2  Do ▅3  Fr █5  Sa ▂1  So ▂1
+- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▁1  Nachmittag ▃3  Abend █7
+- Am häufigsten: **Fr** (38%), **Abend** (54%)
+
 ### Cigarrenversand24 (13 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di █5  Mi  0  Do █5  Fr ▂1  Sa ▂1  So ▂1
 - Tageszeit: Nacht  0  Morgen ▂1  Vormittag ▆4  Mittag █5  Nachmittag ▂1  Abend ▃2
 - Am häufigsten: **Do** (38%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
-
-### StarkeZigarren (13 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di ▂1  Mi ▃2  Do ▅3  Fr █5  Sa ▂1  So ▂1
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▁1  Nachmittag ▃3  Abend █7
-- Am häufigsten: **Fr** (38%), **Abend** (54%)
 
 ### Noblego (12 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▄2  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
