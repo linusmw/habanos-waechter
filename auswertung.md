@@ -1,14 +1,14 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-04 13:30 (deutsche Zeit) · 89 Zugänge · 109× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-04 14:01 (deutsche Zeit) · 92 Zugänge · 111× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
-| Nobbis Tabakwelt | 15 | 1 | 7 | 3 | 9 Std. |
-| Cigarrenversand24 | 11 | 3 | 14 | 2 | 2 Std. |
+| Nobbis Tabakwelt | 17 | 1 | 9 | 3 | 9 Std. |
+| Cigarrenversand24 | 12 | 3 | 14 | 2 | 2 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-04 13:30 (deutsche Zeit) · 89 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃40  Di ▅58  Mi ▅56  Do ▇78  Fr █95  Sa ▂26  So ▁9
+**Alle Shops:** Mo ▃40  Di ▅58  Mi ▅59  Do ▇78  Fr █95  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▅68  Nachmittag █119  Abend ▆86
+Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄68  Nachmittag █122  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -56,16 +56,16 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▅68  Nachmittag █119  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Nobbis Tabakwelt (23 Funde, davon 7 historisch)
-- Wochentage: Mo ▁1  Di █10  Mi ▆7  Do  0  Fr ▂3  Sa ▂2  So  0
-- Tageszeit: Nacht  0  Morgen ▂3  Vormittag  0  Mittag █13  Nachmittag ▂4  Abend ▂3
-- Am häufigsten: **Di** (43%), **Mittag** (57%)
+### Nobbis Tabakwelt (25 Funde, davon 7 historisch)
+- Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▂3  Sa ▂2  So  0
+- Tageszeit: Nacht  0  Morgen ▂3  Vormittag  0  Mittag █13  Nachmittag ▄6  Abend ▂3
+- Am häufigsten: **Di** (40%), **Mittag** (52%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
 
-### Cigarrenversand24 (19 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di █7  Mi ▅4  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▅4  Vormittag ▅4  Mittag █6  Nachmittag ▄3  Abend ▃2
-- Am häufigsten: **Di** (37%), **Mittag** (32%)
+### Cigarrenversand24 (20 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di █7  Mi ▆5  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▅4  Vormittag ▅4  Mittag █6  Nachmittag ▅4  Abend ▃2
+- Am häufigsten: **Di** (35%), **Mittag** (30%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
@@ -145,6 +145,8 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 |---|---|---|---:|
 | Ramon Allones No.3 1’S | Wolsdorff | unter 1 Std. | 1× |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
+| Partagás Aliados | Nobbis Tabakwelt | unter 1 Std. | 1× |
+| Ramon Allones Specially Selected | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
@@ -153,8 +155,6 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Partagas Mille Fleurs 1'S | Wolsdorff | 5 Std. | 2× |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
-| Romeo y Julieta Petit Royales 1'S | Wolsdorff | 9 Std. | 1× |
-| Cohiba Siglo II | Nobbis Tabakwelt | 9 Std. | 1× |
 
 ## Am häufigsten wieder da
 
@@ -162,7 +162,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 |---|---|---:|
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
-| H. Upmann Half Corona | Cigarrenversand24 | 3 |
+| H. Upmann Half Corona | Cigarrenversand24 | 4 |
 | Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 3 |
 | H. Upmann Half Corona | Wolsdorff | 2 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 2 |
