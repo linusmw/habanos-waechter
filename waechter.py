@@ -950,6 +950,36 @@ class Event:
     shop: str
     item: Item
     hours_available: float | None = None   # nur bei "ausverkauft", falls bekannt
+    quiet: bool = False                     # nur protokollieren, nicht melden (Ruhezeit)
+
+
+REALERT_COOLDOWN_HOURS = 6
+
+
+def apply_cooldown(events: list[Event], state: dict, timestamp: str,
+                   wishes: list[tuple[str, list[str]]] | None = None,
+                   hours: float = REALERT_COOLDOWN_HOURS) -> int:
+    """Ruhezeit: Wurde dieselbe Zigarre im selben Shop in den letzten `hours` Stunden schon
+    gemeldet, wird ein erneutes "wieder da" nur protokolliert. Manche Shops schwanken
+    zwischen verfügbar und ausverkauft (Warenkorb-Reservierungen, letztes Stück).
+    Wunsch-Zigarren werden immer gemeldet. Gibt die Zahl der stummen Ereignisse zurück."""
+    wishes = load_wishes() if wishes is None else wishes
+    quiet = 0
+    for e in events:
+        if e.kind not in ALERT_KINDS:
+            continue
+        old = state.get("shops", {}).get(e.shop, {}).get("items", {}).get(e.item.key)
+        if old is None:
+            continue
+        last = old.get("last_alert")
+        since = _hours_between(last, timestamp) if last else None
+        if (since is not None and since < hours and e.kind in ("wieder_da", "neu_oder_wieder")
+                and not wish_for(e.item, wishes)):
+            e.quiet = True
+            quiet += 1
+        else:
+            old["last_alert"] = timestamp
+    return quiet
 
 
 def _hours_between(start: str | None, end: str) -> float | None:
@@ -1282,7 +1312,7 @@ def notify(events: list[Event], shop_names: dict[str, str]) -> None:
 # Shops, deren Ware oft binnen Minuten weg ist und die sich schnell (1–6 Seiten) lesen
 # lassen: Sie werden zwischen den Halbstunden-Läufen zusätzlich alle 5 Minuten geprüft.
 FAST_SHOPS = ["wolsdorff", "casabenden", "brinkmann", "dalay", "starkezigarren",
-              "tabacstore", "ccigars", "lagalana", "herzog"]
+              "tabacstore", "ccigars", "lagalana", "herzog", "nobbis"]
 FAST_INTERVAL_MIN = 5
 FAST_STOP_MINUTE = 26     # in jeder halben Stunde: danach startet keine Nachprüfung mehr
 
@@ -1341,7 +1371,10 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
               "nichts gespeichert oder gesendet.")
         return 0
 
-    notify(all_events, shop_names)
+    muted = apply_cooldown(all_events, state, timestamp)
+    if muted:
+        print(f"{muted} Wiederholung(en) innerhalb von {REALERT_COOLDOWN_HOURS} Std. nur protokolliert.")
+    notify([e for e in all_events if not e.quiet], shop_names)
     log_events(all_events, timestamp, shop_names)
     for shop_name, reason in warnings:
         if reason == "wieder erreichbar":
