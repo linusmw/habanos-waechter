@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-04 14:01 (deutsche Zeit) · 92 Zugänge · 111× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-04 15:00 (deutsche Zeit) · 92 Zugänge · 115× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
-| Nobbis Tabakwelt | 17 | 1 | 9 | 3 | 9 Std. |
+| Nobbis Tabakwelt | 17 | 1 | 13 | 3 | 5 Std. |
 | Cigarrenversand24 | 12 | 3 | 14 | 2 | 2 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
@@ -35,16 +35,16 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄68  Nachmittag █122  Abe
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
 
-### Brinkmann Finest (34 Funde, davon 34 historisch)
-- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
-- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
-- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
-
 ### Wolsdorff (34 Funde, davon 10 historisch)
 - Wochentage: Mo ▃7  Di  0  Mi  1  Do ▁3  Fr █22  Sa  1  So  0
 - Tageszeit: Nacht  0  Morgen ▆9  Vormittag ▁2  Mittag █12  Nachmittag ▇10  Abend ▁1
 - Am häufigsten: **Fr** (65%), **Mittag** (35%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-02 09:15)
+
+### Brinkmann Finest (34 Funde, davon 34 historisch)
+- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
+- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
+- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
 ### Zigarrentraum (31 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
@@ -148,13 +148,13 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Partagás Aliados | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Ramon Allones Specially Selected | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
+| Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
+| Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
+| Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
 | H. Upmann Half Corona | Cigarrenversand24 | 3 Std. | 3× |
 | Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
-| Partagas Mille Fleurs 1'S | Wolsdorff | 5 Std. | 2× |
-| Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
-| Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
 
 ## Am häufigsten wieder da
 
