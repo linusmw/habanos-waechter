@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-04 09:30 (deutsche Zeit) · 83 Zugänge · 107× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-04 11:00 (deutsche Zeit) · 83 Zugänge · 108× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
-| Cigarrenversand24 | 10 | 3 | 13 | 2 | 1 Std. |
+| Cigarrenversand24 | 10 | 3 | 14 | 2 | 2 Std. |
 | Nobbis Tabakwelt | 10 | 1 | 6 | 2 | 9 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
@@ -56,10 +56,11 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄62  Nachmittag █119  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Tabacstore (18 Funde, davon 18 historisch)
-- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
-- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
+### Nobbis Tabakwelt (18 Funde, davon 7 historisch)
+- Wochentage: Mo ▁1  Di █10  Mi ▂2  Do  0  Fr ▂3  Sa ▂2  So  0
+- Tageszeit: Nacht  0  Morgen ▃3  Vormittag  0  Mittag █8  Nachmittag ▄4  Abend ▃3
+- Am häufigsten: **Di** (56%), **Mittag** (44%)
+- Wareneingänge im Schnitt alle **4,2 Tage** (zuletzt 2026-11-03 13:30)
 
 ### Cigarrenversand24 (18 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di █7  Mi ▃3  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
@@ -67,11 +68,10 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄62  Nachmittag █119  Abe
 - Am häufigsten: **Di** (39%), **Mittag** (28%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### Nobbis Tabakwelt (18 Funde, davon 7 historisch)
-- Wochentage: Mo ▁1  Di █10  Mi ▂2  Do  0  Fr ▂3  Sa ▂2  So  0
-- Tageszeit: Nacht  0  Morgen ▃3  Vormittag  0  Mittag █8  Nachmittag ▄4  Abend ▃3
-- Am häufigsten: **Di** (56%), **Mittag** (44%)
-- Wareneingänge im Schnitt alle **4,2 Tage** (zuletzt 2026-11-03 13:30)
+### Tabacstore (18 Funde, davon 18 historisch)
+- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
+- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
 ### c-cigars (15 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di  0  Mi ▁1  Do █7  Fr █7  Sa  0  So  0
@@ -147,13 +147,13 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
+| H. Upmann Half Corona | Cigarrenversand24 | 3 Std. | 3× |
 | Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
 | Partagas Mille Fleurs 1'S | Wolsdorff | 5 Std. | 2× |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 8 Std. | 3× |
 | Romeo y Julieta De Oro (3 Varianten) | Casa Benden | 9 Std. | 1× |
 | Romeo y Julieta Petit Royales 1'S | Wolsdorff | 9 Std. | 1× |
 | Cohiba Siglo II | Nobbis Tabakwelt | 9 Std. | 1× |
-| Montecristo Petit No. 2 | Nobbis Tabakwelt | 9 Std. | 1× |
 
 ## Am häufigsten wieder da
 
