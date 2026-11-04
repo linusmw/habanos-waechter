@@ -81,9 +81,6 @@ Ab jetzt läuft alles jede halbe Stunde von selbst.
   Casa Benden, Brinkmann, Dalay, StarkeZigarren, Tabacstore, c-cigars, La Galana, Zigarren
   Herzog und Nobbis bis kurz vor der nächsten halben Stunde zusätzlich alle 5 Minuten. Dort ist
   Ware oft binnen Minuten wieder weg.
-- **Ruhezeit 6 Stunden:** Meldet ein Shop dieselbe Zigarre innerhalb von 6 Stunden nach der
-  letzten Nachricht erneut als „wieder da“ (manche schwanken zwischen verfügbar und
-  ausverkauft), wird das nur in `verlauf.csv` protokolliert. Wunsch-Zigarren kommen immer.
 
 - **Erster Lauf je Shop = Ausgangsbestand.** Alarme gibt es erst für Änderungen danach.
 - **Ausfälle:** Ist ein Shop 6 Läufe in Folge (3 Stunden) nicht lesbar (Seite umgebaut, Blockade),

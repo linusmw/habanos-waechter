@@ -547,22 +547,3 @@ def test_recheck_fast_shops_stops_before_next_half_hour(monkeypatch):
     assert passes == 5 and "wolsdorff" in calls[0][1]
     assert set(w.FAST_SHOPS) <= {s.id for s in w.SHOPS}
 
-
-def test_cooldown_mutes_repeats_but_not_wishes():
-    state = {"shops": {"cv24": {"items": {
-        "a": {"last_alert": "2026-11-03T10:30:00+00:00"},
-        "b": {"last_alert": "2026-11-03T10:30:00+00:00"},
-        "c": {"last_alert": "2026-11-02T01:00:00+00:00"},
-        "d": {}}}}}
-    wishes = [("Montecristo No 4", [])]
-    ev = [w.Event("wieder_da", "cv24", mk("a", True, "Montecristo No. 2")),
-          w.Event("wieder_da", "cv24", mk("b", True, "Montecristo No. 4")),
-          w.Event("wieder_da", "cv24", mk("c", True, "Hoyo Petit Robusto")),
-          w.Event("wieder_da", "cv24", mk("d", True, "H. Upmann Half Corona")),
-          w.Event("ausverkauft", "cv24", mk("a", False, "Montecristo No. 2"))]
-    muted = w.apply_cooldown(ev, state, "2026-11-03T12:00:00+00:00", wishes)
-    assert muted == 1
-    assert [e.quiet for e in ev] == [True, False, False, False, False]
-    items = state["shops"]["cv24"]["items"]
-    assert items["a"]["last_alert"] == "2026-11-03T10:30:00+00:00"      # Ruhezeit läuft weiter
-    assert items["c"]["last_alert"] == items["d"]["last_alert"] == "2026-11-03T12:00:00+00:00"
