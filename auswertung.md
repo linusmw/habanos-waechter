@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-04 15:00 (deutsche Zeit) · 92 Zugänge · 115× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-04 15:22 (deutsche Zeit) · 92 Zugänge · 115× ausverkauft
 
 ## Überblick je Shop
 
@@ -150,9 +150,10 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
+| Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
+| Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
-| Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
 | H. Upmann Half Corona | Cigarrenversand24 | 3 Std. | 3× |
 | Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
 
