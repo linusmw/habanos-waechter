@@ -1,14 +1,14 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-03 22:30 (deutsche Zeit) · 80 Zugänge · 104× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-04 08:00 (deutsche Zeit) · 81 Zugänge · 104× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
+| Cigarrenversand24 | 8 | 3 | 10 | 2 | 1 Std. |
 | Nobbis Tabakwelt | 10 | 1 | 6 | 2 | 9 Std. |
-| Cigarrenversand24 | 7 | 3 | 10 | 2 | 1 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 16 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 7 | 1 | 17 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-03 22:30 (deutsche Zeit) · 80 Zugänge �
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃40  Di ▅58  Mi ▄47  Do ▇78  Fr █95  Sa ▂26  So ▁9
+**Alle Shops:** Mo ▃40  Di ▅58  Mi ▄48  Do ▇78  Fr █95  Sa ▂26  So ▁9
 
-Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █119  Abend ▆86
+Nacht ▁10  Morgen ▃41  Vormittag ▂36  Mittag ▄62  Nachmittag █119  Abend ▆86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -67,10 +67,10 @@ Nacht ▁10  Morgen ▃40  Vormittag ▂36  Mittag ▄62  Nachmittag █119  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
-### Cigarrenversand24 (15 Funde, davon 5 historisch)
-- Wochentage: Mo  0  Di █7  Mi  0  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▂1  Vormittag ▆4  Mittag █5  Nachmittag ▅3  Abend ▃2
-- Am häufigsten: **Di** (47%), **Mittag** (33%)
+### Cigarrenversand24 (16 Funde, davon 5 historisch)
+- Wochentage: Mo  0  Di █7  Mi ▁1  Do ▆5  Fr ▁1  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▃2  Vormittag ▆4  Mittag █5  Nachmittag ▅3  Abend ▃2
+- Am häufigsten: **Di** (44%), **Mittag** (31%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
 ### c-cigars (15 Funde, davon 13 historisch)
@@ -160,7 +160,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Artikel | Shop | Mal |
 |---|---|---:|
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
-| Montecristo No. 2 | Cigarrenversand24 | 3 |
+| Montecristo No. 2 | Cigarrenversand24 | 4 |
 | H. Upmann Half Corona | Wolsdorff | 2 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
