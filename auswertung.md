@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-05 17:50 (deutsche Zeit) · 101 Zugänge · 125× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-05 19:15 (deutsche Zeit) · 101 Zugänge · 126× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 24 | 0 | 26 | 3 | 9 Std. |
-| Nobbis Tabakwelt | 17 | 1 | 15 | 3 | 9 Std. |
+| Nobbis Tabakwelt | 17 | 1 | 16 | 3 | 9 Std. |
 | Cigarrenversand24 | 12 | 3 | 15 | 2 | 2 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 18 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 8 | 1 | 14 Std. |
@@ -83,25 +83,25 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄69  Nachmittag █130  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag ▇6  Abend █7
 - Am häufigsten: **Fr** (47%), **Abend** (47%)
 
-### Casa Benden (13 Funde, davon 6 historisch)
-- Wochentage: Mo ▂1  Di  0  Mi ▆4  Do █5  Fr ▅3  Sa  0  So  0
-- Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
-- Am häufigsten: **Do** (38%), **Abend** (31%)
-
 ### Noblego (13 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
-### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
+### Casa Benden (13 Funde, davon 6 historisch)
+- Wochentage: Mo ▂1  Di  0  Mi ▆4  Do █5  Fr ▅3  Sa  0  So  0
+- Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
+- Am häufigsten: **Do** (38%), **Abend** (31%)
 
 ### zigarre.de (11 Funde, davon 7 historisch)
 - Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
 - Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
 - Am häufigsten: **Do** (36%), **Nachmittag** (55%)
+
+### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
