@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-06 17:15 (deutsche Zeit) · 110 Zugänge · 141× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-06 22:20 (deutsche Zeit) · 110 Zugänge · 142× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 31 | 0 | 31 | 4 | 9 Std. |
+| Wolsdorff | 31 | 0 | 32 | 4 | 9 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 17 | 3 | 9 Std. |
 | Cigarrenversand24 | 13 | 3 | 16 | 2 | 2 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 18 | 1 | 10 Std. |
@@ -83,15 +83,15 @@ Nacht ▁10  Morgen ▃45  Vormittag ▂36  Mittag ▅76  Nachmittag █130  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag ▇6  Abend █7
 - Am häufigsten: **Fr** (47%), **Abend** (47%)
 
-### Noblego (13 Funde, davon 9 historisch)
-- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
-- Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
-
 ### Casa Benden (13 Funde, davon 6 historisch)
 - Wochentage: Mo ▂1  Di  0  Mi ▆4  Do █5  Fr ▅3  Sa  0  So  0
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
 - Am häufigsten: **Do** (38%), **Abend** (31%)
+
+### Noblego (13 Funde, davon 9 historisch)
+- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
+- Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
 ### zigarre.de (11 Funde, davon 7 historisch)
 - Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
@@ -146,7 +146,6 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Artikel | Shop | weg nach (Median) | beobachtet |
 |---|---|---|---:|
 | Ramon Allones No.3 1’S | Wolsdorff | unter 1 Std. | 1× |
-| Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | unter 1 Std. | 1× |
 | Partagás Aliados | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Ramon Allones Specially Selected | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
@@ -157,6 +156,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 | H. Upmann Half Corona | Cigarrenversand24 | 3 Std. | 3× |
 | Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
+| Juan Lopez Sel. No 1 1'S | Wolsdorff | 4 Std. | 1× |
 
 ## Am häufigsten wieder da
 
