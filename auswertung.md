@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-05 21:00 (deutsche Zeit) · 101 Zugänge · 128× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-06 03:45 (deutsche Zeit) · 101 Zugänge · 129× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,7 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-05 21:00 (deutsche Zeit) · 101 Zugänge 
 | Cigarrenversand24 | 12 | 3 | 16 | 2 | 2 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 18 | 1 | 10 Std. |
 | Casa Benden | 1 | 5 | 8 | 1 | 14 Std. |
-| StarkeZigarren | 2 | 0 | 6 | 1 | – |
+| StarkeZigarren | 2 | 0 | 7 | 1 | 10 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 7 | 1 | 31 Std. |
 | zigarre.de | 4 | 0 | 1 | 0 | 10 Std. |
@@ -93,15 +93,15 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄69  Nachmittag █130  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
-### zigarre.de (11 Funde, davon 7 historisch)
-- Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
-- Am häufigsten: **Do** (36%), **Nachmittag** (55%)
-
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
+
+### zigarre.de (11 Funde, davon 7 historisch)
+- Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
+- Am häufigsten: **Do** (36%), **Nachmittag** (55%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
