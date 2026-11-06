@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-06 11:10 (deutsche Zeit) · 103 Zugänge · 131× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-06 12:50 (deutsche Zeit) · 103 Zugänge · 134× ausverkauft
 
 ## Überblick je Shop
 
@@ -18,9 +18,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-06 11:10 (deutsche Zeit) · 103 Zugänge 
 | La Galana | 3 | 0 | 6 | 0 | 5,2 Tage |
 | Zigarren Herzog | 3 | 0 | 6 | 0 | 47 Std. |
 | Zigarrentraum | 2 | 0 | 2 | 0 | 5,8 Tage |
-| c-cigars | 2 | 0 | 9 | 0 | – |
+| c-cigars | 2 | 0 | 11 | 0 | 13,9 Tage |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
-| Pipe House | 0 | 0 | 2 | 0 | – |
+| Pipe House | 0 | 0 | 3 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
