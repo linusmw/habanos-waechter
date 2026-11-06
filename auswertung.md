@@ -35,16 +35,16 @@ Nacht ▁10  Morgen ▃43  Vormittag ▂36  Mittag ▄69  Nachmittag █130  Abe
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
 
+### Brinkmann Finest (34 Funde, davon 34 historisch)
+- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
+- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
+- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
+
 ### Wolsdorff (34 Funde, davon 10 historisch)
 - Wochentage: Mo ▃7  Di  0  Mi  1  Do ▁3  Fr █22  Sa  1  So  0
 - Tageszeit: Nacht  0  Morgen ▆9  Vormittag ▁2  Mittag █12  Nachmittag ▇10  Abend ▁1
 - Am häufigsten: **Fr** (65%), **Mittag** (35%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-02 09:15)
-
-### Brinkmann Finest (34 Funde, davon 34 historisch)
-- Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
-- Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
-- Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
 ### Zigarrentraum (31 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
