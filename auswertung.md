@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-09 11:01 (deutsche Zeit) · 116 Zugänge · 161× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-09 11:45 (deutsche Zeit) · 117 Zugänge · 161× ausverkauft
 
 ## Überblick je Shop
 
@@ -15,9 +15,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-09 11:01 (deutsche Zeit) · 116 Zugänge 
 | StarkeZigarren | 2 | 0 | 13 | 1 | 28 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 7 | 1 | 31 Std. |
+| Zigarren Herzog | 4 | 0 | 7 | 0 | 5,4 Tage |
 | zigarre.de | 4 | 0 | 3 | 0 | 2,9 Tage |
 | La Galana | 3 | 0 | 6 | 0 | 5,2 Tage |
-| Zigarren Herzog | 3 | 0 | 7 | 0 | 5,4 Tage |
 | Zigarrentraum | 2 | 0 | 2 | 0 | 5,8 Tage |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
 | Pipe House | 0 | 0 | 4 | 0 | – |
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-09 11:01 (deutsche Zeit) · 116 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃41  Di ▄58  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃42  Di ▄58  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃46  Vormittag ▂36  Mittag ▅81  Nachmittag █130  Abend ▅86
+Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅81  Nachmittag █130  Abend ▅86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -62,16 +62,16 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂36  Mittag ▅81  Nachmittag █130  Abe
 - Am häufigsten: **Di** (38%), **Mittag** (50%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
 
+### c-cigars (21 Funde, davon 13 historisch)
+- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
+- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
+- Am häufigsten: **Fr** (33%), **Abend** (33%)
+
 ### Cigarrenversand24 (21 Funde, davon 5 historisch)
 - Wochentage: Mo  0  Di █7  Mi ▆5  Do ▆5  Fr ▂2  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▇5  Vormittag ▅4  Mittag █6  Nachmittag ▅4  Abend ▃2
 - Am häufigsten: **Di** (33%), **Mittag** (29%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
-
-### c-cigars (21 Funde, davon 13 historisch)
-- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
-- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
-- Am häufigsten: **Fr** (33%), **Abend** (33%)
 
 ### StarkeZigarren (19 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▁1  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
@@ -108,10 +108,10 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂36  Mittag ▅81  Nachmittag █130  Abe
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
 
-### Zigarren Herzog (7 Funde, davon 4 historisch)
-- Wochentage: Mo  0  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █6  Abend ▁1
-- Am häufigsten: **Do** (57%), **Nachmittag** (86%)
+### Zigarren Herzog (8 Funde, davon 4 historisch)
+- Wochentage: Mo ▂1  Di ▂1  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █6  Abend ▁1
+- Am häufigsten: **Do** (50%), **Nachmittag** (75%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
