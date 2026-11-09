@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-09 15:30 (deutsche Zeit) · 120 Zugänge · 166× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-09 16:10 (deutsche Zeit) · 120 Zugänge · 167× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 32 | 0 | 34 | 4 | 9 Std. |
+| Wolsdorff | 32 | 0 | 35 | 4 | 9 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 19 | 3 | 16 Std. |
 | Cigarrenversand24 | 15 | 3 | 18 | 2 | 3 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 18 | 1 | 10 Std. |
@@ -93,15 +93,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅83  Nachmittag █131  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
 - Am häufigsten: **Do** (38%), **Abend** (31%)
 
-### zigarre.de (11 Funde, davon 7 historisch)
-- Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
-- Am häufigsten: **Do** (36%), **Nachmittag** (55%)
-
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
+
+### zigarre.de (11 Funde, davon 7 historisch)
+- Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
+- Am häufigsten: **Do** (36%), **Nachmittag** (55%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
@@ -152,7 +152,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 2× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
-| Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
+| Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 2× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
