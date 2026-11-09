@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-09 10:40 (deutsche Zeit) · 116 Zugänge · 159× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-09 11:01 (deutsche Zeit) · 116 Zugänge · 161× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,7 +8,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-09 10:40 (deutsche Zeit) · 116 Zugänge 
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 31 | 0 | 34 | 4 | 9 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 19 | 3 | 16 Std. |
-| Cigarrenversand24 | 13 | 3 | 16 | 2 | 2 Std. |
+| Cigarrenversand24 | 13 | 3 | 18 | 2 | 3 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 18 | 1 | 10 Std. |
 | c-cigars | 8 | 0 | 17 | 1 | 7,6 Tage |
 | Casa Benden | 1 | 5 | 8 | 1 | 14 Std. |
@@ -155,9 +155,9 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 1× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
-| H. Upmann Half Corona | Cigarrenversand24 | 3 Std. | 3× |
 | Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
 | Juan Lopez Sel. No 1 1'S | Wolsdorff | 4 Std. | 1× |
+| Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
 
 ## Am häufigsten wieder da
 
