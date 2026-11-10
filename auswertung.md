@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-10 14:25 (deutsche Zeit) · 125 Zugänge · 175× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-10 14:30 (deutsche Zeit) · 126 Zugänge · 175× ausverkauft
 
 ## Überblick je Shop
 
@@ -13,7 +13,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-10 14:25 (deutsche Zeit) · 125 Zugänge 
 | c-cigars | 8 | 0 | 19 | 1 | 2,7 Tage |
 | Casa Benden | 1 | 5 | 8 | 1 | 14 Std. |
 | StarkeZigarren | 2 | 0 | 13 | 1 | 28 Std. |
-| Zigarren Herzog | 4 | 1 | 7 | 0 | 5,4 Tage |
+| Zigarren Herzog | 4 | 2 | 7 | 0 | 5,4 Tage |
 | zigarre.de | 5 | 0 | 3 | 0 | 2,9 Tage |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-10 14:25 (deutsche Zeit) · 125 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃45  Di ▅63  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃45  Di ▅64  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █133  Abend ▅86
+Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █134  Abend ▅86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -83,15 +83,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █133  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
-### Casa Benden (13 Funde, davon 6 historisch)
-- Wochentage: Mo ▂1  Di  0  Mi ▆4  Do █5  Fr ▅3  Sa  0  So  0
-- Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
-- Am häufigsten: **Do** (38%), **Abend** (31%)
-
 ### Noblego (13 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
+
+### Casa Benden (13 Funde, davon 6 historisch)
+- Wochentage: Mo ▂1  Di  0  Mi ▆4  Do █5  Fr ▅3  Sa  0  So  0
+- Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
+- Am häufigsten: **Do** (38%), **Abend** (31%)
 
 ### zigarre.de (12 Funde, davon 7 historisch)
 - Wochentage: Mo ▂1  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
@@ -103,15 +103,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █133  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
+### Zigarren Herzog (10 Funde, davon 4 historisch)
+- Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
+- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
+
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
-
-### Zigarren Herzog (9 Funde, davon 4 historisch)
-- Wochentage: Mo ▂1  Di ▄2  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █7  Abend ▁1
-- Am häufigsten: **Do** (44%), **Nachmittag** (78%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
