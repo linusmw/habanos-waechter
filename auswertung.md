@@ -238,11 +238,11 @@ Am häufigsten gefunden:
 
 ## Wann kommen Neuheiten online?
 
-Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (455 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
+Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (456 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
 
-**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █90  Sa ▄47  So ▁7
+**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █90  Sa ▄47  So ▁8
 
-Nacht ▁16  Morgen ▅87  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
+Nacht ▁16  Morgen ▅88  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
 
 ### Zigarrentraum (174 Neuheiten)
 - Wochentage: Mo ▅29  Di █43  Mi ▅28  Do ▆31  Fr ▅28  Sa ▃14  So  1
@@ -275,7 +275,7 @@ Zeitpunkt, zu dem ein schon bekanntes Produkt zuletzt erneut veröffentlicht wur
 
 - **La Galana** (93×): Mo ▂8  Di ▃12  Mi █32  Do ▁6  Fr  1  Sa █34  So  0 · Nacht  0  Morgen  2  Vormittag  1  Mittag ▁8  Nachmittag █46  Abend ▆36
 - **c-cigars** (87×): Mo ▂10  Di ▃17  Mi █42  Do ▁7  Fr ▁4  Sa ▁4  So ▁3 · Nacht  0  Morgen  1  Vormittag  2  Mittag ▂13  Nachmittag ▄23  Abend █48
-- **Zigarren Herzog** (14×): Mo ▁1  Di  0  Mi ▁1  Do ▂2  Fr ▂2  Sa  0  So █8 · Nacht  0  Morgen  0  Vormittag █8  Mittag ▂2  Nachmittag ▃3  Abend ▁1
+- **Zigarren Herzog** (16×): Mo ▁1  Di ▂2  Mi ▁1  Do ▂2  Fr ▂2  Sa  0  So █8 · Nacht  0  Morgen  0  Vormittag █8  Mittag ▂2  Nachmittag ▅5  Abend ▁1
 
 Zuletzt neu angelegt:
 
