@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-10 11:00 (deutsche Zeit) · 120 Zugänge · 174× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-10 12:00 (deutsche Zeit) · 121 Zugänge · 174× ausverkauft
 
 ## Überblick je Shop
 
@@ -26,9 +26,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-10 11:00 (deutsche Zeit) · 120 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃45  Di ▄58  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃45  Di ▅59  Mi ▅60  Do ▇86  Fr █104  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅83  Nachmittag █131  Abend ▅86
+Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅84  Nachmittag █131  Abend ▅86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -73,10 +73,10 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅83  Nachmittag █131  Abe
 - Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
 - Am häufigsten: **Fr** (33%), **Abend** (33%)
 
-### StarkeZigarren (19 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di ▁1  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▁1  Nachmittag █9  Abend ▆7
-- Am häufigsten: **Do** (47%), **Nachmittag** (47%)
+### StarkeZigarren (20 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
+- Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
