@@ -93,15 +93,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅84  Nachmittag █131  Abe
 - Tageszeit: Nacht ▂1  Morgen ▄2  Vormittag  0  Mittag ▆3  Nachmittag ▆3  Abend █4
 - Am häufigsten: **Do** (38%), **Abend** (31%)
 
-### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
-
 ### zigarre.de (11 Funde, davon 7 historisch)
 - Wochentage: Mo ▂1  Di ▄2  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
 - Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █6  Abend ▃2
 - Am häufigsten: **Do** (36%), **Nachmittag** (55%)
+
+### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
