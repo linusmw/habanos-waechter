@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-11 16:55 (deutsche Zeit) · 131 Zugänge · 185× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-11 21:00 (deutsche Zeit) · 131 Zugänge · 186× ausverkauft
 
 ## Überblick je Shop
 
@@ -14,7 +14,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-11 16:55 (deutsche Zeit) · 131 Zugänge 
 | c-cigars | 8 | 0 | 20 | 1 | 2,7 Tage |
 | StarkeZigarren | 2 | 0 | 14 | 1 | 28 Std. |
 | Zigarren Herzog | 4 | 2 | 7 | 0 | 5,4 Tage |
-| zigarre.de | 5 | 0 | 3 | 0 | 2,9 Tage |
+| zigarre.de | 5 | 0 | 4 | 0 | 2,1 Tage |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
@@ -105,15 +105,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █139  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
-### Pipe House (10 Funde, davon 10 historisch)
-- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
-- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
-- Am häufigsten: **Di** (30%), **Abend** (40%)
-
 ### Zigarren Herzog (10 Funde, davon 4 historisch)
 - Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
 - Am häufigsten: **Do** (40%), **Nachmittag** (80%)
+
+### Pipe House (10 Funde, davon 10 historisch)
+- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
+- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
+- Am häufigsten: **Di** (30%), **Abend** (40%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
