@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-11 16:00 (deutsche Zeit) · 131 Zugänge · 184× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-11 16:55 (deutsche Zeit) · 131 Zugänge · 185× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,7 +8,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-11 16:00 (deutsche Zeit) · 131 Zugänge 
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 32 | 0 | 36 | 4 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 20 | 2 | 18 Std. |
-| Nobbis Tabakwelt | 18 | 1 | 21 | 3 | 22 Std. |
+| Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
 | Casa Benden | 2 | 5 | 10 | 2 | 17 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 20 | 1 | 10 Std. |
 | c-cigars | 8 | 0 | 20 | 1 | 2,7 Tage |
@@ -105,15 +105,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █139  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
-### Zigarren Herzog (10 Funde, davon 4 historisch)
-- Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
-- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
-
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
+
+### Zigarren Herzog (10 Funde, davon 4 historisch)
+- Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
+- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
