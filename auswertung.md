@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-11 13:30 (deutsche Zeit) · 127 Zugänge · 180× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-11 15:00 (deutsche Zeit) · 127 Zugänge · 181× ausverkauft
 
 ## Überblick je Shop
 
@@ -21,6 +21,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-11 13:30 (deutsche Zeit) · 127 Zugänge 
 | Zigarrentraum | 2 | 0 | 2 | 0 | 5,8 Tage |
 | Dalay Zigarren | 0 | 0 | 5 | 0 | – |
 | Pipe House | 0 | 0 | 4 | 0 | – |
+| Tabacstore | 0 | 0 | 1 | 0 | – |
 
 ## Wann füllen die Shops nach?
 
