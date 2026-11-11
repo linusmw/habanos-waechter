@@ -103,15 +103,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █135  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
-### Zigarren Herzog (10 Funde, davon 4 historisch)
-- Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
-- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
-
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (30%), **Abend** (40%)
+
+### Zigarren Herzog (10 Funde, davon 4 historisch)
+- Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
+- Am häufigsten: **Do** (40%), **Nachmittag** (80%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
