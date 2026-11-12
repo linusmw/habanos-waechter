@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-11 23:00 (deutsche Zeit) · 131 Zugänge · 187× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-12 06:50 (deutsche Zeit) · 133 Zugänge · 187× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 32 | 0 | 36 | 4 | 9 Std. |
+| Wolsdorff | 34 | 0 | 36 | 4 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 20 | 2 | 18 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
 | Casa Benden | 2 | 5 | 10 | 2 | 17 Std. |
@@ -27,19 +27,19 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-11 23:00 (deutsche Zeit) · 131 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃45  Di ▅65  Mi ▅64  Do ▇86  Fr █104  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃45  Di ▅65  Mi ▅64  Do ▇88  Fr █104  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █139  Abend ▅86
+Nacht ▁10  Morgen ▃48  Vormittag ▂37  Mittag ▅86  Nachmittag █139  Abend ▅86
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
 
-### Wolsdorff (42 Funde, davon 10 historisch)
-- Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁3  Fr █29  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▄9  Vormittag ▁2  Mittag █19  Nachmittag ▅11  Abend  1
-- Am häufigsten: **Fr** (69%), **Mittag** (45%)
+### Wolsdorff (44 Funde, davon 10 historisch)
+- Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁5  Fr █29  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▅11  Vormittag ▁2  Mittag █19  Nachmittag ▅11  Abend  1
+- Am häufigsten: **Fr** (66%), **Mittag** (43%)
 - Wareneingänge im Schnitt alle **4,7 Tage** (zuletzt 2026-11-06 13:00)
 
 ### Brinkmann Finest (34 Funde, davon 34 historisch)
@@ -105,15 +105,15 @@ Nacht ▁10  Morgen ▃46  Vormittag ▂37  Mittag ▅86  Nachmittag █139  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
-### Pipe House (10 Funde, davon 10 historisch)
-- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
-- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
-- Am häufigsten: **Di** (30%), **Abend** (40%)
-
 ### Zigarren Herzog (10 Funde, davon 4 historisch)
 - Wochentage: Mo ▂1  Di ▆3  Mi  0  Do █4  Fr ▄2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag  0  Nachmittag █8  Abend ▁1
 - Am häufigsten: **Do** (40%), **Nachmittag** (80%)
+
+### Pipe House (10 Funde, davon 10 historisch)
+- Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
+- Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag █4  Abend █4
+- Am häufigsten: **Di** (30%), **Abend** (40%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
