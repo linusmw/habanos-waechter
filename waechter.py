@@ -569,12 +569,12 @@ class Shop:
     fetch: Callable[[requests.Session], list[Item]]
 
 
-def get_json(session: requests.Session, url: str) -> tuple:
+def get_json(session: requests.Session, url: str, timeout: int = 30) -> tuple:
     """Lädt JSON mit bis zu drei Versuchen und gibt Daten und Header zurück."""
     last_error = None
     for attempt in range(3):
         try:
-            r = session.get(url, timeout=30, headers={"Accept": "application/json"})
+            r = session.get(url, timeout=timeout, headers={"Accept": "application/json"})
             if r.status_code == 200:
                 return r.json(), r.headers
             last_error = f"HTTP {r.status_code}"
@@ -591,20 +591,24 @@ def fetch_zigarrentraum(session: requests.Session) -> list[Item]:
 
 
 def make_woo_fetcher(site: str, category: str, brand_prefix: bool = False,
-                     trust_total: bool = True) -> Callable[[requests.Session], list[Item]]:
-    return lambda session: fetch_woo(session, site, category, brand_prefix, trust_total)
+                     trust_total: bool = True, per_page: int = 100,
+                     timeout: int = 30) -> Callable[[requests.Session], list[Item]]:
+    return lambda session: fetch_woo(session, site, category, brand_prefix, trust_total,
+                                     per_page, timeout)
 
 
 def fetch_woo(session: requests.Session, site: str, category: str,
-              brand_prefix: bool = False, trust_total: bool = True) -> list[Item]:
+              brand_prefix: bool = False, trust_total: bool = True,
+              per_page: int = 100, timeout: int = 30) -> list[Item]:
     """WooCommerce Store API. trust_total=False, wenn der Shop X-WP-Total falsch meldet
-    (Pipe House liefert dort immer 1); dann wird geblättert, bis eine Seite leer ist."""
+    (Pipe House liefert dort immer 1); dann wird geblättert, bis eine Seite leer ist.
+    Langsame Shops bekommen kleinere Seiten (per_page) und mehr Zeit (timeout)."""
     api = f"{site}/wp-json/wc/store/v1/products"
     products: dict[int, dict] = {}
     total = None
-    for page in range(1, 31):
-        data, headers = get_json(session, f"{api}?category={category}&per_page=100"
-                                          f"&page={page}&orderby=id&order=asc")
+    for page in range(1, 3000 // per_page + 1):
+        data, headers = get_json(session, f"{api}?category={category}&per_page={per_page}"
+                                          f"&page={page}&orderby=id&order=asc", timeout)
         if total is None and trust_total:
             total = int(headers.get("X-WP-Total", 0))
         if not data:
@@ -612,7 +616,7 @@ def fetch_woo(session: requests.Session, site: str, category: str,
         new = [p for p in data if p["id"] not in products]
         for p in data:
             products[p["id"]] = p
-        if not new or (total and len(products) >= total) or len(data) < 100:
+        if not new or (total and len(products) >= total) or len(data) < per_page:
             break
         time.sleep(PAUSE_BETWEEN_PAGES)
     if not products:
@@ -625,7 +629,8 @@ def fetch_woo(session: requests.Session, site: str, category: str,
     for i in range(0, len(in_stock), 20):
         parents = "&".join(f"parent[]={pid}" for pid in in_stock[i:i + 20])
         for page in range(1, 11):
-            data, headers = get_json(session, f"{api}?type=variation&{parents}&per_page=100&page={page}")
+            data, headers = get_json(session, f"{api}?type=variation&{parents}&per_page=100&page={page}",
+                                     timeout)
             variations.extend(data)
             if page >= int(headers.get("X-WP-TotalPages", 1) or 1):
                 break
@@ -918,7 +923,10 @@ SHOPS = [
     Shop("starkezigarren", "StarkeZigarren", "nur_lieferbar",
          make_jtl_fetcher("https://www.starkezigarren.de/Kubanische-Zigarren-kaufen")),
     Shop("pipehouse", "Pipe House", "voll",
-         make_woo_fetcher("https://pipehouse.de", "10856", brand_prefix=True, trust_total=False)),
+         # Schnittstelle sehr langsam (seit 12.11.2026 ca. 15 s für 25 Produkte, 30–50 s für 100):
+         # kleinere Seiten und mehr Zeit, sonst läuft das 30-s-Timeout ab
+         make_woo_fetcher("https://pipehouse.de", "10856", brand_prefix=True, trust_total=False,
+                          per_page=25, timeout=90)),
     Shop("nobbis", "Nobbis Tabakwelt", "voll",
          make_woo_fetcher("https://www.nobbis-tabakwelt.de", "53")),
     Shop("paulbugge", "Paul Bugge", "voll", fetch_paulbugge),

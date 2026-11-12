@@ -547,3 +547,23 @@ def test_recheck_fast_shops_stops_before_next_half_hour(monkeypatch):
     assert passes == 5 and "wolsdorff" in calls[0][1]
     assert set(w.FAST_SHOPS) <= {s.id for s in w.SHOPS}
 
+
+
+def test_woo_small_pages_and_timeout(monkeypatch):
+    """Pipe House: kleine Seiten, längeres Timeout, Blättern bis zur unvollen Seite."""
+    monkeypatch.setattr(w, "PAUSE_BETWEEN_PAGES", 0)
+    calls = []
+    products = [{"id": n, "is_in_stock": False, "variations": []} for n in range(1, 61)]
+
+    def fake_get_json(session, url, timeout=30):
+        calls.append((url, timeout))
+        assert "type=variation" not in url
+        page = int(url.split("&page=")[1].split("&")[0])
+        assert "per_page=25" in url
+        return products[(page - 1) * 25:page * 25], {"X-WP-Total": "1"}
+
+    monkeypatch.setattr(w, "get_json", fake_get_json)
+    monkeypatch.setattr(w, "parse_zigarrentraum_api", lambda p, v, b: p)
+    got = w.fetch_woo(None, "https://shop.example", "1", trust_total=False, per_page=25, timeout=90)
+    assert len(got) == 60
+    assert len(calls) == 3 and all(t == 90 for _, t in calls)
