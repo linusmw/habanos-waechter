@@ -837,18 +837,37 @@ def fetch_cigarrenversand24(session: requests.Session) -> list[Item]:
     return list(merged.values())
 
 
+# Unterseiten, die ein Shop in diesem Lauf überspringen musste (Shop-ID -> URLs).
+# run() übernimmt für Artikel dieser Seiten den letzten bekannten Stand, damit
+# eine einzelne kaputte Seite weder den ganzen Shop lahmlegt noch Fehlalarme auslöst.
+SKIPPED_PAGES: dict[str, list[str]] = {}
+MAX_SKIPPED_PAGES = 3
+
+
 def fetch_tabakkontor(session: requests.Session) -> list[Item]:
     # Kategorie Cuba -> Marken -> Linien; jede Seite zeigt alle Artikel ohne Blättern
     base = "https://tabak-kontor.de"
-    queue = [f"{base}/onlineshop/zigarren-cigarillos/cuba"]
+    start = f"{base}/onlineshop/zigarren-cigarillos/cuba"
+    queue = [start]
     seen: set[str] = set()
     items: dict[str, Item] = {}
+    skipped: list[str] = []
+    SKIPPED_PAGES["tabakkontor"] = skipped
     while queue and len(seen) < 150:
         url = queue.pop(0)
         if url in seen:
             continue
         seen.add(url)
-        page_items, subs = parse_virtuemart(get(session, url), base)
+        try:
+            html = get(session, url)
+        except FetchError:
+            # Die Startseite muss gehen; einzelne Marken-/Linienseiten dürfen ausfallen
+            # (z. B. seit 13.11.2026 Vegas Robaina dauerhaft mit HTTP 522).
+            if url == start or len(skipped) >= MAX_SKIPPED_PAGES:
+                raise
+            skipped.append(url)
+            continue
+        page_items, subs = parse_virtuemart(html, base)
         for i in page_items:
             items.setdefault(i.key, i)
         queue += [u for u in subs if u not in seen and "produktion-eingestellt" not in u]
@@ -1028,6 +1047,26 @@ def compare(shop: Shop, shop_state: dict, current: list[Item], timestamp: str) -
 
     shop_state["initialized"] = True
     return events
+
+
+def carry_over(shop_state: dict, current: list[Item], skipped: list[str]) -> list[Item]:
+    """Artikel übersprungener Seiten mit ihrem letzten bekannten Stand übernehmen.
+
+    Ein Artikel gehört zu einer Seite, wenn seine URL mit der Seiten-URL beginnt
+    (VirtueMart: .../vegas-robaina -> .../vegas-robaina-famosos...)."""
+    if not skipped:
+        return []
+    for url in skipped:
+        print(f"   Übersprungen (letzter Stand bleibt): {url}")
+    have = {i.key for i in current}
+    kept = []
+    for key, old in shop_state.get("items", {}).items():
+        url = old.get("url", "")
+        if key not in have and any(url.startswith(s) for s in skipped):
+            kept.append(Item(key=key, name=old.get("name", ""), pack=old.get("pack", ""),
+                             price=old.get("price", ""), url=url,
+                             available=bool(old.get("available")), group=old.get("group", key)))
+    return kept
 
 
 def plausible(shop: Shop, shop_state: dict, current: list[Item]) -> str | None:
@@ -1310,7 +1349,9 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
         shop_state = state["shops"].setdefault(shop.id, {"items": {}})
         print(f"== {shop.name}")
         try:
+            SKIPPED_PAGES.pop(shop.id, None)
             current = [i for i in shop.fetch(session) if is_wanted(i)]
+            current += carry_over(shop_state, current, SKIPPED_PAGES.pop(shop.id, []))
             problem = plausible(shop, shop_state, current)
             if problem:
                 raise FetchError(problem)

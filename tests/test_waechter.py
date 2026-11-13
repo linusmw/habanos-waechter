@@ -567,3 +567,48 @@ def test_woo_small_pages_and_timeout(monkeypatch):
     got = w.fetch_woo(None, "https://shop.example", "1", trust_total=False, per_page=25, timeout=90)
     assert len(got) == 60
     assert len(calls) == 3 and all(t == 90 for _, t in calls)
+
+
+def test_tabakkontor_skips_single_broken_subpage(monkeypatch):
+    start = "https://tabak-kontor.de/onlineshop/zigarren-cigarillos/cuba"
+    broken = "https://tabak-kontor.de/onlineshop/zigarren-cigarillos/vegas-robaina"
+    ok = "https://tabak-kontor.de/onlineshop/zigarren-cigarillos/cohiba"
+    monkeypatch.setattr(w.time, "sleep", lambda s: None)
+
+    def fake_get(session, url, allow_404=False):
+        if url == broken:
+            raise w.FetchError(f"{url}: HTTP 522")
+        return url
+
+    def fake_parse(html, base):
+        if html == start:
+            return [], [broken, ok]
+        return [w.Item(f"k{n}", f"Cohiba {n}", "", "", f"{ok}-{n}", True) for n in range(60)], []
+
+    monkeypatch.setattr(w, "get", fake_get)
+    monkeypatch.setattr(w, "parse_virtuemart", fake_parse)
+    items = w.fetch_tabakkontor(None)
+    assert len(items) == 60
+    assert w.SKIPPED_PAGES["tabakkontor"] == [broken]
+
+
+def test_tabakkontor_fails_when_start_page_broken(monkeypatch):
+    monkeypatch.setattr(w.time, "sleep", lambda s: None)
+
+    def fake_get(session, url, allow_404=False):
+        raise w.FetchError(f"{url}: HTTP 522")
+
+    monkeypatch.setattr(w, "get", fake_get)
+    with pytest.raises(w.FetchError):
+        w.fetch_tabakkontor(None)
+
+
+def test_carry_over_keeps_last_state_of_skipped_page():
+    skipped = "https://tabak-kontor.de/onlineshop/zigarren-cigarillos/vegas-robaina"
+    state = {"items": {
+        "183": {"name": "Vegas Robaina Unicos", "url": skipped + "-unicos", "available": True},
+        "9": {"name": "Cohiba Siglo I", "url": "https://tabak-kontor.de/x/cohiba", "available": True},
+    }}
+    kept = w.carry_over(state, [], [skipped])
+    assert [(i.key, i.available) for i in kept] == [("183", True)]
+    assert w.carry_over(state, [], []) == []
