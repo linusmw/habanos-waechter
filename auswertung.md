@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-13 10:00 (deutsche Zeit) · 136 Zugänge · 194× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-13 13:00 (deutsche Zeit) · 143 Zugänge · 195× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 34 | 0 | 36 | 4 | 9 Std. |
+| Wolsdorff | 41 | 0 | 37 | 5 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 21 | 2 | 18 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
 | Casa Benden | 2 | 5 | 11 | 2 | 14 Std. |
@@ -27,20 +27,20 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-13 10:00 (deutsche Zeit) · 136 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃45  Di ▅65  Mi ▅64  Do ▇91  Fr █104  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃45  Di ▅65  Mi ▅64  Do ▇91  Fr █111  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅87  Nachmittag █139  Abend ▅86
+Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █139  Abend ▅86
+
+### Wolsdorff (51 Funde, davon 10 historisch)
+- Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▃11  Abend  1
+- Am häufigsten: **Fr** (71%), **Mittag** (51%)
+- Wareneingänge im Schnitt alle **5,2 Tage** (zuletzt 2026-11-13 13:00)
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen █14  Vormittag ▇12  Mittag ▅8  Nachmittag ▆10  Abend ▃6
 - Am häufigsten: **Fr** (36%), **Morgen** (28%)
-
-### Wolsdorff (44 Funde, davon 10 historisch)
-- Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁5  Fr █29  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▅11  Vormittag ▁2  Mittag █19  Nachmittag ▅11  Abend  1
-- Am häufigsten: **Fr** (66%), **Mittag** (43%)
-- Wareneingänge im Schnitt alle **4,7 Tage** (zuletzt 2026-11-06 13:00)
 
 ### Brinkmann Finest (34 Funde, davon 34 historisch)
 - Wochentage: Mo ▃3  Di ▄5  Mi ▄4  Do █9  Fr ▇8  Sa ▃3  So ▂2
@@ -74,16 +74,16 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅87  Nachmittag █139  Abe
 - Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
 - Am häufigsten: **Fr** (33%), **Abend** (33%)
 
-### StarkeZigarren (20 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
-- Am häufigsten: **Do** (45%), **Nachmittag** (45%)
-
 ### Casa Benden (20 Funde, davon 6 historisch)
 - Wochentage: Mo ▁1  Di ▁1  Mi █8  Do ▇7  Fr ▃3  Sa  0  So  0
 - Tageszeit: Nacht ▁1  Morgen ▄4  Vormittag  0  Mittag ▃3  Nachmittag █8  Abend ▄4
 - Am häufigsten: **Mi** (40%), **Nachmittag** (40%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
+
+### StarkeZigarren (20 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
+- Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -100,15 +100,15 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅87  Nachmittag █139  Abe
 - Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▃2  Nachmittag █6  Abend ▃2
 - Am häufigsten: **Do** (33%), **Nachmittag** (50%)
 
-### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
-
 ### Zigarren Herzog (11 Funde, davon 4 historisch)
 - Wochentage: Mo ▂1  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █8  Abend ▁1
 - Am häufigsten: **Do** (45%), **Nachmittag** (73%)
+
+### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
@@ -126,6 +126,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Fr 2026-11-13 13:00 | Wolsdorff | 7 | Hoyo de Monterrey Epicure No. 2, Montecristo Edmundo 1'S, Montecristo Petit Edmundo Single 1'S … |
 | Mi 2026-11-11 15:55 | Casa Benden | 4 | Cohiba Year Of The Rabbit Siglo de Oro (2023), Partagas Year Of The Snake Cedros (2025), Romeo y Julieta De Oro … |
 | Sa 2026-11-07 12:45 | c-cigars | 4 | Guantanamera Cristales, Guantanamera Seleccion, Partagas Club Zigarillos … |
 | Fr 2026-11-06 13:00 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Petit Robusto, Juan Lopez Sel. No 1 1'S … |
@@ -140,7 +141,6 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 | Fr 2026-10-30 08:00 | Nobbis Tabakwelt | 3 | Hoyo de Monterrey Palmas Extra, Romeo Y Julieta Sport Largos, Romeo y Julieta Petit Corona |
 | Do 2026-10-29 13:00 | Cigarrenversand24 | 3 | CV24-PRIME-Selection-Sampler "Surprise No. FOUR" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. THREE" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. TWO" - jeweils nur 1x so verfügbar! |
 | Sa 2026-10-24 05:30 | Dominique London | 3 | Montecristo Joyitas - Single Cigar, Montecristo No. 5 - Single Cigar, Trinidad Media Luna - Single Cigar |
-| Fr 2026-10-23 14:30 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Epicure No. 2, Jose L. Piedra Brevas … |
 
 ## Wie schnell ist die Ware wieder weg?
 
@@ -168,18 +168,18 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | H. Upmann Half Corona | Cigarrenversand24 | 6 |
 | Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 6 |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
+| Partagas Mille Fleurs 1'S | Wolsdorff | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
 | H. Upmann Half Corona | Wolsdorff | 3 |
-| Partagas Mille Fleurs 1'S | Wolsdorff | 3 |
+| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 3 |
-| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 2 |
+| Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 |
 | Partagas Serie D No. 4 | Wolsdorff | 2 |
 | Romeo y Julieta No 3 AT | Wolsdorff | 2 |
 | Romeo y Julieta Petit Royales 1'S | Wolsdorff | 2 |
-| Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023 | Tabak-Kontor Leipzig | 2 |
 
 ## Historische Funde
 
