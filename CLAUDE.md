@@ -33,6 +33,7 @@ kein Entwickler: Antworten auf Deutsch, Technik in einfachen Worten.
 | `neuheiten.py` → `neuheiten.csv` | wann Shops Produkte neu angelegt / wieder veröffentlicht haben (Zeitstempel der Shopsysteme) |
 | `wunschliste.txt` | Wunsch-Zigarren mit höchster Priorität (61 Einträge) |
 | `.github/workflows/waechter.yml` | der Workflow |
+| `app/Habanos-Auswertung.html` | lokale Auswertungs-App (Doppelklick): lädt `state.json`, `verlauf.csv`, `historie.csv`, `neuheiten.csv`, `wunschliste.txt` live von raw.githubusercontent.com; Wunschlisten-Abgleich ist ein JS-Nachbau von `wish_for()` – bei Regeländerungen mitziehen; neue Shops in `NAMES` eintragen |
 | `tests/` | pytest; `conftest.py` leitet `STATE_FILE`, `LOG_FILE`, `WISH_FILE` in ein Temp-Verzeichnis um |
 
 ## Die 21 Shops (`SHOPS` in waechter.py)
@@ -79,8 +80,10 @@ Rauchr, Veicht, Dürninger. Vorher prüfen, ob Havannas mit Lagerstand online st
 ## Ablauf eines Laufs
 
 1. Jeder Shop wird gelesen → Liste von `Item(key, name, pack, price, url, available, group)`.
-   Reihenfolge (`shop_order()`): erst die `FAST_SHOPS`, dann der Rest wie in `SHOPS`.
-   Die Push-Nachricht eines Shops geht sofort nach dessen Vergleich raus, nicht erst am Ende.
+   Die Shops werden **gleichzeitig** gelesen (`PARALLEL_SHOPS = 8` Threads, je Shop eigene
+   Sitzung über `fetch_shop()`; Pause zwischen Seiten bleibt je Shop). Gestartet wird in der
+   Reihenfolge `shop_order()` (erst `FAST_SHOPS`). Ausgewertet und gemeldet wird jeder Shop im
+   Hauptthread, sobald er fertig ist (Bestand nie aus Threads ändern). Voller Durchgang ~2 Min.
 2. Filter `is_wanted()`: Zubehör (`ACCESSORY_WORDS`: Feuerzeug, Humidor, Etui, Jar, leer, Buch …,
    außer „mit N Zigarren“ / „5er Metalletui“ / „25er Jar“) und Nicht-Havannas
    (`NON_HABANOS`: VegaFina, Maria Mancini) fliegen bei allen Shops raus.
@@ -121,7 +124,10 @@ shopübergreifende Einträge für `wunschliste.txt` bauen, Treffer gegen `state.
   (Ablaufdatum beim Erstellen höchstens ein Jahr in die Zukunft, sonst tut der Knopf nichts).
   API-Version 2022-11-28 wird laut GitHub ab 10.03.2028 nicht mehr unterstützt.
 - **Reserve:** GitHub-Zeitplan `11 */3 * * *` (eigene Concurrency-Gruppe pro Ereignistyp,
-  ohne Nachprüfung); dabei läuft auch `neuheiten.py`.
+  ohne Nachprüfung); dabei läuft auch `neuheiten.py`. GitHub startet ihn oft stark verspätet;
+  läuft gerade ein Takt-Lauf oder startete einer vor <40 Min., prüft die Reserve **keine Shops**
+  (Schritt „Läuft der Takt gerade?“), sonst gab es doppelte Pushes und überschriebene
+  `verlauf.csv`-Zeilen (5 Fälle bis 14.11.2026).
 - **Speichern:** Wird der Push abgelehnt (anderer Lauf hat inzwischen gespeichert), holt der
   Schritt den neuen Stand mit `git pull --rebase -X theirs` und versucht es bis zu 3×.
   Eigene Pushes während eines laufenden Laufs sind dadurch unkritisch.

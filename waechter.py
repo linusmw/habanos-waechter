@@ -35,6 +35,7 @@ import sys
 import time
 from html import unescape
 from dataclasses import dataclass
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
@@ -1341,24 +1342,35 @@ def shop_order(shops: list[Shop]) -> list[Shop]:
     rank = {shop_id: i for i, shop_id in enumerate(FAST_SHOPS)}
     return sorted(shops, key=lambda s: rank.get(s.id, len(rank)))   # sorted() ist stabil
 
+PARALLEL_SHOPS = 8   # so viele Shops werden gleichzeitig gelesen (jeder Shop selbst weiter mit Pause)
+
+def fetch_shop(shop: Shop) -> tuple[list[Item], list[str]]:
+    """Liest einen Shop mit eigener Sitzung (läuft in einem eigenen Thread).
+    Liefert die gewünschten Artikel und die übersprungenen Seiten."""
+    SKIPPED_PAGES.pop(shop.id, None)
+    items = [i for i in shop.fetch(make_session()) if is_wanted(i)]
+    return items, SKIPPED_PAGES.pop(shop.id, [])
+
 def run(dry_run: bool = False, only: list[str] | None = None) -> int:
     state = load_state()
     timestamp = now_iso()
     today = timestamp[:10]
-    session = make_session()
     shop_names = {s.id: s.name for s in SHOPS}
     all_events: list[Event] = []
     warnings: list[tuple[str, str]] = []
 
-    for shop in shop_order(SHOPS):
-        if only is not None and shop.id not in only:
-            continue
+    shops = [s for s in shop_order(SHOPS) if only is None or s.id in only]
+    # Alle Shops gleichzeitig lesen, die schnellen zuerst gestartet. Ausgewertet und gemeldet
+    # wird jeder Shop, sobald er fertig ist; der Bestand selbst wird nur hier im Hauptthread geändert.
+    pool = ThreadPoolExecutor(max_workers=PARALLEL_SHOPS)
+    futures = {pool.submit(fetch_shop, s): s for s in shops}
+    for future in as_completed(futures):
+        shop = futures[future]
         shop_state = state["shops"].setdefault(shop.id, {"items": {}})
         print(f"== {shop.name}")
         try:
-            SKIPPED_PAGES.pop(shop.id, None)
-            current = [i for i in shop.fetch(session) if is_wanted(i)]
-            current += carry_over(shop_state, current, SKIPPED_PAGES.pop(shop.id, []))
+            current, skipped = future.result()
+            current += carry_over(shop_state, current, skipped)
             problem = plausible(shop, shop_state, current)
             if problem:
                 raise FetchError(problem)
@@ -1388,6 +1400,7 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
         if not dry_run:
             # sofort melden, nicht erst nach dem ganzen Durchgang (der dauert mehrere Minuten)
             notify(events, shop_names)
+    pool.shutdown()
 
     if dry_run:
         alerts = [e for e in all_events if e.kind in ALERT_KINDS]

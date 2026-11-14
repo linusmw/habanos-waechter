@@ -230,17 +230,26 @@ def test_shop_order_fast_first():
     assert sorted(order) == sorted(s.id for s in w.SHOPS)
 
 
-def test_run_pushes_fast_shop_before_reading_slow_shops(monkeypatch, tmp_path):
+def test_run_pushes_fast_shop_without_waiting_for_slow_shops(monkeypatch, tmp_path):
+    import threading
     monkeypatch.setattr(w, "STATE_FILE", tmp_path / "state.json")
     monkeypatch.setattr(w, "LOG_FILE", tmp_path / "verlauf.csv")
     calls = []
-    monkeypatch.setattr(w, "push", lambda title, message, **kw: calls.append(("push", title)) or True)
+    slow_may_finish = threading.Event()
+
+    def fake_push(title, message, **kw):
+        calls.append(("push", title))
+        slow_may_finish.set()          # der langsame Shop wird erst nach dieser Meldung fertig
+        return True
+    monkeypatch.setattr(w, "push", fake_push)
     stock = {"noblego": [mk("n", True, "Cohiba Siglo I")],
              "wolsdorff": [mk("x", False, "Ramón Allones No. 3")]}
 
     def fake(shop_id):
         def f(session):
-            calls.append(("lesen", shop_id))
+            if shop_id == "noblego" and stock["wolsdorff"][0].available:
+                assert slow_may_finish.wait(5), "Wolsdorff-Meldung wartet auf Noblego"
+            calls.append(("gelesen", shop_id))
             return stock[shop_id]
         return f
 
@@ -252,7 +261,9 @@ def test_run_pushes_fast_shop_before_reading_slow_shops(monkeypatch, tmp_path):
     stock["wolsdorff"] = [mk("x", True, "Ramón Allones No. 3")]
     calls.clear()
     w.run()
-    assert calls == [("lesen", "wolsdorff"), ("push", "Wolsdorff: 1 wieder da"), ("lesen", "noblego")]
+    assert calls == [("gelesen", "wolsdorff"), ("push", "Wolsdorff: 1 wieder da"), ("gelesen", "noblego")]
+    state = json.loads((tmp_path / "state.json").read_text())
+    assert state["shops"]["noblego"]["last_count"] == 1 and state["shops"]["wolsdorff"]["items"]["x"]["available"]
 
 
 def test_zigarrentraum_null_attributes():

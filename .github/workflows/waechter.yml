@@ -19,10 +19,11 @@ on:
 
 permissions:
   contents: write
+  actions: read      # Reserve-Lauf schaut nach, ob der Takt gerade läuft
 
 concurrency:
   # Zeitplan-Läufe (Reserve) bekommen eine eigene Gruppe, damit sie keinen wartenden
-  # Takt-Lauf verdrängen; Überschneidungen fängt das Speichern ab.
+  # Takt-Lauf verdrängen. Läuft der Takt, prüft die Reserve keine Shops (siehe unten).
   group: habanos-waechter-${{ github.event_name }}
   cancel-in-progress: false
 
@@ -50,8 +51,26 @@ jobs:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
         run: python waechter.py --test-push
 
+      - name: Läuft der Takt gerade?
+        # Der Reserve-Lauf (oft von GitHub verspätet gestartet) soll nicht gleichzeitig mit
+        # einem Takt-Lauf denselben Bestand prüfen: Das gab doppelte Push-Nachrichten und
+        # überschriebene Zeilen in verlauf.csv. Läuft der Takt oder lief er vor <40 Minuten,
+        # macht die Reserve nur die Neuheiten.
+        id: takt
+        if: ${{ github.event_name == 'schedule' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grenze=$(date -u -d '40 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          aktiv=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow waechter.yml \
+                    --event workflow_dispatch --limit 5 --json status,createdAt \
+                    -q "[.[] | select(.status != \"completed\" or .createdAt > \"$grenze\")] | length" \
+                  || echo 0)
+          echo "Takt-Läufe aktiv oder seit $grenze gestartet: $aktiv"
+          if [ "$aktiv" -gt 0 ]; then echo "aktiv=true" >> "$GITHUB_OUTPUT"; fi
+
       - name: Shops prüfen
-        if: ${{ !inputs.test_push }}
+        if: ${{ !inputs.test_push && steps.takt.outputs.aktiv != 'true' }}
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
