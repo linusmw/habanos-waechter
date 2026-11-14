@@ -33,7 +33,7 @@ kein Entwickler: Antworten auf Deutsch, Technik in einfachen Worten.
 | `neuheiten.py` → `neuheiten.csv` | wann Shops Produkte neu angelegt / wieder veröffentlicht haben (Zeitstempel der Shopsysteme) |
 | `wunschliste.txt` | Wunsch-Zigarren mit höchster Priorität (61 Einträge) |
 | `.github/workflows/waechter.yml` | der Workflow |
-| `app/Habanos-Auswertung.html` | lokale Auswertungs-App (Doppelklick): lädt `state.json`, `verlauf.csv`, `historie.csv`, `neuheiten.csv`, `wunschliste.txt` live von raw.githubusercontent.com; Wunschlisten-Abgleich ist ein JS-Nachbau von `wish_for()` – bei Regeländerungen mitziehen; neue Shops in `NAMES` eintragen |
+| `bot.json` | Steckbrief für die lokale **Bot-Zentrale** des Nutzers (eigene App außerhalb dieses Repos: `Desktop\05_Hyperfokus & Deepdive\Bot-Zentrale`, Ansicht `static/views/bestand.js`). Enthält Shopnamen (Test prüft Gleichstand mit `SHOPS`), Datendateien, Workflow-Knöpfe. Neuer Shop → auch hier eintragen. Der Wunschlisten-Abgleich der App ist ein JS-Nachbau von `wish_for()` – bei Regeländerungen dort mitziehen |
 | `tests/` | pytest; `conftest.py` leitet `STATE_FILE`, `LOG_FILE`, `WISH_FILE` in ein Temp-Verzeichnis um |
 
 ## Die 21 Shops (`SHOPS` in waechter.py)

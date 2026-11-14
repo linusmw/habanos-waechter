@@ -1,0 +1,46 @@
+{
+  "name": "Habanos-Wächter",
+  "beschreibung": "Überwacht deutsche Online-Shops auf kubanische Zigarren und meldet, was wieder da oder neu ist.",
+  "symbol": "🚬",
+  "ansicht": "bestand",
+  "workflow": "waechter.yml",
+  "takt": "alle 30 Minuten (cron-job.org), Reserve alle 3 Stunden",
+  "knoepfe": [
+    {"titel": "Jetzt prüfen", "inputs": {"test_push": "false"},
+     "hinweis": "Startet einen zusätzlichen Lauf (ca. 25 Minuten mit Nachprüfung). Läuft gerade einer, wartet er."},
+    {"titel": "Test-Nachricht", "inputs": {"test_push": "true"},
+     "hinweis": "Schickt eine Beispiel-Nachricht ans Handy. Läuft gerade ein Prüflauf, kommt sie erst danach."}
+  ],
+  "dateien": {
+    "bestand": "state.json",
+    "verlauf": "verlauf.csv",
+    "historie": "historie.csv",
+    "neuheiten": "neuheiten.csv",
+    "wunschliste": "wunschliste.txt"
+  },
+  "einheit": "Zigarre",
+  "shops": {
+    "zigarrentraum": "Zigarrentraum",
+    "casabenden": "Casa Benden",
+    "brinkmann": "Brinkmann Finest",
+    "noblego": "Noblego",
+    "zigarrede": "zigarre.de",
+    "wolsdorff": "Wolsdorff",
+    "tabacstore": "Tabacstore",
+    "dalay": "Dalay Zigarren",
+    "peterheinrichs": "Peter Heinrichs",
+    "falkum": "Tabakhaus Falkum",
+    "ccigars": "c-cigars",
+    "habanoszigarren": "habanos-zigarren.com",
+    "lagalana": "La Galana",
+    "dominique": "Dominique London",
+    "starkezigarren": "StarkeZigarren",
+    "pipehouse": "Pipe House",
+    "nobbis": "Nobbis Tabakwelt",
+    "paulbugge": "Paul Bugge",
+    "cigarrenversand24": "Cigarrenversand24",
+    "tabakkontor": "Tabak-Kontor Leipzig",
+    "herzog": "Zigarren Herzog"
+  },
+  "ohne_lagerstand": ["dominique"]
+}

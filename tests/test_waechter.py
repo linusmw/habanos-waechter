@@ -222,6 +222,15 @@ def test_full_run(monkeypatch, tmp_path):
     assert not any("Panatelas" in p for p in pushes)
 
 
+def test_bot_json_matches_shops():
+    """bot.json ist der Steckbrief für die Bot-Zentrale: Shopnamen müssen zu SHOPS passen."""
+    manifest = json.loads((Path(w.__file__).with_name("bot.json")).read_text(encoding="utf-8"))
+    assert manifest["shops"] == {s.id: s.name for s in w.SHOPS}
+    assert set(manifest["ohne_lagerstand"]) == {s.id for s in w.SHOPS if s.mode == "nur_neu"}
+    for f in manifest["dateien"].values():
+        assert (Path(w.__file__).with_name(f)).exists(), f
+
+
 def test_shop_order_fast_first():
     order = [s.id for s in w.shop_order(w.SHOPS)]
     assert order[:len(w.FAST_SHOPS)] == w.FAST_SHOPS
