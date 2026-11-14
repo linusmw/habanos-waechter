@@ -222,6 +222,39 @@ def test_full_run(monkeypatch, tmp_path):
     assert not any("Panatelas" in p for p in pushes)
 
 
+def test_shop_order_fast_first():
+    order = [s.id for s in w.shop_order(w.SHOPS)]
+    assert order[:len(w.FAST_SHOPS)] == w.FAST_SHOPS
+    rest = [s.id for s in w.SHOPS if s.id not in w.FAST_SHOPS]
+    assert order[len(w.FAST_SHOPS):] == rest          # übrige Reihenfolge bleibt
+    assert sorted(order) == sorted(s.id for s in w.SHOPS)
+
+
+def test_run_pushes_fast_shop_before_reading_slow_shops(monkeypatch, tmp_path):
+    monkeypatch.setattr(w, "STATE_FILE", tmp_path / "state.json")
+    monkeypatch.setattr(w, "LOG_FILE", tmp_path / "verlauf.csv")
+    calls = []
+    monkeypatch.setattr(w, "push", lambda title, message, **kw: calls.append(("push", title)) or True)
+    stock = {"noblego": [mk("n", True, "Cohiba Siglo I")],
+             "wolsdorff": [mk("x", False, "Ramón Allones No. 3")]}
+
+    def fake(shop_id):
+        def f(session):
+            calls.append(("lesen", shop_id))
+            return stock[shop_id]
+        return f
+
+    by_id = {s.id: s for s in w.SHOPS}
+    shops = [w.Shop(i, by_id[i].name, by_id[i].mode, fake(i)) for i in ("noblego", "wolsdorff")]
+    monkeypatch.setattr(w, "SHOPS", shops)
+
+    w.run()                                            # Ausgangsbestand
+    stock["wolsdorff"] = [mk("x", True, "Ramón Allones No. 3")]
+    calls.clear()
+    w.run()
+    assert calls == [("lesen", "wolsdorff"), ("push", "Wolsdorff: 1 wieder da"), ("lesen", "noblego")]
+
+
 def test_zigarrentraum_null_attributes():
     products = json.loads(read("zigarrentraum_products.json"))
     items = w.parse_zigarrentraum_api(products, json.loads(read("zigarrentraum_variations.json")))

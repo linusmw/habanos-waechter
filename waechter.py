@@ -1334,6 +1334,13 @@ FAST_INTERVAL_MIN = 5
 FAST_STOP_MINUTE = 26     # in jeder halben Stunde: danach startet keine Nachprüfung mehr
 
 
+def shop_order(shops: list[Shop]) -> list[Shop]:
+    """Schnelle Shops zuerst (in der Reihenfolge von FAST_SHOPS), dann der Rest wie in SHOPS.
+    So kommt der volle Durchgang um :00/:30 bei den Shops mit schnell vergriffener Ware
+    gleich am Anfang vorbei statt erst nach den großen Katalogen."""
+    rank = {shop_id: i for i, shop_id in enumerate(FAST_SHOPS)}
+    return sorted(shops, key=lambda s: rank.get(s.id, len(rank)))   # sorted() ist stabil
+
 def run(dry_run: bool = False, only: list[str] | None = None) -> int:
     state = load_state()
     timestamp = now_iso()
@@ -1343,7 +1350,7 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
     all_events: list[Event] = []
     warnings: list[tuple[str, str]] = []
 
-    for shop in SHOPS:
+    for shop in shop_order(SHOPS):
         if only is not None and shop.id not in only:
             continue
         shop_state = state["shops"].setdefault(shop.id, {"items": {}})
@@ -1378,6 +1385,9 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
         if was_failing:
             warnings.append((shop.name, "wieder erreichbar"))
         all_events.extend(events)
+        if not dry_run:
+            # sofort melden, nicht erst nach dem ganzen Durchgang (der dauert mehrere Minuten)
+            notify(events, shop_names)
 
     if dry_run:
         alerts = [e for e in all_events if e.kind in ALERT_KINDS]
@@ -1390,7 +1400,6 @@ def run(dry_run: bool = False, only: list[str] | None = None) -> int:
               "nichts gespeichert oder gesendet.")
         return 0
 
-    notify(all_events, shop_names)
     log_events(all_events, timestamp, shop_names)
     for shop_name, reason in warnings:
         if reason == "wieder erreichbar":

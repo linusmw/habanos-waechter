@@ -79,6 +79,8 @@ Rauchr, Veicht, Dürninger. Vorher prüfen, ob Havannas mit Lagerstand online st
 ## Ablauf eines Laufs
 
 1. Jeder Shop wird gelesen → Liste von `Item(key, name, pack, price, url, available, group)`.
+   Reihenfolge (`shop_order()`): erst die `FAST_SHOPS`, dann der Rest wie in `SHOPS`.
+   Die Push-Nachricht eines Shops geht sofort nach dessen Vergleich raus, nicht erst am Ende.
 2. Filter `is_wanted()`: Zubehör (`ACCESSORY_WORDS`: Feuerzeug, Humidor, Etui, Jar, leer, Buch …,
    außer „mit N Zigarren“ / „5er Metalletui“ / „25er Jar“) und Nicht-Havannas
    (`NON_HABANOS`: VegaFina, Maria Mancini) fliegen bei allen Shops raus.
