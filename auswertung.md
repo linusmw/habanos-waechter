@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-15 19:20 (deutsche Zeit) · 144 Zugänge · 207× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-16 00:30 (deutsche Zeit) · 146 Zugänge · 207× ausverkauft
 
 ## Überblick je Shop
 
@@ -14,7 +14,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-15 19:20 (deutsche Zeit) · 144 Zugänge 
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
 | Zigarren Herzog | 5 | 2 | 8 | 0 | 5,4 Tage |
-| zigarre.de | 5 | 0 | 4 | 0 | 2,1 Tage |
+| zigarre.de | 7 | 0 | 4 | 0 | 2,1 Tage |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-15 19:20 (deutsche Zeit) · 144 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃45  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▃47  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abend ▅86
 
 ### Wolsdorff (51 Funde, davon 10 historisch)
 - Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -69,16 +69,16 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abe
 - Am häufigsten: **Di** (36%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### c-cigars (21 Funde, davon 13 historisch)
-- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
-- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
-- Am häufigsten: **Fr** (33%), **Abend** (33%)
-
 ### Casa Benden (21 Funde, davon 6 historisch)
 - Wochentage: Mo ▁1  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
 - Tageszeit: Nacht ▁1  Morgen ▄4  Vormittag  0  Mittag ▃3  Nachmittag █9  Abend ▄4
 - Am häufigsten: **Mi** (38%), **Nachmittag** (43%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
+
+### c-cigars (21 Funde, davon 13 historisch)
+- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
+- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
+- Am häufigsten: **Fr** (33%), **Abend** (33%)
 
 ### StarkeZigarren (20 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
@@ -90,15 +90,15 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
+### zigarre.de (14 Funde, davon 7 historisch)
+- Wochentage: Mo ▆3  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
+- Tageszeit: Nacht ▄3  Morgen  0  Vormittag ▁1  Mittag ▃2  Nachmittag █6  Abend ▃2
+- Am häufigsten: **Do** (29%), **Nachmittag** (43%)
+
 ### Noblego (13 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
-
-### zigarre.de (12 Funde, davon 7 historisch)
-- Wochentage: Mo ▂1  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▃2  Nachmittag █6  Abend ▃2
-- Am häufigsten: **Do** (33%), **Nachmittag** (50%)
 
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
@@ -173,13 +173,13 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | H. Upmann Half Corona | Wolsdorff | 3 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 3 |
+| Guantanamera Décimos | zigarre.de | 3 |
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 |
 | Partagas Serie D No. 4 | Wolsdorff | 2 |
 | Romeo y Julieta No 3 AT | Wolsdorff | 2 |
-| Romeo y Julieta Petit Royales 1'S | Wolsdorff | 2 |
 
 ## Historische Funde
 
