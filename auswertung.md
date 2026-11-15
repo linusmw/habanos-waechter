@@ -69,16 +69,16 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abe
 - Am häufigsten: **Di** (36%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### c-cigars (21 Funde, davon 13 historisch)
-- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
-- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
-- Am häufigsten: **Fr** (33%), **Abend** (33%)
-
 ### Casa Benden (21 Funde, davon 6 historisch)
 - Wochentage: Mo ▁1  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
 - Tageszeit: Nacht ▁1  Morgen ▄4  Vormittag  0  Mittag ▃3  Nachmittag █9  Abend ▄4
 - Am häufigsten: **Mi** (38%), **Nachmittag** (43%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
+
+### c-cigars (21 Funde, davon 13 historisch)
+- Wochentage: Mo ▁1  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
+- Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▇6  Nachmittag ▇6  Abend █7
+- Am häufigsten: **Fr** (33%), **Abend** (33%)
 
 ### StarkeZigarren (20 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
