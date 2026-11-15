@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-15 14:15 (deutsche Zeit) · 144 Zugänge · 206× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-15 19:20 (deutsche Zeit) · 144 Zugänge · 207× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,7 +9,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-15 14:15 (deutsche Zeit) · 144 Zugänge 
 | Wolsdorff | 41 | 0 | 43 | 5 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 21 | 2 | 18 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
-| Casa Benden | 3 | 5 | 12 | 2 | 17 Std. |
+| Casa Benden | 3 | 5 | 13 | 2 | 19 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
@@ -100,15 +100,15 @@ Nacht ▁10  Morgen ▃50  Vormittag ▂37  Mittag ▅94  Nachmittag █140  Abe
 - Tageszeit: Nacht ▁1  Morgen  0  Vormittag ▁1  Mittag ▃2  Nachmittag █6  Abend ▃2
 - Am häufigsten: **Do** (33%), **Nachmittag** (50%)
 
-### Zigarren Herzog (11 Funde, davon 4 historisch)
-- Wochentage: Mo ▂1  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █8  Abend ▁1
-- Am häufigsten: **Do** (45%), **Nachmittag** (73%)
-
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
 - Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
+
+### Zigarren Herzog (11 Funde, davon 4 historisch)
+- Wochentage: Mo ▂1  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █8  Abend ▁1
+- Am häufigsten: **Do** (45%), **Nachmittag** (73%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
@@ -149,7 +149,6 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Artikel | Shop | weg nach (Median) | beobachtet |
 |---|---|---|---:|
 | Ramon Allones No.3 1’S | Wolsdorff | unter 1 Std. | 1× |
-| Cohiba Robustos (Am Brandende bis zu 1,5cm eingerissen) (Restbestand) | Casa Benden | unter 1 Std. | 1× |
 | Partagás Aliados | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Ramon Allones Specially Selected | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
@@ -160,6 +159,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
 | Juan Lopez Sel. No 1 1'S | Wolsdorff | 4 Std. | 1× |
+| Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
 
 ## Am häufigsten wieder da
 
