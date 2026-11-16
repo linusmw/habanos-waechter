@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-16 15:00 (deutsche Zeit) · 151 Zugänge · 215× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-16 15:50 (deutsche Zeit) · 152 Zugänge · 215× ausverkauft
 
 ## Überblick je Shop
 
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-16 15:00 (deutsche Zeit) · 151 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄52  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄53  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █144  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █145  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -69,10 +69,10 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █144  Abe
 - Am häufigsten: **Di** (36%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### Casa Benden (23 Funde, davon 6 historisch)
-- Wochentage: Mo ▃3  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
-- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁1  Mittag ▂3  Nachmittag █10  Abend ▃4
-- Am häufigsten: **Mi** (35%), **Nachmittag** (43%)
+### Casa Benden (24 Funde, davon 6 historisch)
+- Wochentage: Mo ▄4  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
+- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁1  Mittag ▂3  Nachmittag █11  Abend ▃4
+- Am häufigsten: **Mi** (33%), **Nachmittag** (46%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### c-cigars (21 Funde, davon 13 historisch)
