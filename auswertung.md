@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:45 (deutsche Zeit) · 150 Zugänge · 215× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-16 15:00 (deutsche Zeit) · 151 Zugänge · 215× ausverkauft
 
 ## Überblick je Shop
 
@@ -12,9 +12,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:45 (deutsche Zeit) · 150 Zugänge 
 | Casa Benden | 5 | 5 | 15 | 2 | 19 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
+| zigarre.de | 8 | 0 | 6 | 0 | 32 Std. |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
 | Zigarren Herzog | 5 | 2 | 10 | 0 | 5,6 Tage |
-| zigarre.de | 7 | 0 | 6 | 0 | 32 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:45 (deutsche Zeit) · 150 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄51  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄52  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █143  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █144  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -90,10 +90,10 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █143  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
-### zigarre.de (14 Funde, davon 7 historisch)
-- Wochentage: Mo ▆3  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
-- Tageszeit: Nacht ▄3  Morgen  0  Vormittag ▁1  Mittag ▃2  Nachmittag █6  Abend ▃2
-- Am häufigsten: **Do** (29%), **Nachmittag** (43%)
+### zigarre.de (15 Funde, davon 7 historisch)
+- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
+- Tageszeit: Nacht ▃3  Morgen  0  Vormittag ▁1  Mittag ▂2  Nachmittag █7  Abend ▂2
+- Am häufigsten: **Do** (27%), **Nachmittag** (47%)
 
 ### Noblego (13 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
