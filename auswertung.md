@@ -1,15 +1,15 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:20 (deutsche Zeit) · 149 Zugänge · 212× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:45 (deutsche Zeit) · 150 Zugänge · 215× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 43 | 0 | 43 | 5 | 9 Std. |
+| Wolsdorff | 43 | 0 | 45 | 5 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 21 | 2 | 18 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
-| Casa Benden | 4 | 5 | 14 | 2 | 19 Std. |
+| Casa Benden | 5 | 5 | 15 | 2 | 19 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:20 (deutsche Zeit) · 149 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄50  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄51  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █142  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █143  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -69,10 +69,10 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █142  Abe
 - Am häufigsten: **Di** (36%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### Casa Benden (22 Funde, davon 6 historisch)
-- Wochentage: Mo ▂2  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
-- Tageszeit: Nacht ▁1  Morgen ▄4  Vormittag ▁1  Mittag ▃3  Nachmittag █9  Abend ▄4
-- Am häufigsten: **Mi** (36%), **Nachmittag** (41%)
+### Casa Benden (23 Funde, davon 6 historisch)
+- Wochentage: Mo ▃3  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
+- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁1  Mittag ▂3  Nachmittag █10  Abend ▃4
+- Am häufigsten: **Mi** (35%), **Nachmittag** (43%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### c-cigars (21 Funde, davon 13 historisch)
@@ -100,15 +100,15 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █142  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
-### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
-
 ### Zigarren Herzog (11 Funde, davon 4 historisch)
 - Wochentage: Mo ▂1  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █8  Abend ▁1
 - Am häufigsten: **Do** (45%), **Nachmittag** (73%)
+
+### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
 ### Pipe House (10 Funde, davon 10 historisch)
 - Wochentage: Mo ▃1  Di █3  Mi ▃1  Do ▃1  Fr ▅2  Sa ▃1  So ▃1
@@ -151,6 +151,7 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Ramon Allones No.3 1’S | Wolsdorff | unter 1 Std. | 1× |
 | Partagás Aliados | Nobbis Tabakwelt | unter 1 Std. | 1× |
 | Ramon Allones Specially Selected | Nobbis Tabakwelt | unter 1 Std. | 1× |
+| Guantanamera Cristales (Restbestand) | Casa Benden | unter 1 Std. | 3× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 3× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
@@ -159,7 +160,6 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
 | Juan Lopez Sel. No 1 1'S | Wolsdorff | 4 Std. | 1× |
-| Romeo y Julieta No 3 AT | Wolsdorff | 4 Std. | 2× |
 
 ## Am häufigsten wieder da
 
@@ -177,9 +177,9 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
+| Guantanamera Cristales | Casa Benden | 2 |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 |
 | Partagas Serie D No. 4 | Wolsdorff | 2 |
-| Romeo y Julieta No 3 AT | Wolsdorff | 2 |
 
 ## Historische Funde
 
