@@ -1,20 +1,20 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-16 11:00 (deutsche Zeit) · 147 Zugänge · 208× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-16 14:20 (deutsche Zeit) · 149 Zugänge · 212× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 41 | 0 | 43 | 5 | 9 Std. |
+| Wolsdorff | 43 | 0 | 43 | 5 | 9 Std. |
 | Cigarrenversand24 | 17 | 3 | 21 | 2 | 18 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
 | Casa Benden | 4 | 5 | 14 | 2 | 19 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
-| Zigarren Herzog | 5 | 2 | 8 | 0 | 5,4 Tage |
-| zigarre.de | 7 | 0 | 4 | 0 | 2,1 Tage |
+| Zigarren Herzog | 5 | 2 | 10 | 0 | 5,6 Tage |
+| zigarre.de | 7 | 0 | 6 | 0 | 32 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
@@ -27,14 +27,14 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-16 11:00 (deutsche Zeit) · 147 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃48  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄50  Di ▅65  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █140  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅94  Nachmittag █142  Abend ▅86
 
-### Wolsdorff (51 Funde, davon 10 historisch)
-- Wochentage: Mo ▂8  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▃11  Abend  1
-- Am häufigsten: **Fr** (71%), **Mittag** (51%)
+### Wolsdorff (53 Funde, davon 10 historisch)
+- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▄13  Abend  1
+- Am häufigsten: **Fr** (68%), **Mittag** (49%)
 - Wareneingänge im Schnitt alle **5,2 Tage** (zuletzt 2026-11-13 13:00)
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
