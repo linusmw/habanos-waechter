@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-17 13:30 (deutsche Zeit) · 155 Zugänge · 217× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-17 14:00 (deutsche Zeit) · 156 Zugänge · 217× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,9 +11,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-17 13:30 (deutsche Zeit) · 155 Zugänge 
 | Nobbis Tabakwelt | 18 | 1 | 22 | 3 | 24 Std. |
 | Casa Benden | 5 | 5 | 16 | 2 | 17 Std. |
 | Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
+| zigarre.de | 9 | 0 | 6 | 0 | 32 Std. |
 | Zigarren Herzog | 6 | 2 | 10 | 0 | 5,6 Tage |
 | c-cigars | 8 | 0 | 23 | 1 | 3,6 Tage |
-| zigarre.de | 8 | 0 | 6 | 0 | 32 Std. |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
 | Dominique London | 0 | 4 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-17 13:30 (deutsche Zeit) · 155 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅67  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅64  Do ▆91  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅96  Nachmittag █146  Abend ▅86
+Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅96  Nachmittag █147  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -90,10 +90,10 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅96  Nachmittag █146  Abe
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
-### zigarre.de (15 Funde, davon 7 historisch)
-- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
-- Tageszeit: Nacht ▃3  Morgen  0  Vormittag ▁1  Mittag ▂2  Nachmittag █7  Abend ▂2
-- Am häufigsten: **Do** (27%), **Nachmittag** (47%)
+### zigarre.de (16 Funde, davon 7 historisch)
+- Wochentage: Mo █4  Di █4  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
+- Tageszeit: Nacht ▃3  Morgen  0  Vormittag ▁1  Mittag ▂2  Nachmittag █8  Abend ▂2
+- Am häufigsten: **Di** (25%), **Nachmittag** (50%)
 
 ### Noblego (13 Funde, davon 9 historisch)
 - Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
@@ -170,10 +170,10 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
 | Partagas Mille Fleurs 1'S | Wolsdorff | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
+| Guantanamera Décimos | zigarre.de | 4 |
 | H. Upmann Half Corona | Wolsdorff | 3 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 3 |
-| Guantanamera Décimos | zigarre.de | 3 |
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
