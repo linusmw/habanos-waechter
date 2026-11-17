@@ -100,15 +100,15 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅96  Nachmittag █147  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
-### Zigarren Herzog (12 Funde, davon 4 historisch)
-- Wochentage: Mo ▃2  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █9  Abend ▁1
-- Am häufigsten: **Do** (42%), **Nachmittag** (75%)
-
 ### Pipe House (12 Funde, davon 10 historisch)
 - Wochentage: Mo ▂1  Di █5  Mi ▂1  Do ▂1  Fr ▃2  Sa ▂1  So ▂1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag ▄2  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (42%), **Abend** (33%)
+
+### Zigarren Herzog (12 Funde, davon 4 historisch)
+- Wochentage: Mo ▃2  Di ▅3  Mi  0  Do █5  Fr ▃2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▁1  Nachmittag █9  Abend ▁1
+- Am häufigsten: **Do** (42%), **Nachmittag** (75%)
 
 ### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
 - Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
@@ -240,11 +240,11 @@ Am häufigsten gefunden:
 
 ## Wann kommen Neuheiten online?
 
-Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (456 Produkte, 2019-02-11 bis 2026-10-16), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
+Zeitpunkte, zu denen Shops ein Produkt neu angelegt haben (458 Produkte, 2019-02-11 bis 2026-11-02), laut den Zeitstempeln ihrer Shopsysteme. Sortimentsimporte sind herausgerechnet.
 
-**Alle Shops:** Mo ▆72  Di ▇83  Mi ▆71  Do █85  Fr █90  Sa ▄47  So ▁8
+**Alle Shops:** Mo ▆73  Di ▇83  Mi ▆71  Do █86  Fr █90  Sa ▄47  So ▁8
 
-Nacht ▁16  Morgen ▅88  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abend ▃52
+Nacht ▁16  Morgen ▅88  Vormittag ▄81  Mittag ▄71  Nachmittag █150  Abend ▃52
 
 ### Zigarrentraum (174 Neuheiten)
 - Wochentage: Mo ▅29  Di █43  Mi ▅28  Do ▆31  Fr ▅28  Sa ▃14  So  1
@@ -266,10 +266,10 @@ Nacht ▁16  Morgen ▅88  Vormittag ▄81  Mittag ▄71  Nachmittag █148  Abe
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁4  Mittag ▁4  Nachmittag █23  Abend ▄12
 - Am häufigsten: **Mi** (22%), **Nachmittag** (51%)
 
-### Pipe House (33 Neuheiten)
-- Wochentage: Mo ▅5  Di ▇7  Mi ▁1  Do ▇7  Fr ▅5  Sa █8  So  0
-- Tageszeit: Nacht  0  Morgen ▂3  Vormittag █16  Mittag ▂5  Nachmittag ▄9  Abend  0
-- Am häufigsten: **Sa** (24%), **Vormittag** (48%)
+### Pipe House (35 Neuheiten)
+- Wochentage: Mo ▆6  Di ▇7  Mi ▁1  Do █8  Fr ▅5  Sa █8  So  0
+- Tageszeit: Nacht  0  Morgen ▂3  Vormittag █16  Mittag ▂5  Nachmittag ▆11  Abend  0
+- Am häufigsten: **Do** (23%), **Vormittag** (46%)
 
 ### Wieder online gestellt (Shopify-Shops)
 
@@ -283,6 +283,7 @@ Zuletzt neu angelegt:
 
 | Zeit | Shop | Zigarre |
 |---|---|---|
+| Mo 2026-11-02 17:36 | Pipe House | Ramon Allones Absolutos Edición Limitada 2024 |
 | Fr 2026-10-16 15:14 | Zigarrentraum | Cohiba Maduro 5 Genios |
 | Do 2026-09-17 10:53 | Zigarrentraum | Sancho Panza Belicoso |
 | Fr 2026-09-11 07:30 | Nobbis Tabakwelt | Romeo y Julieta Petit Corona |
@@ -297,7 +298,6 @@ Zuletzt neu angelegt:
 | So 2026-06-07 19:25 | c-cigars | Cohiba Maduro 5 Magicos |
 | Mi 2026-05-27 20:34 | c-cigars | Romeo y Julieta Short Churchill Cosecha Reserva |
 | Do 2026-05-07 14:06 | Zigarrentraum | Diplomáticos Cancilleres |
-| Di 2026-05-05 15:05 | c-cigars | Partagas Year Of The Cedros Year of the Snake |
 
 ---
 *Erzeugt aus `verlauf.csv`, `historie.csv` und `neuheiten.csv`. Zeitpunkte im eigenen Verlauf sind auf etwa 30 Minuten genau (Prüfintervall des Wächters), historische Funde geben den Zeitpunkt der Meldung an.*
