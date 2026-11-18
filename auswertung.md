@@ -95,15 +95,15 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abe
 - Tageszeit: Nacht ▃3  Morgen  0  Vormittag ▁1  Mittag ▂2  Nachmittag █8  Abend ▂2
 - Am häufigsten: **Di** (25%), **Nachmittag** (50%)
 
-### Noblego (13 Funde, davon 9 historisch)
-- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
-- Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
-
 ### Zigarren Herzog (13 Funde, davon 4 historisch)
 - Wochentage: Mo ▃2  Di ▅3  Mi ▂1  Do █5  Fr ▃2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▂2  Nachmittag █9  Abend ▁1
 - Am häufigsten: **Do** (38%), **Nachmittag** (69%)
+
+### Noblego (13 Funde, davon 9 historisch)
+- Wochentage: Mo █4  Di ▆3  Mi ▂1  Do ▆3  Fr ▂1  Sa ▂1  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
+- Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
 ### Pipe House (12 Funde, davon 10 historisch)
 - Wochentage: Mo ▂1  Di █5  Mi ▂1  Do ▂1  Fr ▃2  Sa ▂1  So ▂1
