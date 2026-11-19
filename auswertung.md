@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-19 13:20 (deutsche Zeit) · 166 Zugänge · 228× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-19 14:00 (deutsche Zeit) · 167 Zugänge · 228× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 43 | 0 | 46 | 5 | 9 Std. |
+| Wolsdorff | 43 | 1 | 46 | 5 | 9 Std. |
 | Cigarrenversand24 | 18 | 3 | 22 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
@@ -27,14 +27,14 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-19 13:20 (deutsche Zeit) · 166 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇100  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇101  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁13  Morgen ▃53  Vormittag ▂38  Mittag ▆102  Nachmittag █147  Abend ▅86
+Nacht ▁13  Morgen ▃53  Vormittag ▂38  Mittag ▆102  Nachmittag █148  Abend ▅86
 
-### Wolsdorff (53 Funde, davon 10 historisch)
-- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▄13  Abend  1
-- Am häufigsten: **Fr** (68%), **Mittag** (49%)
+### Wolsdorff (54 Funde, davon 10 historisch)
+- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █36  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▄14  Abend  1
+- Am häufigsten: **Fr** (67%), **Mittag** (48%)
 - Wareneingänge im Schnitt alle **5,2 Tage** (zuletzt 2026-11-13 13:00)
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
@@ -57,17 +57,17 @@ Nacht ▁13  Morgen ▃53  Vormittag ▂38  Mittag ▆102  Nachmittag █147  Ab
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Cigarrenversand24 (26 Funde, davon 5 historisch)
-- Wochentage: Mo ▂2  Di █9  Mi ▄5  Do ▅6  Fr ▂2  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▄5  Vormittag ▃4  Mittag █10  Nachmittag ▄5  Abend ▂2
-- Am häufigsten: **Di** (35%), **Mittag** (38%)
-- Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
-
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
 - Tageszeit: Nacht  0  Morgen ▂4  Vormittag  0  Mittag █13  Nachmittag ▄6  Abend ▂3
 - Am häufigsten: **Di** (38%), **Mittag** (50%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
+
+### Cigarrenversand24 (26 Funde, davon 5 historisch)
+- Wochentage: Mo ▂2  Di █9  Mi ▄5  Do ▅6  Fr ▂2  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▄5  Vormittag ▃4  Mittag █10  Nachmittag ▄5  Abend ▂2
+- Am häufigsten: **Di** (35%), **Mittag** (38%)
+- Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
 ### Casa Benden (24 Funde, davon 6 historisch)
 - Wochentage: Mo ▄4  Di ▁1  Mi █8  Do ▇7  Fr ▄4  Sa  0  So  0
