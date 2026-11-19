@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-18 22:25 (deutsche Zeit) · 157 Zugänge · 225× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-19 04:30 (deutsche Zeit) · 158 Zugänge · 225× ausverkauft
 
 ## Überblick je Shop
 
@@ -15,7 +15,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-18 22:25 (deutsche Zeit) · 157 Zugänge 
 | zigarre.de | 9 | 0 | 7 | 0 | 36 Std. |
 | c-cigars | 8 | 0 | 24 | 1 | 4,2 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
-| Dominique London | 0 | 4 | 0 | 1 | – |
+| Dominique London | 0 | 5 | 0 | 1 | – |
 | Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
 | Pipe House | 0 | 2 | 7 | 0 | 4 Std. |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-18 22:25 (deutsche Zeit) · 157 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▆91  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇92  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abend ▅86
+Nacht ▁13  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -119,6 +119,11 @@ Nacht ▁12  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abe
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
 - Am häufigsten: **Fr** (33%), **Nachmittag** (67%)
+
+### Dominique London (5 Funde)
+- Wochentage: Mo  0  Di  0  Mi  0  Do ▃1  Fr ▃1  Sa █3  So  0
+- Tageszeit: Nacht █4  Morgen ▂1  Vormittag  0  Mittag  0  Nachmittag  0  Abend  0
+- Am häufigsten: **Sa** (60%), **Nacht** (80%)
 
 ## Letzte Wareneingänge
 
