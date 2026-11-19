@@ -564,7 +564,6 @@ zeit_utc;zeit_berlin;wochentag;stunde;shop;artikel;art
 2025-11-18T17:45:05+00:00;2025-11-18 18:45;Di;18;c-cigars;Cohiba Siglo I A/T;wieder online
 2025-11-18T17:58:58+00:00;2025-11-18 18:58;Di;18;c-cigars;Partagas Serie D No. 5 A/T;neu
 2025-11-23T09:01:16+00:00;2025-11-23 10:01;So;10;Zigarren Herzog;Partagas 'Línea Maestra' Origen;wieder online
-2025-11-23T09:01:16+00:00;2025-11-23 10:01;So;10;Zigarren Herzog;Trinidad Vigia;wieder online
 2025-11-27T15:51:58+00:00;2025-11-27 16:51;Do;16;c-cigars;Bolivar Royal Corona;wieder online
 2025-11-28T04:10:34+00:00;2025-11-28 05:10;Fr;5;Nobbis Tabakwelt;Hoyo De Monterrey San Juan;neu
 2025-11-29T10:15:38+00:00;2025-11-29 11:15;Sa;11;Pipe House;Hoyo de Monterrey Souvenir de Luxe;neu
@@ -609,7 +608,6 @@ zeit_utc;zeit_berlin;wochentag;stunde;shop;artikel;art
 2026-03-05T19:35:25+00:00;2026-03-05 20:35;Do;20;Nobbis Tabakwelt;Cohiba Panetelas;neu
 2026-03-08T09:00:06+00:00;2026-03-08 10:00;So;10;Zigarren Herzog;Partagas 'Línea Maestra' Rito;wieder online
 2026-03-08T09:00:08+00:00;2026-03-08 10:00;So;10;Zigarren Herzog;Trinidad Reyes;wieder online
-2026-03-08T09:00:11+00:00;2026-03-08 10:00;So;10;Zigarren Herzog;Trinidad Coloniales;wieder online
 2026-03-10T08:36:20+00:00;2026-03-10 09:36;Di;9;Zigarrentraum;Hoyo de Monterrey Le Hoyo de San Luis;neu
 2026-03-11T07:14:59+00:00;2026-03-11 08:14;Mi;8;Nobbis Tabakwelt;Romeo y Julieta Línea de Oro Nobles;neu
 2026-03-11T07:21:29+00:00;2026-03-11 08:21;Mi;8;Nobbis Tabakwelt;Partagás Serie D No. 5 A/T;neu
@@ -634,10 +632,8 @@ zeit_utc;zeit_berlin;wochentag;stunde;shop;artikel;art
 2026-05-27T18:34:35+00:00;2026-05-27 20:34;Mi;20;c-cigars;Romeo y Julieta Short Churchill Cosecha Reserva;neu
 2026-05-31T10:35:07+00:00;2026-05-31 12:35;So;12;c-cigars;Vegueros Centrofinos;wieder online
 2026-06-07T17:25:47+00:00;2026-06-07 19:25;So;19;c-cigars;Cohiba Maduro 5 Magicos;neu
-2026-06-19T11:26:06+00:00;2026-06-19 13:26;Fr;13;Zigarren Herzog;Montecristo Joyitas;wieder online
 2026-06-27T10:05:40+00:00;2026-06-27 12:05;Sa;12;Pipe House;Diplomaticos Cancilleres;neu
 2026-07-06T13:41:38+00:00;2026-07-06 15:41;Mo;15;La Galana;H. Upmann - Magnum 50;wieder online
-2026-07-27T15:32:12+00:00;2026-07-27 17:32;Mo;17;Zigarren Herzog;Guantanamera Minutos;wieder online
 2026-07-28T18:14:21+00:00;2026-07-28 20:14;Di;20;Nobbis Tabakwelt;Fonseca KDT Cadetes;neu
 2026-07-29T19:59:07+00:00;2026-07-29 21:59;Mi;21;La Galana;Romeo y Julieta - Linea de Oro Dianas;wieder online
 2026-07-29T20:19:23+00:00;2026-07-29 22:19;Mi;22;La Galana;Cohiba - Mini 20;wieder online
@@ -651,5 +647,4 @@ zeit_utc;zeit_berlin;wochentag;stunde;shop;artikel;art
 2026-09-17T08:53:10+00:00;2026-09-17 10:53;Do;10;Zigarrentraum;Sancho Panza Belicoso;neu
 2026-10-16T13:14:29+00:00;2026-10-16 15:14;Fr;15;Zigarrentraum;Cohiba Maduro 5 Genios;neu
 2026-11-02T16:36:26+00:00;2026-11-02 17:36;Mo;17;Pipe House;Ramon Allones Absolutos Edición Limitada 2024;neu
-2026-11-10T13:21:50+00:00;2026-11-10 14:21;Di;14;Zigarren Herzog;Romeo y Julieta 'Reserva 2019' Short Churchill;wieder online
-2026-11-10T13:29:29+00:00;2026-11-10 14:29;Di;14;Zigarren Herzog;Montecristo 'Reserva 2018' Edmundo;wieder online
+2026-11-19T12:16:41+00:00;2026-11-19 13:16;Do;13;Zigarren Herzog;MONTECRISTO - Brillantes Year of the Dragon (Ediciòn Limitada 2023);wieder online
