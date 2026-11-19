@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-19 04:30 (deutsche Zeit) · 158 Zugänge · 225× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-19 08:00 (deutsche Zeit) · 159 Zugänge · 226× ausverkauft
 
 ## Überblick je Shop
 
@@ -10,7 +10,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-19 04:30 (deutsche Zeit) · 158 Zugänge 
 | Cigarrenversand24 | 17 | 3 | 22 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
-| Tabak-Kontor Leipzig | 9 | 0 | 21 | 1 | 13 Std. |
+| Tabak-Kontor Leipzig | 10 | 0 | 22 | 1 | 20 Std. |
 | Zigarren Herzog | 7 | 2 | 11 | 0 | 7,1 Tage |
 | zigarre.de | 9 | 0 | 7 | 0 | 36 Std. |
 | c-cigars | 8 | 0 | 24 | 1 | 4,2 Tage |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-19 04:30 (deutsche Zeit) · 158 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇92  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇93  Fr █112  Sa ▂31  So ▁9
 
-Nacht ▁13  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abend ▅86
+Nacht ▁13  Morgen ▃51  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abend ▅86
 
 ### Wolsdorff (53 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁5  Fr █36  Sa  1  So  0
@@ -105,15 +105,15 @@ Nacht ▁13  Morgen ▃50  Vormittag ▂38  Mittag ▅97  Nachmittag █147  Abe
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▃2  Mittag  0  Nachmittag █6  Abend ▇5
 - Am häufigsten: **Mo** (31%), **Nachmittag** (46%)
 
+### Tabak-Kontor Leipzig (12 Funde, davon 2 historisch)
+- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▄2  Fr █4  Sa  0  So ▂1
+- Tageszeit: Nacht ▁1  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
+- Am häufigsten: **Fr** (33%), **Nachmittag** (58%)
+
 ### Pipe House (12 Funde, davon 10 historisch)
 - Wochentage: Mo ▂1  Di █5  Mi ▂1  Do ▂1  Fr ▃2  Sa ▂1  So ▂1
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag ▄2  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (42%), **Abend** (33%)
-
-### Tabak-Kontor Leipzig (11 Funde, davon 2 historisch)
-- Wochentage: Mo ▄2  Di ▆3  Mi  0  Do ▂1  Fr █4  Sa  0  So ▂1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag ▂2  Nachmittag █7  Abend  0
-- Am häufigsten: **Fr** (36%), **Nachmittag** (64%)
 
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
