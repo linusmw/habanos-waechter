@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-20 08:00 (deutsche Zeit) · 170 Zugänge · 231× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-20 13:00 (deutsche Zeit) · 177 Zugänge · 231× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 43 | 1 | 46 | 5 | 9 Std. |
+| Wolsdorff | 50 | 1 | 46 | 6 | 9 Std. |
 | Cigarrenversand24 | 20 | 3 | 24 | 2 | 19 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
@@ -27,15 +27,15 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-20 08:00 (deutsche Zeit) · 170 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇102  Fr █114  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▄68  Mi ▄65  Do ▇102  Fr █121  Sa ▂31  So ▁9
 
-Nacht ▁13  Morgen ▃55  Vormittag ▂38  Mittag ▅102  Nachmittag █149  Abend ▅86
+Nacht ▁13  Morgen ▃55  Vormittag ▂38  Mittag ▆109  Nachmittag █149  Abend ▅86
 
-### Wolsdorff (54 Funde, davon 10 historisch)
-- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █36  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▃11  Vormittag ▁2  Mittag █26  Nachmittag ▄14  Abend  1
-- Am häufigsten: **Fr** (67%), **Mittag** (48%)
-- Wareneingänge im Schnitt alle **5,2 Tage** (zuletzt 2026-11-13 13:00)
+### Wolsdorff (61 Funde, davon 10 historisch)
+- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▃11  Vormittag  2  Mittag █33  Nachmittag ▃14  Abend  1
+- Am häufigsten: **Fr** (70%), **Mittag** (54%)
+- Wareneingänge im Schnitt alle **5,6 Tage** (zuletzt 2026-11-20 13:00)
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -131,6 +131,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Fr 2026-11-20 13:00 | Wolsdorff | 7 | Juan Lopez Selection No 2 1'S, Montecristo No 2 1'S, Montecristo Open Regata 1'S … |
 | Fr 2026-11-13 13:00 | Wolsdorff | 7 | Hoyo de Monterrey Epicure No. 2, Montecristo Edmundo 1'S, Montecristo Petit Edmundo Single 1'S … |
 | Mi 2026-11-11 15:55 | Casa Benden | 4 | Cohiba Year Of The Rabbit Siglo de Oro (2023), Partagas Year Of The Snake Cedros (2025), Romeo y Julieta De Oro … |
 | Sa 2026-11-07 12:45 | c-cigars | 4 | Guantanamera Cristales, Guantanamera Seleccion, Partagas Club Zigarillos … |
@@ -145,7 +146,6 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 | Fr 2026-10-30 12:55 | Wolsdorff | 7 | Montecristo No 2 Single 1'S, Partagas Mille Fleurs 1'S, Partagas Serie D No. 4 … |
 | Fr 2026-10-30 08:00 | Nobbis Tabakwelt | 3 | Hoyo de Monterrey Palmas Extra, Romeo Y Julieta Sport Largos, Romeo y Julieta Petit Corona |
 | Do 2026-10-29 13:00 | Cigarrenversand24 | 3 | CV24-PRIME-Selection-Sampler "Surprise No. FOUR" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. THREE" - jeweils nur 1x so verfügbar!, CV24-PRIME-Selection-Sampler "Surprise No. TWO" - jeweils nur 1x so verfügbar! |
-| Sa 2026-10-24 05:30 | Dominique London | 3 | Montecristo Joyitas - Single Cigar, Montecristo No. 5 - Single Cigar, Trinidad Media Luna - Single Cigar |
 
 ## Wie schnell ist die Ware wieder weg?
 
@@ -179,12 +179,12 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | H. Upmann Half Corona | Wolsdorff | 3 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Guantanamera Cristales | Zigarren Herzog | 3 |
+| Partagas Serie D No. 4 | Wolsdorff | 3 |
+| Romeo y Julieta Petit Royales 1'S | Wolsdorff | 3 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 3 |
 | Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
 | Romeo y Julieta No 1 Tubos 1'S | Wolsdorff | 2 |
 | Guantanamera Minutos | Zigarren Herzog | 2 |
-| Guantanamera Cristales | Casa Benden | 2 |
-| Montecristo No 2 Single 1'S | Wolsdorff | 2 |
 
 ## Historische Funde
 
