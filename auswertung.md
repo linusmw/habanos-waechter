@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-20 16:30 (deutsche Zeit) · 177 Zugänge · 234× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-20 19:30 (deutsche Zeit) · 177 Zugänge · 235× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 50 | 1 | 47 | 6 | 9 Std. |
+| Wolsdorff | 50 | 1 | 48 | 6 | 9 Std. |
 | Cigarrenversand24 | 20 | 3 | 24 | 2 | 19 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
