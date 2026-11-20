@@ -1,12 +1,12 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-20 15:30 (deutsche Zeit) · 177 Zugänge · 232× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-20 16:00 (deutsche Zeit) · 177 Zugänge · 233× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 50 | 1 | 46 | 6 | 9 Std. |
+| Wolsdorff | 50 | 1 | 47 | 6 | 9 Std. |
 | Cigarrenversand24 | 20 | 3 | 24 | 2 | 19 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
@@ -163,8 +163,8 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 2× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
+| Montecristo Open Regata 1'S | Wolsdorff | 3 Std. | 1× |
 | Guantanamera Minuto (Restbestand) | Casa Benden | 3 Std. | 1× |
-| Montecristo Double Edmundo 1'S | Wolsdorff | 4 Std. | 1× |
 
 ## Am häufigsten wieder da
 
