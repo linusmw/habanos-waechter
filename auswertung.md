@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-19 21:30 (deutsche Zeit) · 168 Zugänge · 231× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-20 08:00 (deutsche Zeit) · 170 Zugänge · 231× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 43 | 1 | 46 | 5 | 9 Std. |
-| Cigarrenversand24 | 18 | 3 | 24 | 2 | 19 Std. |
+| Cigarrenversand24 | 20 | 3 | 24 | 2 | 19 Std. |
 | Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 23 | 3 | 26 Std. |
 | Zigarren Herzog | 10 | 3 | 13 | 0 | 8,8 Tage |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-19 21:30 (deutsche Zeit) · 168 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇102  Fr █112  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▅68  Mi ▅65  Do ▇102  Fr █114  Sa ▂31  So ▁9
 
-Nacht ▁13  Morgen ▃53  Vormittag ▂38  Mittag ▅102  Nachmittag █149  Abend ▅86
+Nacht ▁13  Morgen ▃55  Vormittag ▂38  Mittag ▅102  Nachmittag █149  Abend ▅86
 
 ### Wolsdorff (54 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █36  Sa  1  So  0
@@ -57,10 +57,10 @@ Nacht ▁13  Morgen ▃53  Vormittag ▂38  Mittag ▅102  Nachmittag █149  Ab
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Cigarrenversand24 (26 Funde, davon 5 historisch)
-- Wochentage: Mo ▂2  Di █9  Mi ▄5  Do ▅6  Fr ▂2  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▄5  Vormittag ▃4  Mittag █10  Nachmittag ▄5  Abend ▂2
-- Am häufigsten: **Di** (35%), **Mittag** (38%)
+### Cigarrenversand24 (28 Funde, davon 5 historisch)
+- Wochentage: Mo ▂2  Di █9  Mi ▄5  Do ▅6  Fr ▄4  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▆7  Vormittag ▃4  Mittag █10  Nachmittag ▄5  Abend ▂2
+- Am häufigsten: **Di** (32%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
@@ -170,8 +170,8 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 
 | Artikel | Shop | Mal |
 |---|---|---:|
-| H. Upmann Half Corona | Cigarrenversand24 | 7 |
-| Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 6 |
+| H. Upmann Half Corona | Cigarrenversand24 | 8 |
+| Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 7 |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
 | Partagas Mille Fleurs 1'S | Wolsdorff | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
