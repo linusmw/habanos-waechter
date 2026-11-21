@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-21 00:01 (deutsche Zeit) · 177 Zugänge · 239× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-21 10:45 (deutsche Zeit) · 178 Zugänge · 240× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,7 +8,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-21 00:01 (deutsche Zeit) · 177 Zugänge 
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 50 | 1 | 49 | 6 | 9 Std. |
 | Cigarrenversand24 | 20 | 3 | 26 | 2 | 16 Std. |
-| Casa Benden | 5 | 5 | 17 | 2 | 19 Std. |
+| Casa Benden | 6 | 5 | 18 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
 | Zigarren Herzog | 10 | 3 | 13 | 0 | 8,8 Tage |
 | Tabak-Kontor Leipzig | 12 | 0 | 23 | 1 | 20 Std. |
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-21 00:01 (deutsche Zeit) · 177 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▄68  Mi ▄65  Do ▇102  Fr █121  Sa ▂31  So ▁9
+**Alle Shops:** Mo ▄54  Di ▄68  Mi ▄65  Do ▇102  Fr █121  Sa ▂32  So ▁9
 
-Nacht ▁13  Morgen ▃55  Vormittag ▂38  Mittag ▆109  Nachmittag █149  Abend ▅86
+Nacht ▁13  Morgen ▃55  Vormittag ▂39  Mittag ▆109  Nachmittag █149  Abend ▅86
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -69,10 +69,10 @@ Nacht ▁13  Morgen ▃55  Vormittag ▂38  Mittag ▆109  Nachmittag █149  Ab
 - Am häufigsten: **Di** (38%), **Mittag** (50%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
 
-### Casa Benden (25 Funde, davon 6 historisch)
-- Wochentage: Mo ▄4  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa  0  So  0
-- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁1  Mittag ▂3  Nachmittag █12  Abend ▃4
-- Am häufigsten: **Do** (32%), **Nachmittag** (48%)
+### Casa Benden (26 Funde, davon 6 historisch)
+- Wochentage: Mo ▄4  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
+- Am häufigsten: **Do** (31%), **Nachmittag** (46%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### c-cigars (21 Funde, davon 13 historisch)
