@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-23 07:55 (deutsche Zeit) · 180 Zugänge · 244× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-23 08:40 (deutsche Zeit) · 180 Zugänge · 246× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,10 +8,10 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-23 07:55 (deutsche Zeit) · 180 Zugänge 
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 50 | 1 | 50 | 6 | 9 Std. |
 | Cigarrenversand24 | 20 | 3 | 26 | 2 | 16 Std. |
-| Casa Benden | 6 | 5 | 19 | 2 | 19 Std. |
+| Casa Benden | 6 | 5 | 20 | 2 | 17 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
 | Zigarren Herzog | 10 | 3 | 14 | 0 | 8,0 Tage |
-| Tabak-Kontor Leipzig | 12 | 0 | 23 | 1 | 20 Std. |
+| Tabak-Kontor Leipzig | 12 | 0 | 24 | 1 | 20 Std. |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
 | c-cigars | 8 | 0 | 25 | 1 | 4,2 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
@@ -57,17 +57,17 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆109  Nachmittag █149  Ab
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
 - Am häufigsten: **Di** (24%), **Abend** (45%)
 
-### Casa Benden (28 Funde, davon 6 historisch)
-- Wochentage: Mo ▆6  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▄6  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
-- Am häufigsten: **Do** (29%), **Nachmittag** (43%)
-- Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
-
 ### Cigarrenversand24 (28 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █9  Mi ▄5  Do ▅6  Fr ▄4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▆7  Vormittag ▃4  Mittag █10  Nachmittag ▄5  Abend ▂2
 - Am häufigsten: **Di** (32%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Casa Benden (28 Funde, davon 6 historisch)
+- Wochentage: Mo ▆6  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▄6  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
+- Am häufigsten: **Do** (29%), **Nachmittag** (43%)
+- Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
@@ -159,12 +159,12 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Guantanamera Cristales (Restbestand) | Casa Benden | unter 1 Std. | 3× |
 | Jose L. Piedra Zigarren (2 Varianten) | Casa Benden | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
+| Jose L. Piedra Brevas (Restbestand) | Casa Benden | unter 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 3× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 2× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
 | Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
-| Montecristo Open Regata 1'S | Wolsdorff | 3 Std. | 1× |
 
 ## Am häufigsten wieder da
 
