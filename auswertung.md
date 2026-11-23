@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-23 08:40 (deutsche Zeit) · 180 Zugänge · 246× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-23 10:30 (deutsche Zeit) · 180 Zugänge · 247× ausverkauft
 
 ## Überblick je Shop
 
@@ -16,7 +16,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-23 08:40 (deutsche Zeit) · 180 Zugänge 
 | c-cigars | 8 | 0 | 25 | 1 | 4,2 Tage |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
 | Dominique London | 0 | 5 | 0 | 1 | – |
-| Noblego | 1 | 3 | 14 | 1 | 7,0 Tage |
+| Noblego | 1 | 3 | 15 | 1 | 7,0 Tage |
 | La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
 | Pipe House | 0 | 2 | 7 | 0 | 4 Std. |
 | Zigarrentraum | 2 | 0 | 3 | 0 | 7,0 Tage |
