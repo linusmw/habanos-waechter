@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-23 02:00 (deutsche Zeit) · 178 Zugänge · 243× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-23 07:15 (deutsche Zeit) · 179 Zugänge · 243× ausverkauft
 
 ## Überblick je Shop
 
@@ -27,9 +27,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-23 02:00 (deutsche Zeit) · 178 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄54  Di ▄68  Mi ▄65  Do ▇102  Fr █121  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄55  Di ▄68  Mi ▄65  Do ▇102  Fr █121  Sa ▂32  So ▁9
 
-Nacht ▁13  Morgen ▃55  Vormittag ▂39  Mittag ▆109  Nachmittag █149  Abend ▅86
+Nacht ▁13  Morgen ▃56  Vormittag ▂39  Mittag ▆109  Nachmittag █149  Abend ▅86
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -63,10 +63,10 @@ Nacht ▁13  Morgen ▃55  Vormittag ▂39  Mittag ▆109  Nachmittag █149  Ab
 - Am häufigsten: **Di** (32%), **Mittag** (36%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### Casa Benden (26 Funde, davon 6 historisch)
-- Wochentage: Mo ▄4  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
-- Am häufigsten: **Do** (31%), **Nachmittag** (46%)
+### Casa Benden (27 Funde, davon 6 historisch)
+- Wochentage: Mo ▅5  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▃5  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
+- Am häufigsten: **Do** (30%), **Nachmittag** (44%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
