@@ -53,16 +53,16 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Ab
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
 - Am häufigsten: **Di** (26%), **Abend** (35%)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Casa Benden (28 Funde, davon 6 historisch)
 - Wochentage: Mo ▆6  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
