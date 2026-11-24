@@ -284,7 +284,7 @@ Zeitpunkt, zu dem ein schon bekanntes Produkt zuletzt erneut veröffentlicht wur
 
 - **La Galana** (93×): Mo ▂8  Di ▃12  Mi █32  Do ▁6  Fr  1  Sa █34  So  0 · Nacht  0  Morgen  2  Vormittag  1  Mittag ▁8  Nachmittag █46  Abend ▆36
 - **c-cigars** (87×): Mo ▂10  Di ▃17  Mi █42  Do ▁7  Fr ▁4  Sa ▁4  So ▁3 · Nacht  0  Morgen  1  Vormittag  2  Mittag ▂13  Nachmittag ▄23  Abend █48
-- **Zigarren Herzog** (11×): Mo  0  Di  0  Mi ▁1  Do ▄3  Fr ▁1  Sa  0  So █6 · Nacht  0  Morgen  0  Vormittag █6  Mittag ▃2  Nachmittag ▃2  Abend ▁1
+- **Zigarren Herzog** (12×): Mo ▁1  Di  0  Mi ▁1  Do ▄3  Fr ▁1  Sa  0  So █6 · Nacht  0  Morgen  0  Vormittag █6  Mittag ▃2  Nachmittag ▄3  Abend ▁1
 
 Zuletzt neu angelegt:
 
