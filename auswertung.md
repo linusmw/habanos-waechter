@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-24 17:30 (deutsche Zeit) · 185 Zugänge · 257× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-24 19:50 (deutsche Zeit) · 191 Zugänge · 261× ausverkauft
 
 ## Überblick je Shop
 
@@ -13,11 +13,11 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-24 17:30 (deutsche Zeit) · 185 Zugänge 
 | Zigarren Herzog | 11 | 3 | 14 | 0 | 8,0 Tage |
 | Tabak-Kontor Leipzig | 12 | 0 | 29 | 1 | 28 Std. |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
+| La Galana | 9 | 0 | 11 | 2 | 26,1 Tage |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
 | StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
 | Dominique London | 0 | 5 | 0 | 1 | – |
 | Noblego | 1 | 3 | 15 | 1 | 7,0 Tage |
-| La Galana | 3 | 0 | 7 | 0 | 5,2 Tage |
 | Pipe House | 0 | 2 | 8 | 0 | 4 Std. |
 | Zigarrentraum | 2 | 0 | 3 | 0 | 7,0 Tage |
 | Dalay Zigarren | 0 | 0 | 6 | 0 | – |
@@ -28,9 +28,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-24 17:30 (deutsche Zeit) · 185 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄60  Di ▅69  Mi ▄65  Do ▇102  Fr █121  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄65  Do ▇102  Fr █121  Sa ▂32  So ▁9
 
-Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Abend ▄86
+Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Abend ▅92
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -87,15 +87,15 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Ab
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
-### Zigarren Herzog (18 Funde, davon 4 historisch)
-- Wochentage: Mo ▃3  Di ▃3  Mi ▁1  Do █9  Fr ▂2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅6  Nachmittag █10  Abend ▁1
-- Am häufigsten: **Do** (50%), **Nachmittag** (56%)
-
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
+
+### Zigarren Herzog (18 Funde, davon 4 historisch)
+- Wochentage: Mo ▃3  Di ▃3  Mi ▁1  Do █9  Fr ▂2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅6  Nachmittag █10  Abend ▁1
+- Am häufigsten: **Do** (50%), **Nachmittag** (56%)
 
 ### zigarre.de (16 Funde, davon 7 historisch)
 - Wochentage: Mo █4  Di █4  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
@@ -117,6 +117,12 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Ab
 - Tageszeit: Nacht ▂1  Morgen ▂1  Vormittag  0  Mittag ▄2  Nachmittag █4  Abend █4
 - Am häufigsten: **Di** (42%), **Abend** (33%)
 
+### La Galana (10 Funde, davon 1 historisch)
+- Wochentage: Mo ▁1  Di █6  Mi  0  Do ▄3  Fr  0  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag ▅4  Abend █6
+- Am häufigsten: **Di** (60%), **Abend** (60%)
+- Wareneingänge im Schnitt alle **0,0 Tage** (zuletzt 2026-11-24 19:50)
+
 ### Paul Bugge (6 Funde, davon 6 historisch)
 - Wochentage: Mo █2  Di  0  Mi  0  Do ▄1  Fr █2  Sa ▄1  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag  0  Mittag  0  Nachmittag █4  Abend ▄2
@@ -133,6 +139,8 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Di 2026-11-24 19:50 | La Galana | 3 | Hoyo de Monterrey - Flor Extrafina, Montecristo - No. 4, Montecristo - Petit Edmundo |
+| Di 2026-11-24 19:45 | La Galana | 3 | H. Upmann - Half Corona, Romeo y Julieta - Sports Largos, Romeo y Julieta Coronitas en Cedro |
 | Mo 2026-11-23 14:50 | c-cigars | 3 | Guantanamera Cristales, Partagas Club Zigarillos, Trinidad Wide Short |
 | Fr 2026-11-20 13:00 | Wolsdorff | 7 | Juan Lopez Selection No 2 1'S, Montecristo No 2 1'S, Montecristo Open Regata 1'S … |
 | Fr 2026-11-13 13:00 | Wolsdorff | 7 | Hoyo de Monterrey Epicure No. 2, Montecristo Edmundo 1'S, Montecristo Petit Edmundo Single 1'S … |
@@ -146,8 +154,6 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 | Mo 2026-11-02 15:00 | Noblego | 3 | Romeo y Julieta Reserva Cosecha 2019 Short Churchills, Romeo y Julieta Reserva Cosecha 2019 Short Churchills 3er |
 | Mo 2026-11-02 09:15 | Wolsdorff | 3 | H. Upmann Half Corona, Hoyo de Monterrey Petit Robusto, Partagas Aristocrats Single 1'S |
 | Fr 2026-10-30 14:30 | Tabak-Kontor Leipzig | 4 | Cohiba Espléndidos Gran Reserva Cosecha 2017 - 2er Giftpack, Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023, Trinidad Media Luna … |
-| Fr 2026-10-30 12:55 | Wolsdorff | 7 | Montecristo No 2 Single 1'S, Partagas Mille Fleurs 1'S, Partagas Serie D No. 4 … |
-| Fr 2026-10-30 08:00 | Nobbis Tabakwelt | 3 | Hoyo de Monterrey Palmas Extra, Romeo Y Julieta Sport Largos, Romeo y Julieta Petit Corona |
 
 ## Wie schnell ist die Ware wieder weg?
 
