@@ -87,15 +87,15 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆109  Nachmittag █153  Ab
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
-### Tabacstore (18 Funde, davon 18 historisch)
-- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
-- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
-
 ### Zigarren Herzog (18 Funde, davon 4 historisch)
 - Wochentage: Mo ▃3  Di ▃3  Mi ▁1  Do █9  Fr ▂2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅6  Nachmittag █10  Abend ▁1
 - Am häufigsten: **Do** (50%), **Nachmittag** (56%)
+
+### Tabacstore (18 Funde, davon 18 historisch)
+- Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
+- Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
 
 ### zigarre.de (16 Funde, davon 7 historisch)
 - Wochentage: Mo █4  Di █4  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
