@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-26 16:30 (deutsche Zeit) · 199 Zugänge · 278× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-26 18:00 (deutsche Zeit) · 199 Zugänge · 279× ausverkauft
 
 ## Überblick je Shop
 
@@ -19,7 +19,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 16:30 (deutsche Zeit) · 199 Zugänge 
 | Dominique London | 0 | 5 | 0 | 1 | – |
 | Noblego | 1 | 3 | 15 | 1 | 7,0 Tage |
 | Pipe House | 0 | 2 | 8 | 0 | 4 Std. |
-| Zigarrentraum | 2 | 0 | 3 | 0 | 7,0 Tage |
+| Zigarrentraum | 2 | 0 | 4 | 0 | 7,0 Tage |
 | Dalay Zigarren | 0 | 0 | 6 | 0 | – |
 | Tabacstore | 0 | 0 | 1 | 0 | – |
 | Tabakhaus Falkum | 0 | 0 | 1 | 0 | – |
