@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-26 12:25 (deutsche Zeit) · 194 Zugänge · 275× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-26 12:55 (deutsche Zeit) · 195 Zugänge · 275× ausverkauft
 
 ## Überblick je Shop
 
@@ -10,7 +10,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 12:25 (deutsche Zeit) · 194 Zugänge 
 | Casa Benden | 8 | 5 | 23 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Zigarren Herzog | 11 | 3 | 16 | 0 | 7,0 Tage |
+| Zigarren Herzog | 12 | 3 | 16 | 0 | 7,0 Tage |
 | Tabak-Kontor Leipzig | 13 | 0 | 31 | 1 | 28 Std. |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
@@ -28,9 +28,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 12:25 (deutsche Zeit) · 194 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇104  Fr █121  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇105  Fr █121  Sa ▂32  So ▁9
 
-Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆111  Nachmittag █153  Abend ▅93
+Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █153  Abend ▅93
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -87,15 +87,15 @@ Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆111  Nachmittag █153  Ab
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
+### Zigarren Herzog (19 Funde, davon 4 historisch)
+- Wochentage: Mo ▂3  Di ▂3  Mi ▁1  Do █10  Fr ▂2  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▆7  Nachmittag █10  Abend ▁1
+- Am häufigsten: **Do** (53%), **Nachmittag** (53%)
+
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
 - Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag ▃2  Mittag ▃2  Nachmittag █6  Abend █6
 - Am häufigsten: **Fr** (28%), **Nachmittag** (33%)
-
-### Zigarren Herzog (18 Funde, davon 4 historisch)
-- Wochentage: Mo ▃3  Di ▃3  Mi ▁1  Do █9  Fr ▂2  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅6  Nachmittag █10  Abend ▁1
-- Am häufigsten: **Do** (50%), **Nachmittag** (56%)
 
 ### zigarre.de (16 Funde, davon 7 historisch)
 - Wochentage: Mo █4  Di █4  Mi ▂1  Do █4  Fr ▄2  Sa  0  So ▂1
