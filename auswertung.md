@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-26 00:00 (deutsche Zeit) · 192 Zugänge · 268× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-26 08:30 (deutsche Zeit) · 193 Zugänge · 269× ausverkauft
 
 ## Überblick je Shop
 
@@ -8,7 +8,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 00:00 (deutsche Zeit) · 192 Zugänge 
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 50 | 1 | 53 | 6 | 10 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
-| Casa Benden | 6 | 5 | 20 | 2 | 17 Std. |
+| Casa Benden | 7 | 5 | 21 | 2 | 19 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
 | Zigarren Herzog | 11 | 3 | 14 | 0 | 8,0 Tage |
 | Tabak-Kontor Leipzig | 13 | 0 | 31 | 1 | 28 Std. |
@@ -28,9 +28,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 00:00 (deutsche Zeit) · 192 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇102  Fr █121  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇103  Fr █121  Sa ▂32  So ▁9
 
-Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Abend ▅93
+Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Abend ▅93
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -64,10 +64,10 @@ Nacht ▁13  Morgen ▃57  Vormittag ▂39  Mittag ▆110  Nachmittag █153  Ab
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
-### Casa Benden (28 Funde, davon 6 historisch)
-- Wochentage: Mo ▆6  Di ▁1  Mi █8  Do █8  Fr ▄4  Sa ▁1  So  0
-- Tageszeit: Nacht ▁1  Morgen ▄6  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
-- Am häufigsten: **Do** (29%), **Nachmittag** (43%)
+### Casa Benden (29 Funde, davon 6 historisch)
+- Wochentage: Mo ▅6  Di ▁1  Mi ▇8  Do █9  Fr ▄4  Sa ▁1  So  0
+- Tageszeit: Nacht ▁1  Morgen ▅7  Vormittag ▁2  Mittag ▂3  Nachmittag █12  Abend ▃4
+- Am häufigsten: **Do** (31%), **Nachmittag** (41%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
