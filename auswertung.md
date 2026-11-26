@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-26 19:00 (deutsche Zeit) · 199 Zugänge · 280× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-26 21:30 (deutsche Zeit) · 199 Zugänge · 282× ausverkauft
 
 ## Überblick je Shop
 
@@ -10,7 +10,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 19:00 (deutsche Zeit) · 199 Zugänge 
 | Casa Benden | 8 | 5 | 23 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Tabak-Kontor Leipzig | 17 | 0 | 35 | 1 | 28 Std. |
+| Tabak-Kontor Leipzig | 17 | 0 | 37 | 1 | 13 Std. |
 | Zigarren Herzog | 12 | 3 | 16 | 0 | 7,0 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
@@ -59,16 +59,16 @@ Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Am häufigsten: **Do** (33%), **Nachmittag** (40%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
@@ -87,15 +87,15 @@ Nacht ▁13  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
-### Tabak-Kontor Leipzig (19 Funde, davon 2 historisch)
-- Wochentage: Mo ▂2  Di ▃3  Mi ▁1  Do █8  Fr ▄4  Sa  0  So ▁1
-- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag  0  Mittag ▁2  Nachmittag █11  Abend ▁1
-- Am häufigsten: **Do** (42%), **Nachmittag** (58%)
-
 ### Zigarren Herzog (19 Funde, davon 4 historisch)
 - Wochentage: Mo ▂3  Di ▂3  Mi ▁1  Do █10  Fr ▂2  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▆7  Nachmittag █10  Abend ▁1
 - Am häufigsten: **Do** (53%), **Nachmittag** (53%)
+
+### Tabak-Kontor Leipzig (19 Funde, davon 2 historisch)
+- Wochentage: Mo ▂2  Di ▃3  Mi ▁1  Do █8  Fr ▄4  Sa  0  So ▁1
+- Tageszeit: Nacht ▁1  Morgen ▃4  Vormittag  0  Mittag ▁2  Nachmittag █11  Abend ▁1
+- Am häufigsten: **Do** (42%), **Nachmittag** (58%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
@@ -168,11 +168,11 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Jose L. Piedra Zigarren (2 Varianten) | Casa Benden | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Jose L. Piedra Brevas (Restbestand) | Casa Benden | unter 1 Std. | 1× |
-| Cohiba Siglo I Tubos | Tabak-Kontor Leipzig | 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 3× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 2× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
+| Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 
 ## Am häufigsten wieder da
 
