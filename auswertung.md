@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-26 18:00 (deutsche Zeit) · 199 Zugänge · 279× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-26 19:00 (deutsche Zeit) · 199 Zugänge · 280× ausverkauft
 
 ## Überblick je Shop
 
@@ -10,7 +10,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-26 18:00 (deutsche Zeit) · 199 Zugänge 
 | Casa Benden | 8 | 5 | 23 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Tabak-Kontor Leipzig | 17 | 0 | 34 | 1 | 20 Std. |
+| Tabak-Kontor Leipzig | 17 | 0 | 35 | 1 | 28 Std. |
 | Zigarren Herzog | 12 | 3 | 16 | 0 | 7,0 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
