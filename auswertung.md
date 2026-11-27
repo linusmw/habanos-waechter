@@ -59,16 +59,16 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
 - Am häufigsten: **Di** (26%), **Abend** (35%)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Tabak-Kontor Leipzig (28 Funde, davon 2 historisch)
 - Wochentage: Mo ▁2  Di ▂3  Mi ▁1  Do ▇10  Fr █11  Sa  0  So ▁1
