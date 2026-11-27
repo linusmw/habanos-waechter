@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-27 10:35 (deutsche Zeit) · 209 Zugänge · 291× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-27 12:10 (deutsche Zeit) · 209 Zugänge · 292× ausverkauft
 
 ## Überblick je Shop
 
@@ -15,7 +15,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 10:35 (deutsche Zeit) · 209 Zugänge 
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
-| StarkeZigarren | 2 | 0 | 17 | 1 | 34 Std. |
+| StarkeZigarren | 2 | 0 | 18 | 1 | 34 Std. |
 | Dominique London | 0 | 5 | 0 | 1 | – |
 | Noblego | 1 | 3 | 15 | 1 | 7,0 Tage |
 | Pipe House | 0 | 2 | 8 | 0 | 4 Std. |
@@ -48,27 +48,27 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (31 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
-- Am häufigsten: **Di** (26%), **Abend** (35%)
-
 ### Casa Benden (31 Funde, davon 6 historisch)
 - Wochentage: Mo ▅6  Di ▁1  Mi ▆8  Do █10  Fr ▄5  Sa ▁1  So  0
 - Tageszeit: Nacht ▁1  Morgen ▅8  Vormittag ▁2  Mittag ▃4  Nachmittag █12  Abend ▃4
 - Am häufigsten: **Do** (32%), **Nachmittag** (39%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
+### Zigarrentraum (31 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
+- Am häufigsten: **Di** (26%), **Abend** (35%)
 
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Tabak-Kontor Leipzig (28 Funde, davon 2 historisch)
 - Wochentage: Mo ▁2  Di ▂3  Mi ▁1  Do ▇10  Fr █11  Sa  0  So ▁1
