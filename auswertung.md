@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-27 05:30 (deutsche Zeit) · 203 Zugänge · 286× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-27 06:30 (deutsche Zeit) · 205 Zugänge · 286× ausverkauft
 
 ## Überblick je Shop
 
@@ -9,7 +9,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 05:30 (deutsche Zeit) · 203 Zugänge 
 | Wolsdorff | 50 | 1 | 55 | 6 | 11 Std. |
 | Casa Benden | 8 | 5 | 23 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
-| Tabak-Kontor Leipzig | 21 | 0 | 41 | 1 | 8 Std. |
+| Tabak-Kontor Leipzig | 23 | 0 | 41 | 1 | 8 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
 | Zigarren Herzog | 12 | 3 | 16 | 0 | 7,0 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
@@ -28,9 +28,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 05:30 (deutsche Zeit) · 203 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇111  Fr █123  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇111  Fr █125  Sa ▂32  So ▁9
 
-Nacht ▁15  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Abend ▅95
+Nacht ▁15  Morgen ▃60  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Abend ▅95
 
 ### Wolsdorff (61 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
@@ -59,16 +59,16 @@ Nacht ▁15  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Am häufigsten: **Do** (33%), **Nachmittag** (40%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
+
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
@@ -76,16 +76,16 @@ Nacht ▁15  Morgen ▃58  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Ab
 - Am häufigsten: **Di** (38%), **Mittag** (50%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
 
+### Tabak-Kontor Leipzig (25 Funde, davon 2 historisch)
+- Wochentage: Mo ▂2  Di ▂3  Mi ▁1  Do █10  Fr ▆8  Sa  0  So ▁1
+- Tageszeit: Nacht ▂3  Morgen ▄6  Vormittag  0  Mittag ▁2  Nachmittag █11  Abend ▂3
+- Am häufigsten: **Do** (40%), **Nachmittag** (44%)
+
 ### c-cigars (24 Funde, davon 13 historisch)
 - Wochentage: Mo ▅4  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
 - Tageszeit: Nacht  0  Morgen ▁1  Vormittag ▁1  Mittag ▅6  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Fr** (29%), **Nachmittag** (38%)
 - Wareneingänge im Schnitt alle **16,1 Tage** (zuletzt 2026-11-23 14:50)
-
-### Tabak-Kontor Leipzig (23 Funde, davon 2 historisch)
-- Wochentage: Mo ▂2  Di ▂3  Mi ▁1  Do █10  Fr ▅6  Sa  0  So ▁1
-- Tageszeit: Nacht ▂3  Morgen ▃4  Vormittag  0  Mittag ▁2  Nachmittag █11  Abend ▂3
-- Am häufigsten: **Do** (43%), **Nachmittag** (48%)
 
 ### StarkeZigarren (20 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
@@ -179,13 +179,13 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Artikel | Shop | Mal |
 |---|---|---:|
 | H. Upmann Half Corona | Cigarrenversand24 | 8 |
+| Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023 | Tabak-Kontor Leipzig | 7 |
 | Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 7 |
-| Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023 | Tabak-Kontor Leipzig | 6 |
+| Cohiba Siglo I Tubos | Tabak-Kontor Leipzig | 5 |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
 | Partagas Mille Fleurs 1'S | Wolsdorff | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
 | Guantanamera Décimos | zigarre.de | 4 |
-| Cohiba Siglo I Tubos | Tabak-Kontor Leipzig | 4 |
 | H. Upmann Half Corona | Wolsdorff | 3 |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Guantanamera Cristales | Zigarren Herzog | 3 |
