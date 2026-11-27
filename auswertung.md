@@ -1,17 +1,17 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-27 12:10 (deutsche Zeit) · 209 Zugänge · 292× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-27 13:25 (deutsche Zeit) · 216 Zugänge · 293× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
-| Wolsdorff | 50 | 1 | 55 | 6 | 11 Std. |
+| Wolsdorff | 57 | 1 | 55 | 7 | 11 Std. |
 | Tabak-Kontor Leipzig | 26 | 0 | 44 | 2 | 5 Std. |
 | Casa Benden | 9 | 5 | 24 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Zigarren Herzog | 12 | 3 | 16 | 0 | 7,0 Tage |
+| Zigarren Herzog | 12 | 3 | 17 | 0 | 7,1 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
@@ -28,15 +28,16 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 12:10 (deutsche Zeit) · 209 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▄60  Di ▅75  Mi ▄66  Do ▇111  Fr █129  Sa ▂32  So ▁9
+**Alle Shops:** Mo ▄60  Di ▄75  Mi ▄66  Do ▇111  Fr █136  Sa ▂32  So ▁9
 
-Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆112  Nachmittag █157  Abend ▅95
+Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆119  Nachmittag █157  Abend ▅95
 
-### Wolsdorff (61 Funde, davon 10 historisch)
-- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █43  Sa  1  So  0
-- Tageszeit: Nacht  0  Morgen ▃11  Vormittag  2  Mittag █33  Nachmittag ▃14  Abend  1
-- Am häufigsten: **Fr** (70%), **Mittag** (54%)
-- Wareneingänge im Schnitt alle **5,6 Tage** (zuletzt 2026-11-20 13:00)
+### Wolsdorff (68 Funde, davon 10 historisch)
+- Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █50  Sa  1  So  0
+- Tageszeit: Nacht  0  Morgen ▂11  Vormittag  2  Mittag █40  Nachmittag ▃14  Abend  1
+- Am häufigsten: **Fr** (74%), **Mittag** (59%)
+- Wareneingänge im Schnitt alle **5,8 Tage** (zuletzt 2026-11-27 13:01)
+- Prognose nächster Wareneingang: **Do 03.12., gegen 13 Uhr**
 
 ### CIGARWORLD (50 Funde, davon 50 historisch)
 - Wochentage: Mo ▂5  Di ▂4  Mi ▅11  Do ▅12  Fr █18  Sa  0  So  0
@@ -140,6 +141,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Fr 2026-11-27 13:01 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Epicure No. 2, Jose L. Piedra Brevas … |
 | Fr 2026-11-27 09:30 | Tabak-Kontor Leipzig | 3 | Cohiba Robustos 25er Cabinet, Cohiba SIGLO DE ORO - AÑO CHINO - YEAR OF THE RABBIT 2023, Cohiba Siglo I Tubos |
 | Di 2026-11-24 19:50 | La Galana | 3 | Hoyo de Monterrey - Flor Extrafina, Montecristo - No. 4, Montecristo - Petit Edmundo |
 | Di 2026-11-24 19:45 | La Galana | 3 | H. Upmann - Half Corona, Romeo y Julieta - Sports Largos, Romeo y Julieta Coronitas en Cedro |
@@ -154,7 +156,6 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 | Di 2026-11-03 13:30 | Nobbis Tabakwelt | 7 | Cohiba Siglo II, Fonseca KDT Cadetes, Montecristo No. 3 … |
 | Di 2026-11-03 10:30 | Cigarrenversand24 | 3 | H. Upmann Half Corona, Hoyo De Monterrey Petit Robusto, Montecristo No. 2 |
 | Mo 2026-11-02 15:00 | Noblego | 3 | Romeo y Julieta Reserva Cosecha 2019 Short Churchills, Romeo y Julieta Reserva Cosecha 2019 Short Churchills 3er |
-| Mo 2026-11-02 09:15 | Wolsdorff | 3 | H. Upmann Half Corona, Hoyo de Monterrey Petit Robusto, Partagas Aristocrats Single 1'S |
 
 ## Wie schnell ist die Ware wieder weg?
 
@@ -183,17 +184,17 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | H. Upmann Half Corona | Cigarrenversand24 | 8 |
 | Hoyo De Monterrey Petit Robusto | Cigarrenversand24 | 7 |
 | Cohiba Siglo I Tubos | Tabak-Kontor Leipzig | 6 |
+| H. Upmann Half Corona | Wolsdorff | 4 |
+| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 4 |
 | Trinidad Media Luna | Tabak-Kontor Leipzig | 4 |
 | Partagas Mille Fleurs 1'S | Wolsdorff | 4 |
 | Montecristo No. 2 | Cigarrenversand24 | 4 |
 | Guantanamera Décimos | zigarre.de | 4 |
-| H. Upmann Half Corona | Wolsdorff | 3 |
-| Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 3 |
 | Guantanamera Cristales | Zigarren Herzog | 3 |
 | Partagas Serie D No. 4 | Wolsdorff | 3 |
 | Romeo y Julieta Petit Royales 1'S | Wolsdorff | 3 |
 | Hoyo de Monterrey Petit Robusto | Wolsdorff | 3 |
-| Montecristo Petit Edmundo Single 1'S | Wolsdorff | 2 |
+| Romeo y Julieta Mille Fleurs 1'S | Wolsdorff | 3 |
 
 ## Historische Funde
 
