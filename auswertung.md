@@ -1,13 +1,13 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-27 09:30 (deutsche Zeit) · 209 Zugänge · 289× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-27 10:35 (deutsche Zeit) · 209 Zugänge · 291× ausverkauft
 
 ## Überblick je Shop
 
 | Shop | wieder da | neu | ausverkauft | Wareneingänge | Haltbarkeit (Median) |
 |---|---:|---:|---:|---:|---|
 | Wolsdorff | 50 | 1 | 55 | 6 | 11 Std. |
-| Tabak-Kontor Leipzig | 26 | 0 | 43 | 2 | 5 Std. |
+| Tabak-Kontor Leipzig | 26 | 0 | 44 | 2 | 5 Std. |
 | Casa Benden | 9 | 5 | 24 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
@@ -15,7 +15,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 09:30 (deutsche Zeit) · 209 Zugänge 
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
-| StarkeZigarren | 2 | 0 | 16 | 1 | 34 Std. |
+| StarkeZigarren | 2 | 0 | 17 | 1 | 34 Std. |
 | Dominique London | 0 | 5 | 0 | 1 | – |
 | Noblego | 1 | 3 | 15 | 1 | 7,0 Tage |
 | Pipe House | 0 | 2 | 8 | 0 | 4 Std. |
@@ -169,11 +169,11 @@ Am schnellsten vergriffen (typische Zeit von Zugang bis ausverkauft):
 | Jose L. Piedra Zigarren (2 Varianten) | Casa Benden | unter 1 Std. | 1× |
 | Montecristo No. 2 | Cigarrenversand24 | unter 1 Std. | 4× |
 | Jose L. Piedra Brevas (Restbestand) | Casa Benden | unter 1 Std. | 1× |
+| Cohiba Robustos 25er Cabinet | Tabak-Kontor Leipzig | 1 Std. | 1× |
 | Hoyo de Monterrey Epicure No. 2 | Wolsdorff | 1 Std. | 3× |
 | Vegueros Mañanitas | Nobbis Tabakwelt | 1 Std. | 1× |
 | Montecristo No 2 Single 1'S | Wolsdorff | 2 Std. | 2× |
 | Hoyo De Monterrey Epicure No. 2 | Nobbis Tabakwelt | 2 Std. | 1× |
-| Quai d´Orsay No. 50 | Nobbis Tabakwelt | 2 Std. | 1× |
 
 ## Am häufigsten wieder da
 
