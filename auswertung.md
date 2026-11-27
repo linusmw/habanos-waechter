@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-27 16:55 (deutsche Zeit) · 219 Zugänge · 297× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-27 17:25 (deutsche Zeit) · 219 Zugänge · 298× ausverkauft
 
 ## Überblick je Shop
 
@@ -11,7 +11,7 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-27 16:55 (deutsche Zeit) · 219 Zugänge 
 | Casa Benden | 9 | 5 | 24 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Zigarren Herzog | 12 | 4 | 17 | 0 | 7,1 Tage |
+| Zigarren Herzog | 12 | 4 | 18 | 0 | 8,0 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
 | zigarre.de | 9 | 0 | 9 | 0 | 40 Std. |
@@ -66,16 +66,16 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆119  Nachmittag █160  Ab
 - Am häufigsten: **Fr** (43%), **Nachmittag** (43%)
 - Wareneingänge im Schnitt alle **27,8 Tage** (zuletzt 2026-11-27 09:30)
 
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
+
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
-
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
 
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
@@ -89,15 +89,15 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆119  Nachmittag █160  Ab
 - Am häufigsten: **Fr** (29%), **Nachmittag** (38%)
 - Wareneingänge im Schnitt alle **16,1 Tage** (zuletzt 2026-11-23 14:50)
 
-### Zigarren Herzog (20 Funde, davon 4 historisch)
-- Wochentage: Mo ▂3  Di ▂3  Mi ▁1  Do █10  Fr ▂3  Sa  0  So  0
-- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅7  Nachmittag █11  Abend ▁1
-- Am häufigsten: **Do** (50%), **Nachmittag** (55%)
-
 ### StarkeZigarren (20 Funde, davon 13 historisch)
 - Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
 - Am häufigsten: **Do** (45%), **Nachmittag** (45%)
+
+### Zigarren Herzog (20 Funde, davon 4 historisch)
+- Wochentage: Mo ▂3  Di ▂3  Mi ▁1  Do █10  Fr ▂3  Sa  0  So  0
+- Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅7  Nachmittag █11  Abend ▁1
+- Am häufigsten: **Do** (50%), **Nachmittag** (55%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
