@@ -1,6 +1,6 @@
 # Auswertung Habanos-Wächter
 
-Zeitraum: 2026-10-20 15:06 bis 2026-11-28 14:01 (deutsche Zeit) · 233 Zugänge · 302× ausverkauft
+Zeitraum: 2026-10-20 15:06 bis 2026-11-28 14:30 (deutsche Zeit) · 239 Zugänge · 304× ausverkauft
 
 ## Überblick je Shop
 
@@ -10,8 +10,8 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-28 14:01 (deutsche Zeit) · 233 Zugänge 
 | Tabak-Kontor Leipzig | 26 | 2 | 44 | 2 | 5 Std. |
 | Casa Benden | 9 | 5 | 24 | 2 | 19 Std. |
 | Cigarrenversand24 | 20 | 4 | 26 | 2 | 16 Std. |
+| Pipe House | 20 | 2 | 12 | 3 | 4 Std. |
 | Nobbis Tabakwelt | 18 | 1 | 24 | 3 | 26 Std. |
-| Pipe House | 14 | 2 | 10 | 2 | 4 Std. |
 | Zigarren Herzog | 12 | 4 | 18 | 0 | 8,0 Tage |
 | c-cigars | 11 | 0 | 26 | 2 | 3,6 Tage |
 | La Galana | 9 | 0 | 15 | 2 | 13 Std. |
@@ -28,9 +28,9 @@ Zeitraum: 2026-10-20 15:06 bis 2026-11-28 14:01 (deutsche Zeit) · 233 Zugänge 
 
 Zugänge (wieder da + neu) nach Wochentag und Tageszeit, inklusive 273 historischer Funde.
 
-**Alle Shops:** Mo ▃60  Di ▄75  Mi ▄66  Do ▆111  Fr █139  Sa ▃46  So ▁9
+**Alle Shops:** Mo ▃60  Di ▄75  Mi ▄66  Do ▆111  Fr █139  Sa ▃52  So ▁9
 
-Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆130  Nachmittag █163  Abend ▅95
+Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆130  Nachmittag █169  Abend ▄95
 
 ### Wolsdorff (68 Funde, davon 10 historisch)
 - Wochentage: Mo ▂10  Di  0  Mi  1  Do ▁6  Fr █50  Sa  1  So  0
@@ -49,6 +49,12 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆130  Nachmittag █163  Ab
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
+### Pipe House (32 Funde, davon 10 historisch)
+- Wochentage: Mo  1  Di ▂5  Mi  1  Do  1  Fr ▁2  Sa █21  So  1
+- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag █13  Nachmittag █13  Abend ▂4
+- Am häufigsten: **Sa** (66%), **Mittag** (41%)
+- Wareneingänge im Schnitt alle **0,0 Tage** (zuletzt 2026-11-28 14:30)
+
 ### Zigarrentraum (31 Funde, davon 29 historisch)
 - Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
 - Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
@@ -66,28 +72,22 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆130  Nachmittag █163  Ab
 - Am häufigsten: **Fr** (43%), **Nachmittag** (43%)
 - Wareneingänge im Schnitt alle **27,8 Tage** (zuletzt 2026-11-27 09:30)
 
-### Dalay Zigarren (29 Funde, davon 29 historisch)
-- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
-- Am häufigsten: **Di** (24%), **Abend** (45%)
-
 ### Cigarrenversand24 (29 Funde, davon 5 historisch)
 - Wochentage: Mo ▂2  Di █10  Mi ▄5  Do ▅6  Fr ▃4  Sa ▁1  So ▁1
 - Tageszeit: Nacht  0  Morgen ▅7  Vormittag ▃4  Mittag █11  Nachmittag ▄5  Abend ▁2
 - Am häufigsten: **Di** (34%), **Mittag** (38%)
 - Wareneingänge im Schnitt alle **4,9 Tage** (zuletzt 2026-11-03 10:30)
 
+### Dalay Zigarren (29 Funde, davon 29 historisch)
+- Wochentage: Mo ▂2  Di █7  Mi ▇6  Do ▆5  Fr ▆5  Sa ▃3  So ▁1
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▁2  Mittag ▄6  Nachmittag ▄6  Abend █13
+- Am häufigsten: **Di** (24%), **Abend** (45%)
+
 ### Nobbis Tabakwelt (26 Funde, davon 7 historisch)
 - Wochentage: Mo ▁1  Di █10  Mi ▇9  Do  0  Fr ▃4  Sa ▂2  So  0
 - Tageszeit: Nacht  0  Morgen ▂4  Vormittag  0  Mittag █13  Nachmittag ▄6  Abend ▂3
 - Am häufigsten: **Di** (38%), **Mittag** (50%)
 - Wareneingänge im Schnitt alle **2,6 Tage** (zuletzt 2026-11-04 13:30)
-
-### Pipe House (26 Funde, davon 10 historisch)
-- Wochentage: Mo ▁1  Di ▃5  Mi ▁1  Do ▁1  Fr ▁2  Sa █15  So ▁1
-- Tageszeit: Nacht ▁1  Morgen ▁1  Vormittag  0  Mittag █13  Nachmittag ▄7  Abend ▂4
-- Am häufigsten: **Sa** (58%), **Mittag** (50%)
-- Wareneingänge im Schnitt alle **0,0 Tage** (zuletzt 2026-11-28 14:01)
 
 ### c-cigars (24 Funde, davon 13 historisch)
 - Wochentage: Mo ▅4  Di  0  Mi ▁1  Do █7  Fr █7  Sa ▆5  So  0
@@ -142,6 +142,7 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 
 | Zeit | Shop | Artikel | Beispiele |
 |---|---|---:|---|
+| Sa 2026-11-28 14:30 | Pipe House | 6 | Cohiba Medio Siglo, H.Upmann Epicures, Partagas Serie D No. 6 … |
 | Sa 2026-11-28 14:01 | Pipe House | 3 | Fonseca KDT Cadetes, Partagas Serie D No. 5, Quintero Brevas |
 | Sa 2026-11-28 13:30 | Pipe House | 7 | Cuaba Divinos, El Rey Del Mundo Demi Tasse, Hoyo de Monterrey Petit Robustos … |
 | Fr 2026-11-27 13:01 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Epicure No. 2, Jose L. Piedra Brevas … |
@@ -156,7 +157,6 @@ Läufe, in denen bei einem Shop mindestens 3 Artikel gleichzeitig kamen.
 | Fr 2026-11-06 13:00 | Wolsdorff | 7 | H. Upmann Half Corona, Hoyo de Monterrey Petit Robusto, Juan Lopez Sel. No 1 1'S … |
 | Do 2026-11-05 17:50 | StarkeZigarren | 6 | Cohiba Mini, Guantanamera Mini, Montecristo Short … |
 | Mi 2026-11-04 13:30 | Nobbis Tabakwelt | 5 | Cuaba Divinos, Hoyo De Monterrey Epicure No. 2, Partagás Aliados … |
-| Di 2026-11-03 13:30 | Nobbis Tabakwelt | 7 | Cohiba Siglo II, Fonseca KDT Cadetes, Montecristo No. 3 … |
 
 ## Wie schnell ist die Ware wieder weg?
 
