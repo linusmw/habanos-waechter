@@ -49,16 +49,16 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆119  Nachmittag █160  Ab
 - Tageszeit: Nacht ▁2  Morgen  0  Vormittag ▂3  Mittag ▂5  Nachmittag █16  Abend ▄8
 - Am häufigsten: **Do** (26%), **Nachmittag** (47%)
 
-### Zigarrentraum (31 Funde, davon 29 historisch)
-- Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
-- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
-- Am häufigsten: **Di** (26%), **Abend** (35%)
-
 ### Casa Benden (31 Funde, davon 6 historisch)
 - Wochentage: Mo ▅6  Di ▁1  Mi ▆8  Do █10  Fr ▄5  Sa ▁1  So  0
 - Tageszeit: Nacht ▁1  Morgen ▅8  Vormittag ▁2  Mittag ▃4  Nachmittag █12  Abend ▃4
 - Am häufigsten: **Do** (32%), **Nachmittag** (39%)
 - Wareneingänge im Schnitt alle **19,9 Tage** (zuletzt 2026-11-11 15:55)
+
+### Zigarrentraum (31 Funde, davon 29 historisch)
+- Wochentage: Mo ▃3  Di █8  Mi ▇7  Do ▅5  Fr ▁1  Sa ▇7  So  0
+- Tageszeit: Nacht  0  Morgen ▁2  Vormittag ▃4  Mittag ▃4  Nachmittag ▇10  Abend █11
+- Am häufigsten: **Di** (26%), **Abend** (35%)
 
 ### Tabak-Kontor Leipzig (30 Funde, davon 2 historisch)
 - Wochentage: Mo ▁2  Di ▂3  Mi ▁1  Do ▆10  Fr █13  Sa  0  So ▁1
@@ -89,15 +89,15 @@ Nacht ▁15  Morgen ▃64  Vormittag ▂39  Mittag ▆119  Nachmittag █160  Ab
 - Am häufigsten: **Fr** (29%), **Nachmittag** (38%)
 - Wareneingänge im Schnitt alle **16,1 Tage** (zuletzt 2026-11-23 14:50)
 
-### StarkeZigarren (20 Funde, davon 13 historisch)
-- Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
-- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
-- Am häufigsten: **Do** (45%), **Nachmittag** (45%)
-
 ### Zigarren Herzog (20 Funde, davon 4 historisch)
 - Wochentage: Mo ▂3  Di ▂3  Mi ▁1  Do █10  Fr ▂3  Sa  0  So  0
 - Tageszeit: Nacht  0  Morgen  0  Vormittag ▁1  Mittag ▅7  Nachmittag █11  Abend ▁1
 - Am häufigsten: **Do** (50%), **Nachmittag** (55%)
+
+### StarkeZigarren (20 Funde, davon 13 historisch)
+- Wochentage: Mo  0  Di ▂2  Mi ▂2  Do █9  Fr ▄5  Sa ▁1  So ▁1
+- Tageszeit: Nacht  0  Morgen ▂2  Vormittag  0  Mittag ▂2  Nachmittag █9  Abend ▆7
+- Am häufigsten: **Do** (45%), **Nachmittag** (45%)
 
 ### Tabacstore (18 Funde, davon 18 historisch)
 - Wochentage: Mo ▅3  Di ▅3  Mi ▃2  Do ▆4  Fr █5  Sa ▂1  So  0
